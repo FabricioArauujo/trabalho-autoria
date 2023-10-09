@@ -5,6 +5,7 @@ body{
     position: relative;
     top: -20px;
     background-attachment: fixed;
+    max-height: 90vh;
 
 }
 
