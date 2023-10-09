@@ -11,7 +11,7 @@ body{
     background-color: white;
     margin: auto;
     padding: 0px;
-    border-radius: 10px 0px 10px 0px;
+    border-radius: 10px 10px 10px 10px;
 }
 #conteudo p{
     text-align: justify;
