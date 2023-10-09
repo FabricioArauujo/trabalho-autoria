@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(85, 81, 81);
+    margin: 0px;
+    padding: 0px;
+}
+
+#conteudo{
+    width: 800px;
+    height: 100vh;
+    background-color: white;
+    margin: auto;
+    padding: 0px;
+    border-radius: 10px 0px 10px 0px;
+}
