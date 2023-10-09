@@ -1,10 +1,10 @@
 body{
     background-image: url("img/halteres-no-chao-de-uma-academia-ai-generative_123827-23743.avif");
-    background-position: top;
     margin: 0px;
     padding: 0px;
     position: relative;
     top: -20px;
+    background-attachment: fixed;
 
 }
 
