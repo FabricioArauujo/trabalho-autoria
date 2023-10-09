@@ -1,20 +1,25 @@
 body{
-    background-color: rgb(85, 81, 81);
+    background-image: url("img/halteres-no-chao-de-uma-academia-ai-generative_123827-23743.avif");
+    background-position: top;
     margin: 0px;
     padding: 0px;
+    position: relative;
+    top: -20px;
+
 }
 
 #conteudo{
     text-align: center;
-    width: 800px;
+    max-width: 40vw;
     height: 100vh;
-    background-color: white;
+    background-color: rgb(145, 141, 141);
     margin: auto;
+    margin-top: 0vh;
     padding: 0px;
     border-radius: 10px 10px 10px 10px;
 }
 #conteudo p{
     text-align: justify;
     padding: 0px 10px 0px 10px; ;
-    width: 90%;
+    width: 80%;
 }
