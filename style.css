@@ -5,10 +5,16 @@ body{
 }
 
 #conteudo{
+    text-align: center;
     width: 800px;
     height: 100vh;
     background-color: white;
     margin: auto;
     padding: 0px;
     border-radius: 10px 0px 10px 0px;
+}
+#conteudo p{
+    text-align: justify;
+    padding: 0px 10px 0px 10px; ;
+    width: 90%;
 }
