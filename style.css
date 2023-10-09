@@ -4,16 +4,20 @@ body{
     padding: 0px;
     position: relative;
     top: -20px;
+    bottom: 0px;
     background-attachment: fixed;
     max-height: 90vh;
 
 }
+a{
+    text-decoration: none;
+}
 
 #conteudo{
     text-align: center;
-    max-width: 40vw;
+    max-width: 30vw;
     height: 100vh;
-    background-color: rgb(145, 141, 141);
+    background-color: rgba(145, 141, 141, 0.747);
     margin: auto;
     margin-top: 0vh;
     padding: 0px;
@@ -21,6 +25,34 @@ body{
 }
 #conteudo p{
     text-align: justify;
-    padding: 0px 10px 0px 10px; ;
+    padding: 0px 0px 0px 40px; ;
+    margin: 0px;
     width: 80%;
+    text-indent: 10px;
+}
+
+#conteudo button{
+    position: absolute;
+    top: 40%;
+    left: 48%;
+}
+
+form{
+    background-color: rgba(145, 141, 141, 0.747);
+    max-width: 30vw;
+    height: 100vh;
+    background-color: rgba(145, 141, 141, 0.747);
+    margin: auto;
+    margin-top: 0vh;
+    padding: 0px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+form header{
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+main label{
+    padding: 0px 20px 10px 20px; 
 }
