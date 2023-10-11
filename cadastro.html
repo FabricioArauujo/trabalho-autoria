@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form method="post" >
+    <form method="post" action="cadastro2.html">
        <header>
            <h1>Cadastro de Alunos</h1>
        </header>
@@ -16,31 +16,44 @@
 
             <table>
                 <tr>
-                    <label for="inome">Nome:</label>
-                    <input type="text" name="nome" id="inome">
+                    <td><label for="inome">Nome:</label></td>
+                    <td><input type="text" name="nome" id="inome"></td>
                 </tr>
-                
-                <br>
-                <label for="isobrenome">Sobrenome:</label>
-                <input type="text" name="sobrenome" id="isobrenome">
-                <br>
-                <label for="icpf">CPF:</label>
-                <input type="text" name="cpf" id="icpf">
-                <br>
-                <label for="idata">Data de Nascimento:</label>
-                <input type="date" name="data" id="idata">
-                <br>
-                <label for="iemail">Email:</label>
-                <input type="email" name="email" id="iemail">
-                <br>
-                <input type="submit" value="Avançar Cadastro">
-                <input type="reset" value="Limpar">
+
+                <tr>
+                    <td><label for="isobrenome">Sobrenome:</label></td>
+                    <td><input type="text" name="sobrenome" id="isobrenome"></td>
+                </tr>
+                <tr>
+                    <td><label for="icpf">CPF:</label></td>
+                    <td><input type="text" name="cpf" id="icpf"></td>
+                </tr>
+                <tr>
+                    <td><label for="Irg">RG:</label></td>
+                    <td><input type="text" name="rg" id="Irg"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="idata">Data de Nascimento:</label></td>
+                    <td><input type="date" name="data" id="idata"></td>
+                </tr>
+                <tr>
+    
+                    <td><label for="iemail">Email:</label></td>
+                    <td><input type="email" name="email" id="iemail"></td>
+                </tr>
+                <tr>
+    
+                    <td><button><a href="cadastro2.html">Avançar Cadastro</a></button></td>
+                    <td><input type="reset" value="Limpar"></td>
+                </tr>
             </table>
        </main>
        <footer>
 
        </footer>
 
-    </form>
-</body>
+    <td></form></td>
+
+
 </html>
