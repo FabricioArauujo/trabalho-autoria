@@ -9,5 +9,55 @@
 </head>
 <body>
     
+    <form method="post">
+        <header>
+            <h1>Cadastro de Alunos</h1>
+        </header>
+        <main>
+            <h2>Dados Referentes a Academia</h2>
+
+            <table>
+                <tr>
+            
+                    <td><label for="Inivel">Nível:</label></td>
+                    <input type="radio" name="nivel" id="Inivel" value="Iniciante">Iniciante
+                    <input type="radio" name="nivel" id="Inivel" value="Intermediário">Intermediário
+                    <input type="radio" name="nivel" id="Inivel" value="Avançado">Avançado
+                </tr>
+                <br>
+                <tr>
+                    <label for="Itempo">Tempo de Treino:</label>
+                    <input type="text" name="tempo" id="Itempo" size="30" placeholder="Quanto tempo você treina?">
+                </tr>
+                <br>
+                <tr>
+                    <label for="Ihorario">Hora de Treino:</label>
+                    <select name="horario" id="Ihorario">
+                        <option value="manha">Manha</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </tr>
+                <br>
+                <tr>
+                    <label for="Ipersonal">Necessita de Personal:</label>
+                    <input type="radio" name="personal" id="Ipersonal" value="S">Sim 
+                    <input type="radio" name="personal" id="Ipersonal" value="N">Não
+                </tr>
+                <br>
+                <tr>
+                    <label for="Iplanilha">Necessita de Planilha de treino:</label>
+                    <input type="radio" name="planilha" id="Iplanilha" value="S">Sim
+                    <input type="radio" name="planilha" id="Iplanilha" value="N">Não
+                </tr>
+                <br>
+                <tr>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </tr>
+            </table>
+        </main>
+
+    </form>
 </body>
 </html>
