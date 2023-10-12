@@ -6,53 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="style.css">
+    <script src="animacoes.js"></script>
 </head>
 <body>
-    
-    <form method="post" action="cadastro2.html">
-       <header>
-           <h1>Cadastro de Alunos</h1>
-       </header>
-       <main>
+    <form method="post" action="cadastro2.html" onsubmit="return validar();">
+        <header>
+            <h1>Cadastro de Alunos</h1>
+        </header>
+        <main>
             <h2>Dados Pessoais</h2>
             <div id="conteinerDados">
                 <table>
                     <tr>
                         <td><label for="inome">Nome:</label></td>
-                        <td><input type="text" name="nome" id="inome"></td>
+                        <td><input type="text" name="nome" id="inome" placeholder="Nome"></td>
                     </tr>
                     <tr>
                         <td><label for="isobrenome">Sobrenome:</label></td>
-                        <td><input type="text" name="sobrenome" id="isobrenome"></td>
+                        <td><input type="text" name="sobrenome" id="isobrenome" placeholder="Sobrenome"></td>
                     </tr>
                     <tr>
                         <td><label for="icpf">CPF:</label></td>
-                        <td><input type="text" name="cpf" id="icpf"></td>
+                        <td><input type="text" name="cpf" id="icpf" placeholder="CPF"></td>
                     </tr>
                     <tr>
-                        <td><label for="Irg">RG:</label></td>
-                        <td><input type="text" name="rg" id="Irg"></td>
+                        <td><label for="irg">RG:</label></td>
+                        <td><input type="text" name="rg" id="irg" placeholder="RG"></td>
                     </tr>
                     <tr>
                         <td><label for="idata">Data de Nascimento:</label></td>
-                        <td><input type="date" name="data" id="idata"></td>
+                        <td><input type="date" name="data" id="idata" placeholder="Data de Nascimento"></td>
                     </tr>
                     <tr>
                         <td><label for="iemail">Email:</label></td>
-                        <td><input type="email" name="email" id="iemail"></td>
+                        <td><input type="email" name="email" id="iemail" placeholder="Email"></td>
                     </tr>
                     <tr>
-                        <td><button><a href="cadastro2.html">Avançar Cadastro</a></button></td>
+                        <td><input type="submit" value="Enviar"></td>
                         <td><input type="reset" value="Limpar"></td>
                     </tr>
                 </table>
             </div>
-       </main>
-       <footer>
+        </main>
+        <footer>
             <p>Desenvolvido por <a href="https://github.com/FabricioArauujo" target="_blank">Fabrício Araujo</a> e <a href="https://github.com/wermesson-silva" target="_blank">Wermesson Silva</a></p>
-       </footer>
-
+        </footer>
     </form>
-
-
+</body>
 </html>
