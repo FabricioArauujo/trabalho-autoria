@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinopse Hitman / WEB Jogos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icoSite.ico">
+</head>
+<body>
+    <div id="topo">
+        <img src="img/imgSIte3.png" alt="logo do site">
+    <span>WEB Jogos</span>
+
+    <ul id="lista">
+        <li>
+            <a href="pagina1.html">Jogos</a>
+        </li>
+    </div>
+    
+
+    <div id="sinopse">
+        <h1 id="titulo">Hitman</h1>
+        <br>
+
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/R_Ob-fupzKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <p id="botomMostrar">Mostrar sinopse</p>
+        <br>
+        <p id="sinopsejogo">Hitman é uma série de jogos eletrônicos stealth desenvolvidos pela empresa dinamarquesa IO Interactive, publicada anteriormente pela Eidos Interactive e pela Square Enix.</p>
+       
+    </div>   
+    <div id="download">
+        <img src="img/imgHitmanLogo.jpg" alt="pubg">
+        <br>
+        <h2>Ficou interresado? baixe aqui!</h2>
+        <p id="gratuito">JOGO GRATUITO</p>
+        <p id="baixar">você inclui o download do jogo por aqui:</p>
+
+        <p id="iconeBaixar">BAIXAR </p>
+            <ul id="tiposDownload">
+                <li>        
+                    <a href="https://play.google.com/store/apps/details?id=com.squareenixmontreal.hitmansniperandroid&hl=pt_BR&gl=US" target="_blank">Baixe aqui Hitman sniper Mobile</a>
+                </li>
+                <li>      
+                    <a href="https://store.steampowered.com/agecheck/app/1659040/" target="_blank">Baixe aqui o hitman para Computador</a>
+                </li>
+                <li>
+                    <a href="https://store.playstation.com/pt-br/product/UP4572-PPSA01768_00-0000000000FSPBND" target="_blank">Baixe aqui o Hitman para console</a>
+                </li>
+            </ul>
+       
+        
+
+    </div>
+
+    <div id="fotosGameplay">
+
+        <h1>Fotos da gameplay:</h1>
+        <ul>
+            <li>
+                <img  src="img/imgHitmanGameplay.jpg" alt="Hitman">
+            </li>
+            <li>
+                <img src="img/imgHitmanGameplay2.jpg" alt="hitman" >
+            </li>
+            <li>
+                <img  src="img/imgHitmanGameplay3.jpg" alt="hitman " >
+            </li>
+      </ul>
+    </div>
+    <script>
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('iconeBaixar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var tiposDownload = document.getElementById('tiposDownload');
+  
+  // Verifica se a lista está visível
+  if (tiposDownload.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    tiposDownload.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    tiposDownload.style.display = 'none';
+  }
+});
+
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('botomMostrar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var sinopsejogo = document.getElementById('sinopsejogo');
+  
+  // Verifica se a lista está visível
+  if (sinopsejogo.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    sinopsejogo.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    sinopsejogo.style.display = 'none';
+  }
+});
+    </script>
+</body>
+</html>

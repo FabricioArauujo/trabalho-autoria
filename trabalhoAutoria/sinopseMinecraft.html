@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinopse Minecraft / WEB Jogos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icoSite.ico">
+</head>
+<body>
+    <div id="topo">
+        <img src="img/imgSIte3.png" alt="logo do site">
+    <span>WEB Jogos</span>
+
+    <ul id="lista">
+        <li>
+            <a href="pagina1.html">Jogos</a>
+        </li>
+    </div>
+    
+
+    <div id="sinopse">
+        <h1 id="titulo">Minecraft</h1>
+
+        <p id="emojis">&#x1F30D; Mundo Aberto &#x2694; combates desafiodores</p>
+
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/jMe3tdyjouM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <p id="botomMostrar">Mostrar sinopse</p>
+        <br>
+        <p id="sinopsejogo">Minecraft é um jogo eletrônico sandbox de sobrevivência criado pelo desenvolvedor sueco Markus "Notch" Persson e posteriormente desenvolvido e publicado pela Mojang Studios, cuja propriedade intelectual foi obtida pela Microsoft em 2014.
+            Em Minecraft, os jogadores exploram um mundo aberto tridimensional intencionalmente em blocos, pixelizado e gerado proceduralmente, podendo descobrir e extrair matérias-primas, ferramentas artesanais, construir estruturas ou terraplenagens e, dependendo do modo de jogo, podem combater inimigos controlados por computador, bem como cooperar ou competir contra outros jogadores no mesmo mundo. Esses modos incluem um modo sobrevivência, no qual o jogador precisa adquirir recursos para construir o mundo e se manter vivo, e um modo criativo, onde os jogadores têm recursos ilimitados. Em Java Edition, os jogadores podem modificar a jogabilidade com mods para criar novas mecânicas de itens, texturas, entre outros.</p>
+       
+    </div>   
+    <div id="download">
+        <img src="img/imgMinecraft.jpg" alt="pubg">
+        <br>
+        <h2>Ficou interresado? baixe aqui!</h2>
+        <p id="Pago">JOGO PAGO</p>
+        <p id="baixar">você inclui o download do jogo por aqui:</p>
+
+        <p id="iconeBaixar">BAIXAR </p>
+            <ul id="tiposDownload">
+                <li>        
+                    <a href="https://play.google.com/store/apps/details?id=com.mojang.minecraftpe&hl=pt_BR&gl=US" target="_blank">Baixe aqui Minecrat Mobile</a>
+                </li>
+                <li>      
+                    <a href="https://www.minecraft.net/pt-br/download" target="_blank">Baixe aqui o minecraft para Computador</a>
+                </li>
+                <li>
+                    <a href="https://store.playstation.com/pt-br/product/UP4433-CUSA00744_00-MINECRAFTPS40001" target="_blank">Baixe aqui o minecraft para console</a>
+                </li>
+            </ul>
+       
+        
+
+    </div>
+
+    <div id="fotosGameplay">
+
+        <h1>Fotos da gameplay:</h1>
+        <ul>
+            <li>
+                <img  src="img/imgMinecraftGameplay.jpg" alt="Foto Minecraft" >
+            </li>
+            <li>
+                <img src="img/imgMinecraftfgameplay3.jpg" alt="Foto Minecraft">
+            </li>
+            <li>
+                <img  src="img/imgMinecraftGameplay2.jpg" alt="Foto Minecraft">
+            </li>
+      </ul>
+    </div>
+    <script>
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('iconeBaixar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var tiposDownload = document.getElementById('tiposDownload');
+  
+  // Verifica se a lista está visível
+  if (tiposDownload.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    tiposDownload.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    tiposDownload.style.display = 'none';
+  }
+});
+
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('botomMostrar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var sinopsejogo = document.getElementById('sinopsejogo');
+  
+  // Verifica se a lista está visível
+  if (sinopsejogo.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    sinopsejogo.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    sinopsejogo.style.display = 'none';
+  }
+});
+    </script>
+</body>
+</html>

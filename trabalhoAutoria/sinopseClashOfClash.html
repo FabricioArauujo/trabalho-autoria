@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinopse Clash Of Clans /WEB Jogos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icoSite.ico" >
+</head>
+<body>
+    <div id="topo">
+        <img src="img/imgSIte3.png" alt="logo do site">
+    <span>WEB Jogos</span>
+
+    <ul id="lista">
+        <li>
+            <a href="pagina1.html">Jogos</a>
+        </li>
+    </div>
+    
+
+    <div id="sinopse">
+        <h1 id="titulo">Clash Of Clans </h1>
+
+        <br>
+
+        <iframe src="https://www.youtube.com/embed/DDY6KjQCMoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <p id="botomMostrar">Mostrar sinopse</p>
+        <br>
+        <p id="sinopsejogo">Estratégia em tempo real, ou em inglês Real-time strategy é um subgênero de jogos de estratégia em que o jogo não tem progresso por turnos. Num RTS, jogadores geralmente tem o objetivo de fazer uso de recursos para criar bases e unidades, a fim de derrotar o oponente. </p>
+       
+       
+    </div>   
+    <div id="download">
+        <img src="img/imgClashOfClans.jpg" alt="Clash of Clans">
+        <br>
+        <h2>Ficou interresado? baixe aqui!</h2>
+        <p id="gratuito">JOGO GRATUITO</p>
+        <p id="baixar">você inclui o download do jogo por aqui:</p>
+
+        <p id="iconeBaixar">BAIXAR </p>
+            <ul id="tiposDownload">
+                <li>        
+                    <a href="https://play.google.com/store/search?q=clash%20of%20clans&c=apps&hl=pt_BR&gl=US" target="_blank">Baixe aqui Clash of Clans Mobile</a>
+                </li>
+            </ul>
+       
+        
+
+    </div>
+
+    <div id="fotosGameplay">
+
+        <h1>Fotos da gameplay:</h1>
+        <ul>
+            <li>
+                <img   src="img/imgClashofclansGameplay.jpg" alt="Clash Of Clans" >
+            </li>
+            <li>
+                <img  src="img/imgClashofclansGameplay2.jpg" alt="Clash Of Clans" >
+            </li>
+            <li>
+                <img src="img/imgClashofclansGameplay3.jpg" alt="Clash Of Clans" >
+            </li>
+      </ul>
+    </div>
+    <script>
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('iconeBaixar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var tiposDownload = document.getElementById('tiposDownload');
+  
+  // Verifica se a lista está visível
+  if (tiposDownload.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    tiposDownload.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    tiposDownload.style.display = 'none';
+  }
+});
+
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('botomMostrar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var sinopsejogo = document.getElementById('sinopsejogo');
+  
+  // Verifica se a lista está visível
+  if (sinopsejogo.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    sinopsejogo.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    sinopsejogo.style.display = 'none';
+  }
+});
+    </script>
+</body>
+</html>

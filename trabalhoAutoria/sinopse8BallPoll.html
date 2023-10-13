@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinopse 8 ball pool /WEB Jogos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icoSite.ico" >
+</head>
+<body>
+    <div id="topo">
+        <img src="img/imgSIte3.png" alt="logo do site">
+    <span>WEB Jogos</span>
+
+    <ul id="lista">
+        <li>
+            <a href="pagina1.html">Jogos</a>
+        </li>
+    </div>
+    
+
+    <div id="sinopse">
+        <h1 id="titulo">8 ball pool</h1>
+
+        <br>
+        <iframe src="https://www.youtube.com/embed/MarGQrmbPm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <p id="botomMostrar">Mostrar sinopse</p>
+        <br>
+        <p id="sinopsejogo">O Bola 8 é um jogo de Pool, uma das vertentes do bilhar e pode ser jogado em mesas de 7, 8 e 9 pés. É composto por 16 bolas, sendo que uma é branca e as outras são coloridas. Utiliza-se um taco de bilhar e a finalidade é tacar a bola branca e com esta acertar numa bola colorida e encestá-la. Existem duas séries de bolas, sendo que a primeira está numerada da 1 a 7, e a segunda, da 9 a 15. Cada jogador fica com uma série, sendo a 8, a bola preta, a última a ser encaçapada.</p>
+       
+       
+    </div>   
+    <div id="download">
+        <img src="img/img8ball.jpg" alt="8 ball poll">
+        <br>
+        <h2>Ficou interresado? baixe aqui!</h2>
+        <p id="gratuito">JOGO GRATUITO</p>
+        <p id="baixar">você inclui o download do jogo por aqui:</p>
+
+        <p id="iconeBaixar">BAIXAR </p>
+            <ul id="tiposDownload">
+                <li>        
+                    <a href="https://play.google.com/store/search?q=8%20ball%20pool&c=apps&hl=pt_BR&gl=US" target="_blank">Baixe aqui 8 ball pool Mobile</a>
+                </li>
+            </ul>
+       
+        
+
+    </div>
+
+    <div id="fotosGameplay">
+
+        <h1>Fotos da gameplay:</h1>
+        <ul>
+            <li>
+                <img  src="img/img8ballGameplay.jpg" alt="8 ball pool">
+            </li>
+            <li>
+                <img  src="img/img8ballGameplay2.jpg" alt="8 ball pool" >
+            </li>
+            <li>
+                <img src="img/img8ballGameplay3.jpg" alt="8 ball pool">
+            </li>
+      </ul>
+    </div>
+    <script>
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('iconeBaixar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var tiposDownload = document.getElementById('tiposDownload');
+  
+  // Verifica se a lista está visível
+  if (tiposDownload.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    tiposDownload.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    tiposDownload.style.display = 'none';
+  }
+});
+
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('botomMostrar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var sinopsejogo = document.getElementById('sinopsejogo');
+  
+  // Verifica se a lista está visível
+  if (sinopsejogo.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    sinopsejogo.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    sinopsejogo.style.display = 'none';
+  }
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinopse Among US /WEB Jogos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icoSite.ico" >
+</head>
+<body>
+    <div id="topo">
+        <img src="img/imgSIte3.png" alt="logo do site">
+    <span>WEB Jogos</span>
+
+    <ul id="lista">
+        <li>
+            <a href="pagina1.html">Jogos</a>
+        </li>
+    </div>
+    
+
+    <div id="sinopse">
+        <h1 id="titulo">Among US</h1>
+
+<br>    
+<iframe src="https://www.youtube.com/embed/0YKjFoGxbec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <p id="botomMostrar">Mostrar sinopse</p>
+        <br>
+        <p id="sinopsejogo">Among Us é um jogo eletrônico online, dos gêneros jogo em grupo e sobrevivência, desenvolvido e publicado pelo estúdio de jogos estadunidense InnerSloth.</p>
+       
+       
+    </div>   
+    <div id="download">
+        <img src="img/imgAmongUs.png" alt="Among US">
+        <br>
+        <h2>Ficou interresado? baixe aqui!</h2>
+        <p id="gratuito">JOGO GRATUITO</p>
+        <p id="baixar">você inclui o download do jogo por aqui:</p>
+
+        <p id="iconeBaixar">BAIXAR </p>
+            <ul id="tiposDownload">
+                <li>        
+                    <a href="https://play.google.com/store/search?q=among%20us&c=apps&hl=pt_BR&gl=US" target="_blank">Baixe aqui Among us Mobile</a>
+                </li>
+                <li>      
+                    <a href="https://store.epicgames.com/pt-BR/p/among-us" target="_blank">Baixe aqui o  Among us para Computador</a>
+                </li>
+                <li>
+                    <a href="https://store.playstation.com/pt-br/product/UP7032-PPSA03595_00-AMONGUS5SIEA0001" target="_blank">Baixe aqui o  Among us para console</a>
+                </li>
+            </ul>
+       
+        
+
+    </div>
+
+    <div id="fotosGameplay">
+
+        <h1>Fotos da gameplay:</h1>
+        <ul>
+            <li>
+                <img   src="img/imgAmongGameplay.jpg" alt="among us" >
+            </li>
+            <li>
+                <img src="img/imgAmonggameplay2.jpg" alt="Among us" >
+            </li>
+            <li>
+                <img src="img/imgamonggameplay3.jpg" alt="Among us">
+            </li>
+      </ul>
+    </div>
+    <script>
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('iconeBaixar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var tiposDownload = document.getElementById('tiposDownload');
+  
+  // Verifica se a lista está visível
+  if (tiposDownload.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    tiposDownload.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    tiposDownload.style.display = 'none';
+  }
+});
+
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('botomMostrar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var sinopsejogo = document.getElementById('sinopsejogo');
+  
+  // Verifica se a lista está visível
+  if (sinopsejogo.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    sinopsejogo.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    sinopsejogo.style.display = 'none';
+  }
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinopse GOD OF War / WEB Jogos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icoSite.ico">
+</head>
+<body>
+    <div id="topo">
+        <img src="img/imgSIte3.png" alt="logo do site">
+    <span>WEB Jogos</span>
+
+    <ul id="lista">
+        <li>
+            <a href="pagina1.html">Jogos</a>
+        </li>
+    </div>
+    
+
+    <div id="sinopse">
+        <h1 style="position: relative; left: 20px;" id="titulo">GOD OF WAR RANGARÖK</h1>
+
+        <p id="emojis">&#x2694; combates desafiodores</p>
+
+        <iframe  src="https://www.youtube.com/embed/x6oF3Jxu7X0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <p id="botomMostrar">Mostrar sinopse</p>
+        <br>
+        <p id="sinopsejogo">Depois dos acontecimentos do primeiro game, lançado em 2018, reencontramos Kratos e Atreus alguns anos depois, lidando com as consequências da profecia descoberta por eles, que tem relação com o Ragnarök, o fim dos Nove Reinos na Mitologia Nórdica provocado por uma guerra entre os deuses.
+
+            Em Midgard, todos os seres já encaram o duro Fimbulwinter, um inverno terrível que precede o conflito, segundo as lendas.
+            
+            Atreus acredita que vai desempenhar um papel central no Ragnarök ou tentando impedi-lo, já que as profecias dos gigantes apontam que ele é Loki. Enquanto isso, Kratos reforça os treinamentos do filho adolescente para deixá-lo pronto para o futuro, ao mesmo tempo em que refuta a ideia de se envolver em mais uma guerra entre deuses. Afinal, ele já dizimou o Olimpo, lembra?
+            
+            E os dois ainda precisam lidar com inimigos que fizeram pelo caminho, como Freya, que jurou vingança depois de Kratos matar seu filho semideus psicopata, ainda que fosse para salvá-la, e Thor, que também tem contas a acertar sobre a morte do meio-irmão e de dois filhos, Magni e Modi. </p>
+       
+    </div>   
+    <div id="download">
+    <img src="img/imgGodofwarlogo.jpg" alt="imagem GOD OF WAR">
+        <br>
+        <h2>Ficou interresado? baixe aqui!</h2>
+        <p id="gratuito">JOGO GRATUITO</p>
+        <p id="baixar">você inclui o download do jogo por aqui:</p>
+
+        <p id="iconeBaixar">BAIXAR </p>
+            <ul id="tiposDownload">
+                <li>
+                    <a href="https://store.playstation.com/pt-br/product/UP9000-CUSA34384_00-GOWRAGNAROK00000" target="_blank">Baixe aqui o God Of War Rangarök para console</a>
+                </li>
+            </ul>
+       
+        
+
+    </div>
+
+    <div id="fotosGameplay">
+
+        <h1>Fotos da gameplay:</h1>
+        <ul>
+            <li>
+                <img  src="img/imgGodOFWARgameplay.jpg" alt="imagem God Of War">
+            </li>
+            <li>
+                <img  src="img/imgGodOWarGameplay2.jpg" alt="imagem God Of War">
+            </li>
+            <li>
+                <img  src="img/imgGodOFWARgameplay3.jpg" alt="imagem God Of War">
+            </li>
+      </ul>
+    </div>
+    <script>
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('iconeBaixar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var tiposDownload = document.getElementById('tiposDownload');
+  
+  // Verifica se a lista está visível
+  if (tiposDownload.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    tiposDownload.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    tiposDownload.style.display = 'none';
+  }
+});
+
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('botomMostrar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var sinopsejogo = document.getElementById('sinopsejogo');
+  
+  // Verifica se a lista está visível
+  if (sinopsejogo.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    sinopsejogo.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    sinopsejogo.style.display = 'none';
+  }
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinopse Mortal Kombat / WeB Jogos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/icoSite.ico" >
+</head>
+<body>
+    <div id="topo">
+        <img src="img/imgSIte3.png" alt="logo do site">
+    <span>WEB Jogos</span>
+
+    <ul id="lista">
+        <li>
+            <a href="pagina1.html">Jogos</a>
+        </li>
+    </div>
+    
+
+    <div id="sinopse">
+        <h1 style="position: relative; left: 15%;" id="titulo">Mortal Kombat</h1>
+
+<br>
+    <iframe  src="https://www.youtube.com/embed/0BmmB27LsGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <p id="botomMostrar">Mostrar sinopse</p>
+        <br>
+        <p id="sinopsejogo">Mortal Kombat é uma franquia de mídia centrada em uma série de videogames de luta originalmente desenvolvidos pela Midway Games em 1992. Em 2011, depois da falência da Midway, a produção de Mortal Kombat foi adquirida pela Warner Bros. Games, com o desenvolvimento da NetherRealm Studios.</p>
+    </div>   
+    <div id="download">
+        <img src="img/imgmortalKombatLogo.jpg" alt="mortal Kombat">
+        <br>
+        <h2>Ficou interresado? baixe aqui!</h2>
+        <p id="gratuito">JOGO GRATUITO</p>
+        <p id="baixar">você inclui o download do jogo por aqui:</p>
+
+        <p id="iconeBaixar">BAIXAR </p>
+            <ul id="tiposDownload">
+                <li>        
+                    <a href="https://play.google.com/store/search?q=mortal+kombat&c=apps&hl=pt_BR&gl=US" target="_blank">Baixe aqui Mortal Kombat Mobile</a>
+                </li>
+                <li>      
+                    <a href="https://store.steampowered.com/agecheck/app/307780/" target="_blank">Baixe aqui o Mortal Kombat para Computador</a>
+                </li>
+                <li>
+                    <a href="https://store.playstation.com/pt-br/product/UP1018-CUSA00967_00-MORTALKOMBATX000" target="_blank">Baixe aqui o PUBG para console</a>
+                </li>
+            </ul>
+       
+        
+
+    </div>
+
+    <div id="fotosGameplay">
+
+        <h1>Fotos da gameplay:</h1>
+        <ul>
+            <li>
+                <img   src="img/imgMortalKombatGameo=play3.jpg" alt="mortal Kombat" >
+            </li>
+            <li>
+                <img src="img/imgMortalKombatgameplay.jpg" alt="Mortal Kombat" >
+            </li>
+            <li>
+                <img  src="img/imgMortalKombatgameplay2.jpg" alt="Mortal Kombat">
+            </li>
+      </ul>
+    </div>
+    <script>
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('iconeBaixar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var tiposDownload = document.getElementById('tiposDownload');
+  
+  // Verifica se a lista está visível
+  if (tiposDownload.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    tiposDownload.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    tiposDownload.style.display = 'none';
+  }
+});
+
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('botomMostrar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var sinopsejogo = document.getElementById('sinopsejogo');
+  
+  // Verifica se a lista está visível
+  if (sinopsejogo.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    sinopsejogo.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    sinopsejogo.style.display = 'none';
+  }
+});
+    </script>
+    
+</body>
+</html>
