@@ -10,13 +10,14 @@
 </head>
 <body>
     
-    <form method="post" action="paginaFinal.html" onsubmit="return validateForm()">
+    <main>
         <header>
             <h1>Cadastro de Alunos</h1>
         </header>
-        <main>
-            <h2>Dados Referentes a Academia</h2>
 
+        <h2>Dados Referentes a Academia</h2>
+        
+        <form method="post" action="paginaFinal.html" onsubmit="return validateForm()">
             <table>
                 <tr>
                     <td><label for="Inivel">Nível:</label></td>
@@ -85,13 +86,13 @@
                     </td>
                 </tr>
             </table>
-        </main>
-
+        </form>
+        
         <footer>
             <p>Desenvolvido por <a href="https://github.com/FabricioArauujo" target="_blank">Fabrício Araujo</a> e <a href="https://github.com/wermesson-silva" target="_blank">Wermesson Silva</a></p>
         </footer>
-
-    </form>
+        
+    </main>
 
     <script>
         function validateForm() {
