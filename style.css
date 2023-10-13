@@ -46,8 +46,6 @@ a{
 form {
     min-width: 400px;
     margin: 2vh 0vh 2vh 0vh;
-    height: 100vh;
-  
     transform: translate(0%, 0%);
 }
 
