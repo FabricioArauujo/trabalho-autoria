@@ -2,98 +2,80 @@ body{
     background-image: url("img/halteres-no-chao-de-uma-academia-ai-generative_123827-23743.avif");
     margin: 0px;
     padding: 0px;
-    position: relative;
-    top: -20px;
-    bottom: 0px;
-    background-attachment: fixed;
-    max-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 a{
     text-decoration: none;
 }
 /*Página Principal*/
 #conteudo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     text-align: center;
-    max-width: 30vw;
+    align-items: center;
+    width: 50vw;
     height: 100vh;
     background-color: rgba(145, 141, 141, 0.747);
-    margin: auto;
-    margin-top: 0vh;
-    padding: 0px;
     border-radius: 10px 10px 10px 10px;
 }
 #conteudo p{
     text-align: justify;
-    padding: 0px 0px 0px 40px; ;
+    padding: 0px 0px 0px 0px; ;
     margin: 0px;
     width: 80%;
     text-indent: 10px;
 }
 
-#conteudo button{
-    position: absolute;
-    top: 40%;
-    left: 48%;
-}
+
 /*Fim da página Principal*/
 
 /*Primeira página de Cadastro*/
 form{
-    position: relative;
+    margin: 2vh 0 2vh 0;
     background-color: rgba(145, 141, 141, 0.747);
-    max-width: 40%;
-    min-width: 420px;
-    height: 102vh;
-    margin: auto;
-    margin-top: 0vh;
-    padding: 0px;
+    height: 96vh;
     border-radius: 10px 10px 10px 10px;
     transform: translate(0%, 0%);
 }
 
 form header{
-    padding: 0px;
-    margin: 0px;
-    position: absolute;
     top: 5%;
     width: 100%;
 }
 header h1{
     text-align: center;
     padding: 0px;
-    margin: 0px;
+    margin-bottom: 50px;
 }
 main label{
     padding: 0px 20px 10px 20px; 
 }   
 main{
-    position: absolute;
-    top: 20%;
-    left: 2%;
-    width: 95%;
-    height: 55%;
+    width: 80vh;
     border: 1px solid black;
+    margin: 10px;
 }
 main h2{
     text-align: center;
 }
 main td{
-    padding: 10px;
-    position: relative;
-    left: -15%;
+    padding: 6px;
 }
+
 main input{
     padding: 5px;
 }
-main #Avançar, #Limpar{
-    position: absolute;
-    left: 20%;
+
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#conteinerDados{
-    width: 100%;
-    transform: translate(10vw, 0%);
-}
 footer{
     text-align: center;
     padding: 0px;
