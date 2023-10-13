@@ -37,9 +37,8 @@ a{
 /*Primeira página de Cadastro*/
 form{
     min-width: 400px;
-    margin: 2vh 0vh 2vh 0vh;
     background-color: rgba(145, 141, 141, 0.893);
-    height: 96vh;
+    height: 100vh;
     border-radius: 10px 10px 10px 10px;
     transform: translate(0%, 0%);
 }
