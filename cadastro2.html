@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <form method="post" action="paginaFinal.html">
+    <form method="post" action="paginaFinal.html" onsubmit="return validateForm()">
         <header>
             <h1>Cadastro de Alunos</h1>
         </header>
@@ -21,6 +21,7 @@
                     <td><label for="Inivel">Nível:</label></td>
                     <td>
                         <select name="nivel" id="Inivel">
+                            <option value=0>-Selecione-</option>
                             <option value="Iniciante">Iniciante</option>
                             <option value="Intermediário">Intermediário</option>
                             <option value="Avançado">Avançado</option>
@@ -41,7 +42,7 @@
                 </tr>
                 <tr>
                     <td><label for="Ialtura">Altura:</label></td>
-                    <td><input type="number" name="altura" id="Ialtura" placeholder="Altura" value="1.50" step="0.05"></td>
+                    <td><input type="number" name="altura" id="Ialtura" placeholder="Altura" value="1.50" step="0.01"></td>
                 </tr>
                 <tr>
                     <td><label for="Ipeso">Peso:</label></td>
@@ -56,6 +57,7 @@
                     <td><label for="Ihorario">Hora de Treino:</label></td>
                     <td>
                         <select name="horario" id="Ihorario">
+                            <option >-Selecione-</option>
                             <option value="manha">Manha</option>
                             <option value="tarde">Tarde</option>
                             <option value="noite">Noite</option>
@@ -89,5 +91,60 @@
         </footer>
 
     </form>
+
+    <script>
+        function validateForm() {
+            var nivel = document.getElementById("Inivel").value;
+            var tipo = document.querySelector('input[name="tipo"]:checked');
+            var altura = document.getElementById("Ialtura").value;
+            var peso = document.getElementById("Ipeso").value;
+            var tempo = document.getElementById("Itempo").value;
+            var horario = document.getElementById("Ihorario").value;
+            var personal = document.querySelector('input[name="personal"]:checked');
+            var planilha = document.querySelector('input[name="planilha"]:checked');
+    
+            if (nivel === "" || nivel === "0") {
+                alert("Campo Nível é obrigatório");
+                return false;
+            }
+    
+            if (!tipo) {
+                alert("Campo Tipo de Corpo é obrigatório");
+                return false;
+            }
+    
+            if (altura === "") {
+                alert("Campo Altura é obrigatório");
+                return false;
+            }
+    
+            if (peso === "") {
+                alert("Campo Peso é obrigatório");
+                return false;
+            }
+    
+            if (tempo === "") {
+                alert("Campo Tempo de Treino é obrigatório");
+                return false;
+            }
+    
+            if (horario === "") {
+                alert("Campo Hora de Treino é obrigatório");
+                return false;
+            }
+    
+            if (!personal) {
+                alert("Campo Necessita de Personal é obrigatório");
+                return false;
+            }
+    
+            if (!planilha) {
+                alert("Campo Necessita de Planilha de Treino é obrigatório");
+                return false;
+            }
+    
+            return true;
+        }
+    </script>
 </body>
 </html>
