@@ -24,10 +24,11 @@ a{
 }
 #conteudo p{
     text-align: justify;
-    padding: 0px 0px 0px 0px; ;
+    padding: 0px; ;
     margin: 0px;
     width: 80%;
     text-indent: 10px;
+
 }
 
 
@@ -35,7 +36,8 @@ a{
 
 /*Primeira página de Cadastro*/
 form{
-    margin: 2vh 0 2vh 0;
+    min-width: 400px;
+    margin: 2vh 0vh 2vh 0vh;
     background-color: rgba(145, 141, 141, 0.747);
     height: 96vh;
     border-radius: 10px 10px 10px 10px;
@@ -46,36 +48,31 @@ form header{
     top: 5%;
     width: 100%;
 }
+
 header h1{
     text-align: center;
     padding: 0px;
-    margin-bottom: 50px;
 }
-main label{
-    padding: 0px 20px 10px 20px; 
-}   
-main{
-    width: 80vh;
-    border: 1px solid black;
-    margin: 10px;
-}
+
 main h2{
     text-align: center;
 }
-main td{
-    padding: 6px;
-}
-
-main input{
-    padding: 5px;
-}
-
 table {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
+table td{
+    padding: 7px;
+}
+.inputACao{
+    position: absolute;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
 footer{
     text-align: center;
     padding: 0px;
