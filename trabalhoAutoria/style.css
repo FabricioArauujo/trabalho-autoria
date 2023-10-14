@@ -2,6 +2,8 @@
 body{
 background: rgb(15, 15, 15);/*Deifinir a cor de fundo como preta*/
 color: white;/*cor de letrar btancas*/
+width: 100vw;
+height: 100vh;
 }
 img{ 
   border-radius: 15px;/*aplicando em todas as imagens uma borda arendonda de 15px*/
@@ -387,8 +389,9 @@ li a:hover {
   left: 20%;
 }
 /*Categorias*/
+
 .categorias{
-  width: 100%;
+  width: 100vw;
   position: relative;
   top: 100px;
 }

@@ -1,0 +1,72 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+    --cor: rgb(238, 147, 11);
+    --cor1:white;
+    --cor2: rgb(224, 168, 84);
+}
+
+body{
+    width: 100%;
+    background-color: rgb(24, 22, 22);
+    color: var(--cor);
+}
+h1{
+    color: var(--cor1);
+}
+p{
+    color: var(--cor2);
+}
+a{
+    text-decoration: none;
+    color: var(--cor);
+}
+
+header{
+    width: 100%;
+}
+
+main{
+    position: absolute;
+    width: 70vw;
+    transform: translate(20%, 0%);
+}
+main section{
+    position: relative;
+    left: -20%;
+    top: 5vh;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+section a{
+    text-decoration: none;
+    color: white;
+}
+
+section a:hover{
+    color: var(--cor);
+}
+main li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+main li:hover{
+    border-bottom: 4px solid rgb(238, 147, 11);
+    transform: scale(1.02);  
+    transition: transform 0.8s ease;
+}
+#containerJogos{
+    margin: 0px;
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    min-width: 380px;
+    break-before: auto; /* Força a quebra de linha antes do elemento */
+}
