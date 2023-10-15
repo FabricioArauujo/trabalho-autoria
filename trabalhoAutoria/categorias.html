@@ -19,7 +19,7 @@
     <main>
         
         <section class="categorias">
-            <h1>Categorias</h1>
+            <h1>Categorias:</h1>
             <table>
                 <tr>
                     <td>
@@ -96,7 +96,7 @@
         
         
         <div id="containerJogos">
-            <h1>Todos os Jogos</h1>
+            <h1 id="h1Jogos">Todos os Jogos</h1>
             <ul>
                 <li class="battle-royale">
                     <a href="sinopsePUBG.html"><img src="img/imgPUBG@.jpg" alt="imagem PUBG" style="width: 230px; height: 410px;">
@@ -221,7 +221,7 @@
         document.addEventListener("DOMContentLoaded", function () {
           const botoesCategorias = document.querySelectorAll(".categorias a[data-categoria]");
           const listaJogos = document.querySelectorAll("#containerJogos li");
-          const h1 = document.querySelector(".categorias h1"); // Seleciona o H1
+          const h1Jogos = document.querySelector("#h1Jogos");
       
           function atualizarDisplayLi() {
             listaJogos.forEach((jogo) => {
@@ -247,7 +247,7 @@
               atualizarDisplayLi();
 
               // Atualiza o texto do H1 para o texto do link clicado
-              h1.textContent = this.textContent;
+              h1Jogos.textContent = this.textContent;
             });
           });
       

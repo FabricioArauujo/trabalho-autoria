@@ -34,6 +34,8 @@ main{
     transform: translate(20%, 0%);
 }
 main section{
+    height: 20%;
+    min-width: 20%;
     position: relative;
     left: -20%;
     top: 5vh;
@@ -41,7 +43,12 @@ main section{
     border: 1px solid white;
     border-radius: 10px;
 }
-
+section h1{
+    padding-bottom: 5px;
+}
+section td{
+    padding-bottom: 5px;
+}
 section a{
     text-decoration: none;
     color: white;
