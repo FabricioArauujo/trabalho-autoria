@@ -18,9 +18,61 @@
             color: white;
 
         }
+        header{
+            width: 100%;
+            position: absolute;
+            top: 0vh;
+            background-color: rgb(32, 32, 32);;
+        }
+        #topo{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 10vh;
+        }
+        #logo{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            width: 30%;
+        }
+        #lista{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            list-style-type: none;
+            width: 70%;
+        }
+        #lista a{
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+            font-size: 20px;
+        }       
+    
+        #lista a:hover{
+            text-decoration: underline;
+            color: rgb(238, 147, 11);
+        }
         main{
-            width: 50%;
+            position: relative;
+            top: 12vh;
+            max-width: 600px;
+            min-width: 340px;
+            height: 80vh;
+            text-align: center;
             border: 1px solid white;
+            background-color: rgb(32, 32, 32);
+            border-radius: 20px;
+        }
+        input{
+            border-radius: 10px;
+        
+        }
+        .botao{
+            border-radius: 0px;
+            position: relative;
+            top: 10vh;
         }
         #containerInputs{
             display: flex;
@@ -28,45 +80,61 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            border: 1px solid white;
+            position: relative;
+            top: 10vh;            
         }
         .input{
-            padding: 10px;
+            padding: 8px;
             text-align: left;
-            align-items: flex-start;
-
-        }
-        .input label{
-            text-align: left;
-            bor
         }
     </style>
 </head>
 <body>
+    <header>
+        <div id="topo">
+            <div id="logo"	>
+                <img src="img/imgSIte3.png" alt="logo do site" title="logo do site">
+                <span>WEB Jogos</span>
+            </div>
+        
+            <ul id="lista">
+                <li>
+                    <a href="#todosJogos">Jogos</a>
+                </li>
+        
+            </ul>
+        </div>
+    </header>
     <main>
         <h1>Faça o login</h1>
         <p>Por favor, preencha alguns dados que solicitaremos para acessar a página.</p>
-        <form action="pagina1.html" method="post">
+        <form action="pagina1.html" method="get">
             <div id="containerInputs">
                 <div class="input">
                     <label for="Inome">Nome:</label>
-                    <input type="text" id="Inome" name="nome" required>
+                    <br>
+                    <input type="text" id="Inome" name="nome" required placeholder="Nome" style="text-align: center;">
                 </div>
                 <div class="input">
                     <label for="Isobrenome">Sobrenome:</label>
-                    <input type="text" id="Isobrenome" name="sobrenome" required>
+                    <br>
+                    <input type="text" id="Isobrenome" name="sobrenome" required placeholder="Sobrenome" style="text-align: center;">
                 </div>
                 <div class="input">
                     <label for="Iemail">E-mail:</label>
-                    <input type="email" id="Iemail" name="email" required>
+                    <br>
+                    <input type="email" id="Iemail" name="email" required placeholder="E-mail" style="text-align: center;" size="20">
                 </div>
                 <div class="input">
                     <label for="Isenha">Senha:</label>
-                    <input type="password" id="Isenha" name="senha" required>
-                </div>
-            </div>
-            <button type="submit">Entrar</button>
+                    <br>
+                    <input type="password" id="Isenha" name="senha" required placeholder="Senha" style="text-align: center;">
+                </div> 
+                <br>
+                
+            </div> 
+            <input class="botao" type="submit" value="Entrar">
+            <input class="botao" type="reset" value="Limpar">
         </form>
     </main>
 </body>
