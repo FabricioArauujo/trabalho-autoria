@@ -15,6 +15,9 @@ li{
   list-style-type: none;/*retirando todas as bolinhas no li em geral*/
 }
 #topo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   position: fixed;/*deixar o topo sempre fixa na pagina mesmo quando o usário descer a barra de rolagem*/
   top: 0;
   left: 0;
@@ -25,10 +28,16 @@ li{
   height: 40px; /*altura do topo*/
 }
 
-#topo img {
+.topo-logo{
+  border: 1px solid pink;
+  margin-top: 5px;
+  width: 50%;
+}
+
+.topo-logo img {
+  margin-top: -10px;
   width: 50px;/*tamanho da imagem no topo, no caso a logo*/
   float: left;/*deixar a imagem sempre a esquerda*/
-  position: relative;/*deixar a imagem relativa a o topo*/
   left: 1%;/*distância do lado esquerdo do topo*/
   top: -10px;/*deixar a imagem em uma posição mais a baixo do topo*/
   box-shadow: 0px 0px 0px; /*anulando o box-shadow*/
@@ -38,7 +47,6 @@ li{
   font-size: 27px;/*Tamanho da fonte da logo*/
   font-family: Arial, Helvetica, sans-serif;/*a família da fonte, se não sucifionar uma, ela segue da ordem pré determinada*/
   color: rgb(168, 166, 166);/*cor da fonte*/
-  position: absolute;/*Nesse caso o span vai ter uma posição absoluta onde pode ser posicionado depependendo do pai*/
   left: 80px;/*largura*/
   top: 10px;/*altura*/
 }
@@ -46,15 +54,15 @@ li{
   padding: 8px;/*espaçamento entre o links do topo*/
 }
 
-#lista {
+#topo-lista {
+  border: 1px solid blue;
+  margin-top: 10px;
+  width: 50%;
   color: rgb(168, 166, 166);/*cor da fonte que está presente na lista do topo*/
-  position: absolute;/*A lista vai ter uma posição absoluta onde pode ser posicionado depependendo do pai*/
-  left: 25%;/*distancia da esquerda referente ao pai*/
-  top: 2%;/*distância do topo referente ao pai*/
   padding: 0; /* Removendo o padding padrão da lista */
 }
 
-#lista li {
+#topo-lista li {
   display: inline-block; /* Exibindo os itens da lista em linha. com o display em inline-block possibilita a manutenção tanto da altura quanto da largura*/
   margin-right: 14px;/*marem da direta*/
   border-right: 2px solid white;/*borda do item da lista somente na direita*/
