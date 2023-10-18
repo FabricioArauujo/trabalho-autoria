@@ -16,8 +16,8 @@ li{
 }
 #topo {
   display: flex;
+  flex-flow: row wrap;
   flex-direction: column;
-  flex-wrap: wrap;
   position: fixed;/*deixar o topo sempre fixa na pagina mesmo quando o usário descer a barra de rolagem*/
   top: 0;
   left: 0;
@@ -26,6 +26,7 @@ li{
   padding: 10px; /* Opcional: Adicionar um espaçamento interno para o conteúdo do cabeçalho */
   z-index: 999; /* Usar um valor de z-index maior se houver elementos sobrepostos, deixe modo o topo sempre irá sobrepor os demais elementos */
   height: 40px; /*altura do topo*/
+  border: 4px solid blue;
 }
 
 .topo-logo{
@@ -120,13 +121,11 @@ li a:hover {
 #conteudo{
   width: 100%;/*a div de conteudo vai ocupar toda a largura da tela*/
   height: 120%;/*a div de conteudo vai ocupar 90% a altura da tela*/
-  position: absolute;/*a div de conteudo vai ter uma posição absoluta onde pode ser posicionado depependendo do pai*/
-  top: 10%;/*a div vai ter uma distância do topo referente ao pai*/
-
+  border: 3px solid red;
+  margin-top: 4.5%;
 }
 #menu {
   width: 40%; /* largura do menu */
-  position: absolute; /* posição absoluta onde pode ser posicionado dependendo do pai */
   top: 1%; /* Distância do topo referente ao pai */
   left: 27%; /* distância da esquerda referente ao pai */
   background-color: rgb(32, 32, 32); /* cor de fundo */
