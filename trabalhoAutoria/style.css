@@ -5,6 +5,15 @@ color: white;/*cor de letrar btancas*/
 width: 100vw;
 height: 100vh;
 }
+
+#conteudoPagina{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
 img{ 
   border-radius: 15px;/*aplicando em todas as imagens uma borda arendonda de 15px*/
   box-shadow: 0px 0px 2px white;/*aplicando uma borda sombriadas em todas as imagens*/
@@ -238,6 +247,17 @@ li a:hover {
    display: inline-block;
  }
 /*sinopse*/
+
+main{
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+}
 #emojis{
   font-size: 18px;
   position: relative;
@@ -245,39 +265,45 @@ li a:hover {
   left: 40px;
 }
 
-#titulo{
-  position: relative;
-  left: 25%;
-  top: 35px;
-  color: white;
-}
 #sinopse{
-  width: 60%;
-  position: absolute;
-  left: 80px;
-  top: 10%;
+  position: relative;
+  width: 50%;
+  min-width: 400px;
+  max-width: 60%;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+  background-color: antiquewhite;
   
  }
- iframe{/*Defini a largura e altura de todos os iframes que tiver no site*/
-  width: 700px;
-  height: 350px;
- }
- #sinopse p{/* a largura do paragrafo ocupará 65% da div e o texto contindo ficará bem ajustado*/
-  width: 65%;
-  text-align: justify;
- }
- #sinopse #sinopsejogo{/*fazendo a sinopse do jogo ficar oculta no inicio, com o posicionamento relativo, com uma largura de 70% e altura de 30 px. a cor de fundo de cor rgb e color do texto preta*/
-  display: none;
+ .video{
+  background-color: var(--cor5);
+  margin: 0;
+  padding-bottom: 50%;
   position: relative;
-  top: 30px;
+ }
+
+
+ .video iframe{
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  top: 5%;}
+
+ #sinopse #sinopsejogo{/*fazendo a sinopse do jogo ficar oculta no inicio, com o posicionamento relativo, com uma largura de 70% e altura de 30 px. a cor de fundo de cor rgb e color do texto preta*/
+  position: relative;
   background: rgb(185, 182, 182);
   color: black;
-  width: 70%;
+  width: 90%;
+  text-align: justify;
+  left: 5%;
+  text-indent: 10px;
+
  }
  #sinopse #botomMostrar{
+  margin: auto;
   text-align: center;
-  position: absolute;
-  left: 25%;
+  position: relative;
   background: rgb(238, 180, 19);
   width: 120px;
   color: black;
@@ -285,67 +311,21 @@ li a:hover {
  #sinopse #botomMostrar:hover{
   background: rgb(183, 196, 8);
  }
- #fotosGameplay{
-  width: 100%;
-   position: absolute;
-   top: 115%;
-   color: rgb(238, 147, 11);
-   overflow: hidden;
- }
- #fotosGameplay img{
-  width: 30%;
-  transition: transform 0.4s ease;
-
- }
- #fotosGameplay img:hover{
-   transform: scale(1.2);
- }
- #fotosGameplay li {
-    display: inline;
-    list-style-type: none;
-    padding-right: 2%;
- }
- #fotosGameplay h1{
-  text-align: center;
- }
 #download{
-  width: 500px;
+  display: inline-block;
   text-align: center;
-  float: right;
-  position: absolute;
-  right: 80px;
-  top: 30%;
-  border: 1px solid white;
+  position: relative;
+  width: 50%;
+  min-width: 400px;
+  height: 60%;
+  min-height: 450px;
+  background-color: rgb(32, 32, 32);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+
 }
 #download img{
-  width: 200px;
-  position: relative;
-  top: 10px;
-}
-#download #gratuito{
-  color: rgb(168, 166, 166);
-  font-size: 85%;
-}
-#download #baixar{
-  color: rgb(168, 166, 166);
-  font-size: 105%;
-}
-#download #tiposDownload{
-  list-style-type: none;
-  display: none;
-}
-#iconeBaixar{
-  text-align: center;
-  width: 350px;
-  position: relative;
-  top: 0px;
-  left: 90px;
-  background: rgb(238, 180, 19);
-  color: rgb(73, 71, 71);
-  font-weight: bold;
-}
-#iconeBaixar:hover{
-  background-color: rgb(183, 196, 8);
+  width: 30%;
+  height: 30%;
 }
 
 /*Criadores*/
