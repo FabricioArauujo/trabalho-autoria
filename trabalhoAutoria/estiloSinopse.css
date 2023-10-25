@@ -1,0 +1,130 @@
+li{
+    list-style: none;
+}
+
+li a {
+    color: white;/*Cor da fonte da lista*/
+    text-decoration: none;/*retirando os sublinhados dos links presentes na lista*/
+    font-size: 18px;/*Fonte da lista*/
+  }
+  
+  li a:hover {
+    border-bottom: 5px solid rgb(238, 147, 11);/*criando uma borda somente na parte de baixo de cada link quando o mouse passa sobre ele*/
+    
+  }
+
+#titulo{
+    color: white;
+    text-align: center;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; ;   
+     flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+    margin-top: 8%;
+  }
+
+#sinopse{
+    position: relative;
+    width: 50%;
+    min-width: 400px;
+    max-width: 60%;
+    max-height: 77%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+    background-color: rgb(0,0,0);
+    margin-bottom: 4vh;
+    
+   }
+   .video{
+    background-color: var(--cor5);
+    margin: 0;
+    padding-bottom: 50%;
+    position: relative;
+   }
+  
+  
+   .video iframe{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    top: 2%;}
+  
+  #download{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    min-width: 400px;
+    background-color: rgb(32, 32, 32);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+    overflow: hidden;
+  }
+  #conteudoDownload{
+    border: 1px solid rgb(185, 171, 171);
+    min-width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    
+  }
+  #conteudoDownload h2,p{
+    padding: 10px;
+    color: aliceblue;
+  }
+  #download img{
+    width: 30%;
+    height: 30%;
+  }
+
+  #sinopse #sinopsejogo{/*fazendo a sinopse do jogo ficar oculta no inicio, com o posicionamento relativo, com uma largura de 70% e altura de 30 px. a cor de fundo de cor rgb e color do texto preta*/
+    position: relative;
+    background: rgb(185, 182, 182);
+    color: black;
+    width: 90%;
+    text-align: justify;
+    text-indent: 10px;
+    display: none;
+    margin: auto;
+  
+   }
+   #sinopse #botomMostrar{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: -1.5vh;
+    background: rgb(238, 180, 19);
+    width: 120px;
+    color: black;
+    border-radius: 10px;
+    padding: 0px 8px 0px 8px ;
+   }
+   #sinopse #botomMostrar:hover{
+    background: rgb(183, 196, 8);
+   }
+  #iconeBaixar{
+    background-color: rgb(238, 147, 11);
+    padding: 5px 20px ;
+    border-radius: 10px;
+  }
+  
+  #iconeBaixar:hover{
+    background-color: rgb(196, 168, 8);
+  }
+  #tiposDownload{
+    margin-top: 3vh;
+    display: none;
+    position: relative;
+    padding: 0px;
+  }
+  
