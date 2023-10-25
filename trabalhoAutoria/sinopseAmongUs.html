@@ -4,72 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinopse Among US /WEB Jogos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloSinopse.css">
     <link rel="shortcut icon" href="img/icoSite.ico" >
 </head>
 <body>
-    <div id="topo">
-        <img src="img/imgSIte3.png" alt="logo do site">
-    <span>WEB Jogos</span>
-
-    <ul id="lista">
-        <li>
-            <a href="pagina1.html">Jogos</a>
-        </li>
+    <header>
+        <div class="barra-menu">
+            <div class="img-logo">
+                <img src="img/icoSite.ico" alt="">
+            </div>
+            <div class="logo">
+                <h1>Web Jogos</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="botao-login">
+                <a href="paginaLogin.html ">Login</a>
+            </div>
+        </div>
+    </header>
+    <div id="titulo">
+        <h1>Among US</h1>
     </div>
+
+    <main>
+       
+        <div id="sinopse">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/0YKjFoGxbec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p id="botomMostrar">Mostrar sinopse</p>
+            <br>
+            <p id="sinopsejogo">Among Us é um jogo eletrônico online, dos gêneros jogo em grupo e sobrevivência, desenvolvido e publicado pelo estúdio de jogos estadunidense InnerSloth.</p>
+        
+        </div>
+        <div id="download">
+            <div id="conteudoDownload">
+                <img src="img/imgpubg5.jpg" alt="pubg">
+                <h2>Ficou interresado? baixe aqui!</h2>
+                <p id="gratuito">JOGO GRATUITO</p>
+                <p id="baixar">você inclui o download do jogo por aqui:</p>
+                <p id="iconeBaixar">BAIXAR </p>
+                <ul id="tiposDownload">
+                    <li>
+                        <a href="https://play.google.com/store/search?q=pubg&c=apps&hl=pt_BR&gl=US" target="_blank">Baixe aqui PUBG Mobile</a>
+                    </li>
+                    <li>
+                        <a href="https://store.epicgames.com/pt-BR/p/pubg-59c1d9" target="_blank">Baixe aqui o PUBG para Computador</a>
+                    </li>
+                    <li>
+                        <a href="https://store.playstation.com/pt-br/product/UP5082-CUSA14081_00-PTSBUN0000000000" target="_blank">Baixe aqui o PUBG para console</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+       
+        <div id="tituloGamePlay">
+            <h1
+            >Fotos da gameplay:</h1>
+        </div>
+        
+        <div id="fotoGamePlay">
+    
+           
+            <img src="img/imgpubg4.jpg" alt="foto GamePlay pubg">
+            <img src="img/imgpubg3.jpg" alt="Foto GamePlay pubg">
+            <img src="img/imgpubg2.jpg" alt="Foto GamePlay pubg">
+        </div>
+    </main>
     
 
-    <div id="sinopse">
-        <h1 id="titulo">Among US</h1>
-
-<br>    
-<iframe src="https://www.youtube.com/embed/0YKjFoGxbec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        <p id="botomMostrar">Mostrar sinopse</p>
-        <br>
-        <p id="sinopsejogo">Among Us é um jogo eletrônico online, dos gêneros jogo em grupo e sobrevivência, desenvolvido e publicado pelo estúdio de jogos estadunidense InnerSloth.</p>
-       
-       
-    </div>   
-    <div id="download">
-        <img src="img/imgAmongUs.png" alt="Among US">
-        <br>
-        <h2>Ficou interresado? baixe aqui!</h2>
-        <p id="gratuito">JOGO GRATUITO</p>
-        <p id="baixar">você inclui o download do jogo por aqui:</p>
-
-        <p id="iconeBaixar">BAIXAR </p>
-            <ul id="tiposDownload">
-                <li>        
-                    <a href="https://play.google.com/store/search?q=among%20us&c=apps&hl=pt_BR&gl=US" target="_blank">Baixe aqui Among us Mobile</a>
-                </li>
-                <li>      
-                    <a href="https://store.epicgames.com/pt-BR/p/among-us" target="_blank">Baixe aqui o  Among us para Computador</a>
-                </li>
-                <li>
-                    <a href="https://store.playstation.com/pt-br/product/UP7032-PPSA03595_00-AMONGUS5SIEA0001" target="_blank">Baixe aqui o  Among us para console</a>
-                </li>
-            </ul>
-       
-        
-
-    </div>
-
-    <div id="fotosGameplay">
-
-        <h1>Fotos da gameplay:</h1>
-        <ul>
-            <li>
-                <img   src="img/imgAmongGameplay.jpg" alt="among us" >
-            </li>
-            <li>
-                <img src="img/imgAmonggameplay2.jpg" alt="Among us" >
-            </li>
-            <li>
-                <img src="img/imgamonggameplay3.jpg" alt="Among us">
-            </li>
-      </ul>
-    </div>
     <script>
         // Adicionei um evento de clique ao elemento #iconeBaixar
 document.getElementById('iconeBaixar').addEventListener('click', function() {
