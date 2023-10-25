@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'jogos';
+  src: url(fontes/HeadlinerNo.45\ DEMO.ttf);
+  font-weight: normal;
+}
+
+:root{
+  --fonte-padrao: 'jogos', cursive;
+}
+
 li{
     list-style: none;
 }
@@ -8,12 +18,9 @@ li a {
     font-size: 18px;/*Fonte da lista*/
   }
   
-  li a:hover {
-    border-bottom: 5px solid rgb(238, 147, 11);/*criando uma borda somente na parte de baixo de cada link quando o mouse passa sobre ele*/
-    
-  }
 
 #titulo{
+    font-family: var(--fonte-padrao);
     color: white;
     text-align: center;
 }
