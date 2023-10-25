@@ -23,6 +23,13 @@ li a {
     font-family: var(--fonte-padrao);
     color: white;
     text-align: center;
+    background-color: rgb(32, 32, 32);
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: row;
 }
 
 main{
@@ -33,7 +40,7 @@ main{
     justify-content: center; ;   
      flex-wrap: wrap;
     background-color: rgb(0, 0, 0);
-    margin-top: 8%;
+    margin-top: 5%;
   }
 
 #sinopse{
