@@ -1,76 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinopse Call Of Duty / WEB Jogos</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/icoSite.ico">
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloSinopse.css">
+    <link rel="shortcut icon" href="img/icoSite.ico" >
 </head>
 <body>
-    <div id="topo">
-        <img src="img/imgSIte3.png" alt="logo do site">
-    <span>WEB Jogos</span>
+    <header>
+        <div class="barra-menu">
+            <div class="img-logo">
+                <img src="img/icoSite.ico" alt="">
+            </div>
+            <div class="logo">
+                <h1>Web Jogos</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="botao-login">
+                <a href="paginaLogin.html ">Login</a>
+            </div>
+        </div>
+    </header>
 
-    <ul id="lista">
-        <li>
-            <a href="pagina1.html">Jogos</a>
-        </li>
+    <div id="titulo">
+        <h1>Call Of Duty</h1>
     </div>
-    
 
-    <div id="sinopse">
-        <h1 id="titulo">Call od Duty</h1>
-
-        <br>
-
-        <iframe  src="https://www.youtube.com/embed/gOEWZ6iofzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        <p id="botomMostrar">Mostrar sinopse</p>
-        <br>
-        <p id="sinopsejogo">Call of Duty: Modern Warfare II é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela Infinity Ward e publicado pela Activision. É uma sequência direta do reboot de 2019 e é o 19º jogo da franquia Call of Duty..</p>
+    <main>
        
-       
-    </div>   
-    <div id="download">
-        <img src="img/imgCallOfDuty.jpg" alt="Call of Duty">
-        <br>
-        <h2>Ficou interresado? baixe aqui!</h2>
-        <p id="gratuito">JOGO GRATUITO</p>
-        <p id="baixar">você inclui o download do jogo por aqui:</p>
-
-        <p id="iconeBaixar">BAIXAR </p>
-            <ul id="tiposDownload">
-                <li>        
-                    <a href="https://play.google.com/store/search?q=pubg&c=apps&hl=pt_BR&gl=US" target="_blank">Baixe aqui Call Of Duty Mobile</a>
-                </li>
-                <li>      
-                    <a href="https://store.steampowered.com/agecheck/app/2387940/" target="_blank">Baixe aqui o Call Of Duty para Computador</a>
-                </li>
-                <li>
-                    <a href="https://store.playstation.com/pt-br/product/UP0002-PPSA01649_00-CODMW2CROSSGEN01" target="_blank">Baixe aqui o Call of Duty para console</a>
-                </li>
-            </ul>
-       
+        <div id="sinopse">
+            <div class="video">
+                <iframe  src="https://www.youtube.com/embed/gOEWZ6iofzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p id="botomMostrar">Mostrar sinopse</p>
+            <p id="sinopsejogo">Call of Duty: Modern Warfare II é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela Infinity Ward e publicado pela Activision. É uma sequência direta do reboot de 2019 e é o 19º jogo da franquia Call of Duty..</p>
         
+        </div>
+        <div id="download">
+            <div id="conteudoDownload">
+                <img src="img/imgCallOfDuty.png" alt="Call Of Duty">
+                <h2>Ficou interresado? baixe aqui!</h2>
+                <p id="gratuito">JOGO GRATUITO</p>
+                <p id="baixar">você inclui o download do jogo por aqui:</p>
+                <p id="iconeBaixar">BAIXAR </p>
+                <ul id="tiposDownload">
+                    <li>      
+                        <a href="https://store.steampowered.com/agecheck/app/2387940/" target="_blank">Baixe aqui o Call Of Duty para Computador</a>
+                    </li>
+                    <li>
+                        <a href="https://store.playstation.com/pt-br/product/UP0002-PPSA01649_00-CODMW2CROSSGEN01" target="_blank">Baixe aqui o Call of Duty para console</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    </div>
+        <div id="gameplay">
+            <div id="tituloGamePlay">
+                <h1
+                >Fotos da gameplay:</h1>
+            </div>
+            
+            <div id="fotoGamePlay">
+                <img src="img/imgCallOfDutygameplay.jpg" alt="foto GamePlay Call Of Duty">
+                <img src="img/imgCallOfDutygameplay2.jpg" alt="Foto GamePlay Call Of Duty">
+                <img src="img/imgCallOfDutygameplay3.jpg" alt="Foto GamePlay Call Of Duty">
+            </div>
+        </div>
+        
+    </main>
+   
 
-    <div id="fotosGameplay">
-
-        <h1>Fotos da gameplay:</h1>
-        <ul>
-            <li>
-                <img    src="img/imgCallOfDutygameplay2.jpg" alt="Call of Duty">
-            </li>
-            <li>
-                <img src="img/imgCallOfDutygameplay3jpg.jpg" alt="Call of Duty" >
-            </li>
-            <li>
-                <img  src="img/imgCallOfDutygameplay.jpg" alt="Call of Duty" >
-            </li>
-      </ul>
-    </div>
+    
     <script>
         // Adicionei um evento de clique ao elemento #iconeBaixar
 document.getElementById('iconeBaixar').addEventListener('click', function() {
