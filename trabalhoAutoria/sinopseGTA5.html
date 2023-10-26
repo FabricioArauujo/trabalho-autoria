@@ -1,78 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinopse GTA V</title>
-    <link rel="shortcut icon" href="img/icoSite.ico">
-    <link rel="stylesheet" href="style.css">
+    <title>Exemplo sinopse</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloSinopse.css">
+    <link rel="shortcut icon" href="img/icoSite.ico" >
 </head>
 <body>
-    <div id="topo">
-        <img src="img/imgSIte3.png" alt="logo do site">
-    <span>WEB Jogos</span>
+    <header>
+        <div class="barra-menu">
+            <div class="img-logo">
+                <img src="img/icoSite.ico" alt="">
+            </div>
+            <div class="logo">
+                <h1>Web Jogos</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="botao-login">
+                <a href="paginaLogin.html ">Login</a>
+            </div>
+        </div>
+    </header>
 
-    <ul id="lista">
-        <li>
-            <a href="pagina1.html">Jogos</a>
-        </li>
+    <div id="titulo">
+        <h1>Grand Theft Auto V</h1>
     </div>
-    
 
-    <div id="sinopse">
-        <h1 id="titulo">GTA V</h1>
-
-        <p id="emojis">&#x1F30D; Mundo Aberto </p>
-
-        <iframe width="500" height="315" src="https://www.youtube.com/embed/qoytS3930aY?start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        <p id="botomMostrar">Mostrar sinopse</p>
-        <br>
-        <p id="sinopsejogo">O jogo Grand Theft Auto (GTA) V foi desenvolvido pela Rockstar North e publicado pela Rockstar Games. É o sétimo título principal da série GTA e foi lançado originalmente em 17 de setembro de 2013. O game se passa no estado ficcional de San Andreas, baseado na Califórnia do Sul, nos EUA.
-
-            Traz a história de campanha simultânea de três criminosos: o ladrão de bancos aposentado Michael ‘Mike’ De Santa, o gângster de rua Franklin Clinton e o traficante de armas psicopata Trevor Philips. Seu mundo aberto permite que os jogadores naveguem livremente pelas áreas rurais e urbanas de San Andreas.
-            
-            A jogabilidade é mostrada em uma perspectiva de primeira ou terceira pessoa e o mundo pode ser atravessado a pé ou com veículos. Os jogadores controlam três protagonistas e podem alternar entre eles durante e fora das missões. A história é centrada em sequências de assaltos, com muitas missões envolvendo a jogabilidade de tiro e direção.
-            </p>
+    <main>
        
-    </div>   
-    <div id="download">
-        <img src="img/imgGTA5logo.jpg" alt="Imagem GTA 5">
-        <br>
-        <h2>Ficou interresado? baixe aqui!</h2>
-        <p id="gratuito">JOGO GRATUITO</p>
-        <p id="baixar">você inclui o download do jogo por aqui:</p>
+        <div id="sinopse">
+            <div class="video">
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/qoytS3930aY?start=13" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p id="botomMostrar">Mostrar sinopse</p>
+            <p id="sinopsejogo">O jogo Grand Theft Auto (GTA) V foi desenvolvido pela Rockstar North e publicado pela Rockstar Games. É o sétimo título principal da série GTA e foi lançado originalmente em 17 de setembro de 2013. O game se passa no estado ficcional de San Andreas, baseado na Califórnia do Sul, nos EUA.
 
-        <p id="iconeBaixar">BAIXAR </p>
-            <ul id="tiposDownload">
-   
-                <li>      
-                    <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank">Baixe aqui o GTA V para Computador</a>
-                </li>
-                <li>
-                    <a href="https://store.playstation.com/pt-br/product/UP1004-PPSA03420_00-GTAVCROSSGENBUND" target="_blank">Baixe aqui GTA V para console</a>
-                </li>
-            </ul>
-       
+                Traz a história de campanha simultânea de três criminosos: o ladrão de bancos aposentado Michael ‘Mike’ De Santa, o gângster de rua Franklin Clinton e o traficante de armas psicopata Trevor Philips. Seu mundo aberto permite que os jogadores naveguem livremente pelas áreas rurais e urbanas de San Andreas.
+                
+                A jogabilidade é mostrada em uma perspectiva de primeira ou terceira pessoa e o mundo pode ser atravessado a pé ou com veículos. Os jogadores controlam três protagonistas e podem alternar entre eles durante e fora das missões. A história é centrada em sequências de assaltos, com muitas missões envolvendo a jogabilidade de tiro e direção.</p>
         
+        </div>
+        <div id="download">
+            <div id="conteudoDownload">
+                <img src="img/imgGTA5logo.jpg" alt="GTA V">
+                <h2>Ficou interresado? baixe aqui!</h2>
+                <p id="gratuito">JOGO GRATUITO</p>
+                <p id="baixar">você inclui o download do jogo por aqui:</p>
+                <p id="iconeBaixar">BAIXAR </p>
+                <ul id="tiposDownload">
+                    <li>      
+                        <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank">Baixe aqui o GTA V para Computador</a>
+                    </li>
+                    <li>
+                        <a href="https://store.playstation.com/pt-br/product/UP1004-PPSA03420_00-GTAVCROSSGENBUND" target="_blank">Baixe aqui GTA V para console</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    </div>
+        <div id="gameplay">
+            <div id="tituloGamePlay">
+                <h1
+                >Fotos da gameplay:</h1>
+            </div>
+            
+            <div id="fotoGamePlay">
+                <img src="img/imgGTA5gameplay.jpg" alt="foto GamePlay GTA V">
+                <img src="img/imgGTA5gameplay2.jpg" alt="Foto GamePlay GTA V">
+                <img src="img/imgGTA5gameplay3.jpg" alt="Foto GamePlay GTA V">
+            </div>
+        </div>
+        
+    </main>
+   
 
-    <div id="fotosGameplay">
-
-        <h1>Fotos da gameplay:</h1>
-        <ul>
-            <li>
-                <img src="img/imgGTA5gameplay.jpg" alt="gta V">
-            </li>
-            <li>
-                <img  src="img/imgGTA5gameplay2.jpg" alt="gta v">
-            </li>
-            <li>
-                <img  src="img/imgGTA5gameplay3.jpg" alt="gta v" >
-            </li>
-      </ul>
-    </div>
+    
     <script>
         // Adicionei um evento de clique ao elemento #iconeBaixar
 document.getElementById('iconeBaixar').addEventListener('click', function() {
