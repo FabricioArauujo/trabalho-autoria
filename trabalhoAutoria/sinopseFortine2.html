@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinopse Fortnite / WEB Jogos</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloSinopse.css">
+    <link rel="shortcut icon" href="img/icoSite.ico" >
+</head>
+<body>
+    <header>
+        <div class="barra-menu">
+            <div class="img-logo">
+                <img src="img/icoSite.ico" alt="">
+            </div>
+            <div class="logo">
+                <h1>Web Jogos</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="botao-login">
+                <a href="paginaLogin.html ">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="titulo">
+        <h1>Fortnite</h1>
+    </div>
+
+    <main>
+       
+        <div id="sinopse">
+            <div class="video">
+                <iframe  src="https://www.youtube.com/embed/YeuJ2G-Jg1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p id="botomMostrar">Mostrar sinopse</p>
+            <p id="sinopsejogo">Fortnite é um jogo eletrônico multijogador online revelado originalmente em 2011, desenvolvido pela Epic Games e lançado como diferentes modos de jogo que compartilham a mesma jogabilidade e motor gráfico de jogo.</p>
+
+        </div>
+        <div id="download">
+            <div id="conteudoDownload">
+                <img src="img/imgFortine.jpg" alt="Fortnite">
+                <h2>Ficou interresado? baixe aqui!</h2>
+                <p id="gratuito">JOGO GRATUITO</p>
+                <p id="baixar">você inclui o download do jogo por aqui:</p>
+                <p id="iconeBaixar">BAIXAR </p>
+                <ul id="tiposDownload">
+                    <li>        
+                        <a href="https://galaxystore.samsung.com/detail/com.epicgames.portal?lang=en-US&session_id=W_e6920272370b38553c1fc9b522324fd0" target="_blank">Baixe aqui fortnite Mobile</a>
+                    </li>
+                    <li>      
+                        <a href="https://store.epicgames.com/pt-BR/p/fortnite" target="_blank">Baixe aqui o fortnite para Computador</a>
+                    </li>
+                    <li>
+                        <a href="https://store.playstation.com/pt-br/product/UP1477-CUSA07022_00-FORTNITETESTING1" target="_blank">Baixe aqui o fortnite para console</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="gameplay">
+            <div id="tituloGamePlay">
+                <h1
+                >Fotos da gameplay:</h1>
+            </div>
+            
+            <div id="fotoGamePlay">
+                <img src="img/imgfortineGameplay.jpg" alt="foto GamePlay Fortnite">
+                <img src="img/imgfortinegameplay2.jpg" alt="Foto GamePlay Fortnite">
+                <img src="img/imgfortinegameplay3.jpg" alt="Foto GamePlay Fortnite">
+            </div>
+        </div>
+        
+    </main>
+   
+
+    
+    <script>
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('iconeBaixar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var tiposDownload = document.getElementById('tiposDownload');
+  
+  // Verifica se a lista está visível
+  if (tiposDownload.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    tiposDownload.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    tiposDownload.style.display = 'none';
+  }
+});
+
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('botomMostrar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var sinopsejogo = document.getElementById('sinopsejogo');
+  
+  // Verifica se a lista está visível
+  if (sinopsejogo.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    sinopsejogo.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    sinopsejogo.style.display = 'none';
+  }
+});
+    </script>
+</body>
+</html>
