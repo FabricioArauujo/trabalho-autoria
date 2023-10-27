@@ -4,23 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias / WEB Jogos</title>
+    <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="style.categorias.css">
     <link rel="shortcut icon" href="img/icoSite.ico">
 </head>
 <body>
 
     <header>
-      
-        <a href="html/pagina1.html"><abbr title="Página inicial"><img src="img/imgSIte3.png" alt="logo do site"></abbr></a>
-        <span>WEB Jogos</span>
-        
-        <a href="pagina1.html">Jogos</a>
+        <div class="barra-menu">
+            <div class="img-logo">
+                <img src="img/icoSite.ico" alt="">
+            </div>
+            <div class="logo">
+                <h1>Web Jogos</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="botao-login">
+                <a href="paginaLogin.html ">Login</a>
+            </div>
+        </div>
     </header>
     <main>
         
-        <section class="categorias">
-            <h1>Categorias:</h1>
+        <div class="categorias">
+            <h1>Categorias</h1>
             <table>
+                <tr>
+                    <td>
+                        <a href="#" data-categoria="Todos">Todos os Jogos</a>
+                    </td>
+                </tr>
                 <tr>
                     <td>
                         <a href="#" data-categoria="battle-royale">Battle royale</a>
@@ -33,7 +51,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#" data-categoria="deducao-social">Dedução social</a>
+                        <a href="#" data-categoria="deducao-social">Deducao social</a>
                     </td>
                 </tr>
                 <tr>
@@ -53,7 +71,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#" data-categoria="Ação-Aventura">Ação-Aventura</a>
+                        <a href="#" data-categoria="Ação-Aventura">Acao_Aventura</a>
                     </td>
                 </tr>
                 <tr>
@@ -88,11 +106,11 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="#" data-categoria="RPG-de-Ação">RPG de Ação</a>
+                        <a href="#" data-categoria="RPG-de-Ação">RPG de Acao</a>
                     </td>
                 </tr>
             </table>
-        </section>
+        </div>
         
         
         <div id="containerJogos">
@@ -143,12 +161,12 @@
                
            
                 <li class="battle-royale">
-                    <a href="sinopseApexLegends.html"><img src="img/imgApexLegends.jpg" alt="imagem apex legends" style="width: 230px; height: 410px;"></a>
+                    <a href="sinopseApexLegends.html"><img src="img/imgApexLegends.png" alt="imagem apex legends" style="width: 230px; height: 410px;"></a>
                     <p>Apex Legends</p>
                     <p>Gratuito</p>
                 </li>
                 <li class="battle-royale">
-                    <a href="sinopseCallOfDuty.html"><img src="img/imgCallOfDuty.jpg" alt="imagem Call of duty" style="width: 230px; height: 410px;"></a>
+                    <a href="sinopseCallOfDuty.html"><img src="img/imgCallOfDuty.png" alt="imagem Call of duty" style="width: 230px; height: 410px;"></a>
                     <p>Call Of Duty </p>
                     <p>Gratuito</p>
                 </li>
@@ -183,7 +201,7 @@
                     <p>Gratuito</p>
                 </li>
                 <li class="battle-royale Corrida">
-                    <a href="sinopseStumbleGuys.html"><img src="img/imgStumbleGuys.jpg" alt="Imagem Stumbl Guys" style="width: 340px; height: 240px;"></a>
+                    <a href="sinopseStumbleGuys.html"><img src="img/imgStumbleGuys.png" alt="Imagem Stumbl Guys" style="width: 340px; height: 240px;"></a>
                     <p>Stumble Guys</p>
                     <p>Gratuito</p>
                 </li>
@@ -208,7 +226,7 @@
                     <p>Gratuito</p>
                 </li>
                 <li class="mundo-aberto sandbox">
-                    <a href="sinopseMinecraft.html"><img src="img/imgMinecraft.jpg" alt="imagem minecraft" style="width: 340px; height: 240px;"></a>
+                    <a href="sinopseMinecraft.html"><img src="img/imgMinecraft.png" alt="imagem minecraft" style="width: 340px; height: 240px;"></a>
                     <p>Minecraft</p>
                     <p>Gratuito</p>
                 </li>
@@ -237,7 +255,7 @@
               const categoriaSelecionada = this.getAttribute("data-categoria");
       
               listaJogos.forEach((jogo) => {
-                if (categoriaSelecionada === "todos" || jogo.classList.contains(categoriaSelecionada)) {
+                if (categoriaSelecionada === "Todos" || jogo.classList.contains(categoriaSelecionada)) {
                   jogo.style.display = "inline-block";
                 } else {
                   jogo.style.display = "none";
@@ -254,6 +272,7 @@
           atualizarDisplayLi();
         });
     </script>
+    
 
 </body>
 </html>
