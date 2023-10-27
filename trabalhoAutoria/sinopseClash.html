@@ -1,70 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinopse Clash Royale / WEB Jogos</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloSinopse.css">
     <link rel="shortcut icon" href="img/icoSite.ico" >
 </head>
 <body>
-    <div id="topo">
-        <img src="img/imgSIte3.png" alt="logo do site">
-    <span>WEB Jogos</span>
+    <header>
+        <div class="barra-menu">
+            <div class="img-logo">
+                <img src="img/icoSite.ico" alt="">
+            </div>
+            <div class="logo">
+                <h1>Web Jogos</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="botao-login">
+                <a href="paginaLogin.html ">Login</a>
+            </div>
+        </div>
+    </header>
 
-    <ul id="lista">
-        <li>
-            <a href="pagina1.html">Jogos</a>
-        </li>
+    <div id="titulo">
+        <h1>Clash Royale</h1>
     </div>
-    
 
-    <div id="sinopse">
-        <h1 id="titulo">Clash Royale</h1>
-
-        <br>
-
-        <iframe  src="https://www.youtube.com/embed/Dgh2y5C_Xf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        <p id="botomMostrar">Mostrar sinopse</p>
-        <br>
-        <p id="sinopsejogo">Clash Royale é um videojogo de estratégia freemium Também conhecido como o melhor jogo manual do mundo, desenvolvido e publicado pela Supercell, empresa sediada em Helsinki, na Finlândia.</p>
+    <main>
        
-       
-    </div>   
-    <div id="download">
-        <img src="img/imgClash.jpg" alt="Clash Royale">
-        <br>
-        <h2>Ficou interresado? baixe aqui!</h2>
-        <p id="gratuito">JOGO GRATUITO</p>
-        <p id="baixar">você inclui o download do jogo por aqui:</p>
-
-        <p id="iconeBaixar">BAIXAR </p>
-            <ul id="tiposDownload">
-                <li>        
-                    <a href="https://play.google.com/store/search?q=clash%20royale&c=apps&hl=pt_BR&gl=US" target="_blank">Baixe aqui Clash Royale Mobile</a>
-                </li>
-            </ul>
-       
+        <div id="sinopse">
+            <div class="video">
+                <iframe  src="https://www.youtube.com/embed/Dgh2y5C_Xf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p id="botomMostrar">Mostrar sinopse</p>
+            <p id="sinopsejogo">Clash Royale é um videojogo de estratégia freemium Também conhecido como o melhor jogo manual do mundo, desenvolvido e publicado pela Supercell, empresa sediada em Helsinki, na Finlândia.</p>
         
+        </div>
+        <div id="download">
+            <div id="conteudoDownload">
+                <img src="img/imgClash.jpg" alt="Clash Royale">
+                <h2>Ficou interresado? baixe aqui!</h2>
+                <p id="gratuito">JOGO GRATUITO</p>
+                <p id="baixar">você inclui o download do jogo por aqui:</p>
+                <p id="iconeBaixar">BAIXAR </p>
+                <ul id="tiposDownload">
+                    <li>        
+                        <a href="https://play.google.com/store/search?q=clash%20royale&c=apps&hl=pt_BR&gl=US" target="_blank">Baixe aqui Clash Royale Mobile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-    </div>
-
-    <div id="fotosGameplay">
-
-        <h1>Fotos da gameplay:</h1>
-        <ul>
-            <li>
-                <img   src="img/imgClahRoayleGameplay.jpg" alt="Clash Royale" style="height: 500px; width: 300px;" >
-            </li>   
-            <li>
-                <img  src="img/imgClashRoyalegameplay2.jpg" alt="Clash Royale" >
-            </li>
-            <li>
+        <div id="gameplay">
+            <div id="tituloGamePlay">
+                <h1
+                >Fotos da gameplay:</h1>
+            </div>
+            
+            <div id="fotoGamePlay">
+                <img   src="img/imgClashRoyaleGameplay3.jpg" alt="Clash Royale" style="height: 500px; width: 300px;" >
+                <img  src="img/imgClashRoyalegameplay2.webp" alt="Clash Royale" style="height: 500px; width: 300px;" >
                 <img  src="img/imgClashRoyalegameplay.jpg" alt="Clash Royale" style="height: 500px; width: 300px;" >
-            </li>
-      </ul>
-    </div>
+            </div>
+        </div>
+        
+    </main>
+   
+
+    
     <script>
         // Adicionei um evento de clique ao elemento #iconeBaixar
 document.getElementById('iconeBaixar').addEventListener('click', function() {
