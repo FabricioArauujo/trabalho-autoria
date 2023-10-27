@@ -4,69 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinopse Horizon /WEB Jogos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloSinopse.css">
     <link rel="shortcut icon" href="img/icoSite.ico" >
 </head>
 <body>
-    <div id="topo">
-        <img src="img/imgSIte3.png" alt="logo do site">
-    <span>WEB Jogos</span>
+    <header>
+        <div class="barra-menu">
+            <div class="img-logo">
+                <img src="img/icoSite.ico" alt="">
+            </div>
+            <div class="logo">
+                <h1>Web Jogos</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="botao-login">
+                <a href="paginaLogin.html ">Login</a>
+            </div>
+        </div>
+    </header>
 
-    <ul id="lista">
-        <li>
-            <a href="pagina1.html">Jogos</a>
-        </li>
+    <div id="titulo">
+        <h1>Horizon</h1>
     </div>
-    
 
-    <div id="sinopse">
-        <h1 id="titulo">Horizon</h1>
-
-        <br>
-
-        <iframe  src="https://www.youtube.com/embed/9axpikOIHEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        <p id="botomMostrar">Mostrar sinopse</p>
-        <br>
-        <p id="sinopsejogo">Horizon é uma série de RPGs de ação desenvolvidos pela Guerrilla Games e publicados pela Sony Interactive Entertainment para PlayStation 4, PlayStation 5 e Microsoft Windows. A série segue as aventuras de Aloy, uma jovem caçadora em um mundo dominado por máquinas, que se propõe a descobrir seu passado. </p>
+    <main>
        
-    </div>   
-    <div id="download">
-        <img src="img/imgHorizon.jpg" alt="Horizon">
-        <br>
-        <h2>Ficou interresado? baixe aqui!</h2>
-        <p id="gratuito">JOGO GRATUITO</p>
-        <p id="baixar">você inclui o download do jogo por aqui:</p>
-
-        <p id="iconeBaixar">BAIXAR </p>
-            <ul id="tiposDownload">
-                <li>      
-                    <a href="https://store.steampowered.com/agecheck/app/1151640/" target="_blank">Baixe aqui o Horizon para Computador</a>
-                </li>
-                <li>
-                    <a href="https://store.playstation.com/pt-br/product/UP9000-CUSA10237_00-HRZCE00000000000" target="_blank">Baixe aqui o Horizom para console</a>
-                </li>
-            </ul>
-       
+        <div id="sinopse">
+            <div class="video">
+                <iframe  src="https://www.youtube.com/embed/ztwwQByMmmE?si=ti_IPkqMJqLmcAHF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p id="botomMostrar">Mostrar sinopse</p>
+            <p id="sinopsejogo">Horizon é uma série de RPGs de ação desenvolvidos pela Guerrilla Games e publicados pela Sony Interactive Entertainment para PlayStation 4, PlayStation 5 e Microsoft Windows. A série segue as aventuras de Aloy, uma jovem caçadora em um mundo dominado por máquinas, que se propõe a descobrir seu passado. </p>
         
+        </div>
+        <div id="download">
+            <div id="conteudoDownload">
+                <img src="img/imgHorizon.jpg" alt="Horizon" style=" width: 30%;
+                height: 40%;">
+                
+                <h2>Ficou interresado? baixe aqui!</h2>
+                <p id="gratuito">JOGO GRATUITO</p>
+                <p id="baixar">você inclui o download do jogo por aqui:</p>
 
-    </div>
+                <p id="iconeBaixar">BAIXAR </p>
+                    <ul id="tiposDownload">
+                        <li>      
+                            <a href="https://store.steampowered.com/agecheck/app/1151640/" target="_blank">Baixe aqui o Horizon para Computador</a>
+                        </li>
+                        <li>
+                            <a href="https://store.playstation.com/pt-br/product/UP9000-CUSA10237_00-HRZCE00000000000" target="_blank">Baixe aqui o Horizom para console</a>
+                        </li>
+                    </ul>
+                    
+            </div>
+        </div>
 
-    <div id="fotosGameplay">
-
-        <h1>Fotos da gameplay:</h1>
-        <ul>
-            <li>
+        <div id="gameplay">
+            <div id="tituloGamePlay">
+                <h1
+                >Fotos da gameplay:</h1>
+            </div>
+            
+            <div id="fotoGamePlay">
                 <img  src="img/imgHitmanGameplay.jpg" alt="Horizon" >
-            </li>
-            <li>
                 <img  src="img/imgHorizonGameplay2.jpg" alt="Horizon">
-            </li>
-            <li>
                 <img  src="img/imgHorizonGameplay3.jpg" alt="Horizon" >
-            </li>
-      </ul>
-    </div>
+            </div>
+        </div>
+        
+    </main>
+   
     <script>
         // Adicionei um evento de clique ao elemento #iconeBaixar
 document.getElementById('iconeBaixar').addEventListener('click', function() {

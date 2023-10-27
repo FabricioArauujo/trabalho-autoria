@@ -4,70 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinopse EA FC24 / WEB Jogos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloSinopse.css">
     <link rel="shortcut icon" href="img/icoSite.ico">
 </head>
 <body>
-    <div id="topo">
-        <img src="img/imgSIte3.png" alt="logo do site">
-    <span>WEB Jogos</span>
+    <header>
+        <div class="barra-menu">
+            <div class="img-logo">
+                <img src="img/icoSite.ico" alt="">
+            </div>
+            <div class="logo">
+                <h1>Web Jogos</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="botao-login">
+                <a href="paginaLogin.html ">Login</a>
+            </div>
+        </div>
+    </header>
 
-    <ul id="lista">
-        <li>
-            <a href="pagina1.html">Jogos</a>
-        </li>
+    <div id="titulo">
+        <h1>EA SPORTS FC24</h1>
     </div>
-    
 
-    <div id="sinopse">
-        <h1 id="titulo">EA SPORTS FC24</h1>
-
-        <br>
-
-        <iframe  src="https://www.youtube.com/embed/-vL01jbgENE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-        <p id="botomMostrar">Mostrar sinopse</p>
-        <br>
-        <p id="sinopsejogo">O EA SPORTS FC™ 24 traz para você o Jogo de Todo Mundo, a experiência mais realista de futebol de todos os tempos com o HyperMotionV, PlayStyles otimizada pela Opta e uma Frostbite™ Engine revolucionada, que reinventa como mais de 19.000 atletas com licença se movimentam, jogam e aparecem em todas as partidas.</p>
+    <main>
        
-       
-    </div>   
-    <div id="download">
-        <img src="img/imgEAFClogo.jpg" alt="EA SPORTS FC24">
-        <br>
-        <h2>Ficou interresado? baixe aqui!</h2>
-        <p id="gratuito">JOGO GRATUITO</p>
-        <p id="baixar">você inclui o download do jogo por aqui:</p>
-
-        <p id="iconeBaixar">BAIXAR </p>
-            <ul id="tiposDownload">
-                <li>      
-                    <a href="https://store.steampowered.com/app/2195250/EA_SPORTS_FC_24/" target="_blank">Baixe aqui o EA SPORTS  FC24 para Computador</a>
-                </li>
-                <li>
-                    <a href="https://store.playstation.com/pt-br/product/UP0006-PPSA13393_00-24STANDARDBUNDLE" target="_blank">Baixe aqui o EA SPORTS  FC24 para console</a>
-                </li>
-            </ul>
-       
+        <div id="sinopse">
+            <div class="video">
+                <iframe  src="https://www.youtube.com/embed/-vL01jbgENE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p id="botomMostrar">Mostrar sinopse</p>
+            <p id="sinopsejogo">O EA SPORTS FC™ 24 traz para você o Jogo de Todo Mundo, a experiência mais realista de futebol de todos os tempos com o HyperMotionV, PlayStyles otimizada pela Opta e uma Frostbite™ Engine revolucionada, que reinventa como mais de 19.000 atletas com licença se movimentam, jogam e aparecem em todas as partidas.</p>
         
+        </div>
+        <div id="download">
+            <div id="conteudoDownload">
+                <img src="img/imgEAFClogo.jpg" alt="EA SPORTS FC24">
+                
+                <h2>Ficou interresado? baixe aqui!</h2>
+                <p id="gratuito">JOGO GRATUITO</p>
+                <p id="baixar">você inclui o download do jogo por aqui:</p>
+        
+                <p id="iconeBaixar">BAIXAR </p>
+                    <ul id="tiposDownload">
+                        <li>      
+                            <a href="https://store.steampowered.com/app/2195250/EA_SPORTS_FC_24/" target="_blank">Baixe aqui o EA SPORTS  FC24 para Computador</a>
+                        </li>
+                        <li>
+                            <a href="https://store.playstation.com/pt-br/product/UP0006-PPSA13393_00-24STANDARDBUNDLE" target="_blank">Baixe aqui o EA SPORTS  FC24 para console</a>
+                        </li>
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.ea.gp.fifamobile&hl=pt_BR&gl=US" target="_blank">Baixe aqui o EA SPORTS  FC24 para Android"></a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
 
-    </div>
-
-    <div id="fotosGameplay">
-
-        <h1>Fotos da gameplay:</h1>
-        <ul>
-            <li>
+        <div id="gameplay">
+            <div id="tituloGamePlay">
+                <h1
+                >Fotos da gameplay:</h1>
+            </div>
+            
+            <div id="fotoGamePlay">
                 <img   src="img/imgEAFCgameplay.jpg" alt="EA FC24">
-            </li>
-            <li>
                 <img  src="img/imgEAFCgameplay2.jpg" alt="Ea FC24" >
-            </li>
-            <li>
-                <img  src="img/imgEAFCgameplay3.jpg" alt="EA FC24" >
-            </li>
-      </ul>
-    </div>
+                <img  src="img/imgEAFCgameplay3.jpg" alt="EA FC24" >  
+                      </div>
+        </div>
+        
+    </main>
+   
     <script>
         // Adicionei um evento de clique ao elemento #iconeBaixar
 document.getElementById('iconeBaixar').addEventListener('click', function() {
