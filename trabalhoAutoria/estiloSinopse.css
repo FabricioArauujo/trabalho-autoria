@@ -150,6 +150,9 @@ main{
     position: relative;
     padding: 0px;
   }
+  #tiposDownload a:hover{
+     border-bottom: 5px solid rgb(238, 147, 11);
+  }
 
   #tituloGamePlay h1{
     margin: 3vh 0vh 3vh 0vh ;
