@@ -129,6 +129,10 @@ main{
     padding: 10px;
     color: aliceblue;
   }
+
+  #conteudoDownload img{
+    border-radius: 20px;
+  }
   #download img{
     width: 30%;
     height: 30%;
