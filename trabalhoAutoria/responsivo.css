@@ -22,3 +22,10 @@
         font-size: 30px;
     }
 }
+
+@media only screen and (max-width: 557px){
+    .submenu a{
+        font-size: 19px;
+    }
+}
+
