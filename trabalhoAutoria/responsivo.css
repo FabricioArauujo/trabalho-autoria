@@ -17,4 +17,8 @@
     .menu-jogos li{
         justify-content: center;
     }
+
+    .logo h1{
+        font-size: 30px;
+    }
 }

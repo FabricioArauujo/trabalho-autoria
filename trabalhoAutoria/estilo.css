@@ -12,6 +12,10 @@
   :root{
     --fonte-padrao: 'jogos', cursive;
   }
+
+  h1{
+    color: white;
+  }
   
 
 body{
@@ -273,6 +277,5 @@ body{
     transition: transform 0.8s ease;
 }
 .jogos li:hover{
-    border: 2px solid rgb(238, 147, 11);
     transform: scale(0.97);
 }
