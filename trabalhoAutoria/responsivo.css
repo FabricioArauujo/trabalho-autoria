@@ -1,0 +1,14 @@
+@media only screen and (max-width: 600px){
+    .carrossel{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-imagens {
+        width: 100%;
+    }
+
+    .menu-jogos{
+        width: 100%;
+    }
+}
