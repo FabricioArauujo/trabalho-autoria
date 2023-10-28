@@ -53,8 +53,7 @@ main{
     position: relative;
     width: 50%;
     min-width: 380px;
-    max-width: 60%;
-    max-height: 77%;
+    min-height: 50%;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
     background-color: rgb(0,0,0);
@@ -82,7 +81,7 @@ main{
     position: relative;
     background: rgb(0, 0, 0);
     color: white;
-    width: 90%;
+    width: 80%;
     text-align: justify;
     text-indent: 10px;
     display: none;
@@ -110,7 +109,7 @@ main{
     align-items: center;
     position: relative;
     width: 50%;
-    height: 50%;
+    min-height: 50%;
     min-width: 400px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
     overflow: hidden;
