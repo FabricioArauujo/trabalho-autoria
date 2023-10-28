@@ -50,8 +50,8 @@ main{
  .categorias{
     width: 30%;
     min-width: 200px;
-    max-width: 40%;
-    height: 64%;
+    max-width: 20%;
+    height: 74%;
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(153, 150, 150);
@@ -69,22 +69,45 @@ main{
     text-decoration: underline;
 }
 #containerJogos{
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
-    height: 100%;
-    min-width: 60%;
 }
-#containerJogos h1{
-    margin: auto;
+
+#containerJogos ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
+
+#containerJogos li{
+    margin: 3px;
+}
+
+#h1jogos{
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#h1jogos h1{
+    font-size: 50px;
+}
+.jogos{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+}
+
 #containerJogos p {
+    text-align: center;
     font-size: 18px;
 }
 
-#containerJogos  ul{
-    text-align: center;
-}
+
 
 a :hover{
     border: 5px solid rgb(238, 147, 11);
