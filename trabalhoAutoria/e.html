@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meus Jogos Favoritos</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        main {
+            width: 100%;
+            height: 100%;
+        }
+        #container {
+            width: 100%;
+            background-color: blue;
+            text-align: center;
+        }
+
+        .pesquisa-container {
+            position: relative;
+            width: 100%;
+            background-color: aqua;
+        }
+
+        ul {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: aquamarine;
+        }
+        li {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="pesquisa-container">
+        <form id="pesquisa-form">
+            <label for="pesquisa">Pesquisar Jogo:</label>
+            <input type="text" id="pesquisa" placeholder="Digite o nome do jogo">
+            <button type="button" onclick="pesquisarJogo()">Pesquisar</button>
+            <select name="jogos" id="jogos">
+                <option value="0" data-plataforma="Todos">Selecione</option>
+                <option value="1" data-plataforma="Mobile">Mobile</option>
+                <option value="2" data-plataforma="PC">PC</option>
+                <option value="3" data-plataforma="Console">Console</option>
+            </select>
+        </form>
+    </div>
+
+    <div id="container">
+        <h2>Jogos Favoritos</h2>
+        <ul id="jogos-favoritos">
+        </ul>
+    </div>
+    <ul id="lista-jogos">
+        <li id="pubg" class="battle-royale jogo-de-tiro Mobile PC Console Todos">
+            <a href="sinopsePUBG.html"><img src="img/imgPUBG@.jpg" alt="PUBG"></a>
+            <p>PUBG</p>
+            <p>Gratuito</p>
+            <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('pubg')">🤍</button>
+        </li>
+        <li id="gta" class="sandbox PC Console Todos">
+            <a href="sinopseGTA5.html"> <img src="img/imgGTA5.jpg" alt="imagem GTA5" style="width: 230px; height: 410px;">
+            </a>
+            <p>GTA 5</p>
+            <p>Gratuito</p>
+            <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('gta')">🤍</button>
+        </li>
+        <li id="cs" class="jogo-de-tiro PC Todos">
+            <a href="sinopseCSGO.html"> <img src="img/imgCSGO.jpg" alt="imagem cs go" style="width: 230px; height: 410px;" ></a>
+            <p>CS GO</p>
+            <p>Gratuito</p>
+            <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('cs')">🤍</button>
+        </li>
+        <li id="godofwar" class="Ação-Aventura PC Todos Console" >
+            <a href="sinopseGODOFWAR.html"><img src="img/imgGodOfWar.jpg" alt="imagem GOD OF WAR" style="width: 230px; height: 410px;"></a>
+            <p>GOD OF WAR</p>
+            <p>Gratuito</p>
+            <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('godofwar')">🤍</button>
+        </li>
+        <li id="hitman" class="Ação-Aventura">
+            <a href="html/sinopseHitman.html"> <img src="img/imgHitman.jpg" alt="imagem  Hitman" style="width: 230px; height: 411px;"style="width: 230px; height: 410px;"></a>
+            <p>Hitman</p>
+            <p>Gratuito</p>
+            <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('hitman')">🤍</button>
+        </li>
+        <li class="Ação-Aventura">
+            <a href="sinopseRedDead.html"><img src="img/imgRedDead.jpg" alt="imagem Red dead Repemtiop" style="width: 230px; height: 410px;"></a>
+            <p>Red Dead Redemption </p>
+            <p>Gratuito</p>
+        </li>
+        <li class="Luta">
+            <a href="sinopseMortalKombat.html"><img src="img/imgMortalKombat.jpg" alt="Imagem Mortal Kombat"style="width: 230px; height: 410px;"></a>
+            <p>Mortal Kombat</p>
+            <p>Gratuito</p>
+        </li>
+        <li class="battle-royale jogo-de-tiro">
+            <a href="sinopseValorant.html"><img src="img/imgValorant.jpg" alt="imagem Valorant" style="width: 230px; height: 410px;"></a>
+            <p>Valorant</p>
+            <p>Gratuito</p>
+        </li>
+       
+   
+        <li class="battle-royale jogo-de-tiro">
+            <a href="sinopseApexLegends.html"><img src="img/imgApexLegends.png" alt="imagem apex legends" style="width: 230px; height: 410px;"></a>
+            <p>Apex Legends</p>
+            <p>Gratuito</p>
+        </li>
+        <li class="battle-royale jogo-de-tiro">
+            <a href="sinopseCallOfDuty.html"><img src="img/imgCallOfDuty.png" alt="imagem Call of duty" style="width: 230px; height: 410px;"></a>
+            <p>Call Of Duty </p>
+            <p>Gratuito</p>
+        </li>
+        <li class="Realidade-Aumentada">
+            <a href="sinopsePokemongo.html"><img src="img/imgPokemongo.jpg" alt="imagem Call of duty" style="width: 230px; height: 410px;"></a>
+            <p>Pokemon GO </p>
+            <p>Gratuito</p>
+        </li>
+        <li class="Estrategia">
+            <a href="sinopseClashOfClash.html"><img src="img/imgClashOfClans.jpg" alt="imagem clash of Clans" style="width: 230px; height: 410px;"></a>
+            <p>Clash Of Clans </p>
+            <p>Gratuito</p>
+        </li>
+        <!-- Adicione os outros itens da lista aqui -->
+    </ul>
+</main>
+
+<script>
+    const listaJogos = document.getElementById('lista-jogos');
+    const infoJogo = document.getElementById('info-jogo');
+    const pesquisaInput = document.getElementById('pesquisa');
+    const jogosFavoritos = document.getElementById('jogos-favoritos');
+    const selectPlataforma = document.getElementById('jogos');
+
+    function pesquisarJogo() {
+        const termoPesquisa = pesquisaInput.value.trim().toLowerCase();
+        const listaItens = listaJogos.querySelectorAll('li');
+
+        listaItens.forEach(item => {
+            const nomeJogo = item.id.toLowerCase();
+
+            if (nomeJogo === termoPesquisa) {
+                item.style.display = 'inline-block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        if (!Array.from(listaItens).some(item => item.style.display === 'inline-block')) {
+            alert("Nenhum jogo correspondente encontrado.");
+        }
+    }
+
+    function favoritarJogo(id) {
+        const jogo = document.getElementById(id);
+        const favoriteButton = jogo.querySelector('.favorite-button');
+
+        if (favoriteButton.getAttribute('data-favorite') === 'false') {
+            favoriteButton.setAttribute('data-favorite', 'true');
+            favoriteButton.textContent = '❤️';
+            const jogoFavorito = jogo.cloneNode(true);
+            jogoFavorito.querySelector('.favorite-button').addEventListener('click', () => removerJogoFavorito(id));
+            jogosFavoritos.appendChild(jogoFavorito);
+            jogo.style.display = 'none';
+        }
+    }
+
+    function removerJogoFavorito(id) {
+        const jogoFavorito = document.getElementById(id);
+        if (jogoFavorito) {
+            jogoFavorito.remove();
+            const jogoOriginal = listaJogos.querySelector(`#${id}`);
+            const favoriteButton = jogoOriginal.querySelector('.favorite-button');
+            favoriteButton.setAttribute('data-favorite', 'false');
+            favoriteButton.textContent = '🤍';
+            jogoOriginal.style.display = 'inline-block';
+        }
+    }
+
+    selectPlataforma.addEventListener('change', () => {
+        const plataformaSelecionada = selectPlataforma.options[selectPlataforma.selectedIndex].getAttribute('data-plataforma');
+
+        const listaItens = listaJogos.querySelectorAll('li');
+
+        listaItens.forEach(item => {
+            const plataformas = item.classList;
+
+            if (plataformas.contains(plataformaSelecionada) || plataformaSelecionada === '0') {
+                item.style.display = 'inline-block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+</script>
+</body>
+</html>
