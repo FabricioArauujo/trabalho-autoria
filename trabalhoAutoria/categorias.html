@@ -302,23 +302,7 @@
         });
 
         
-document.addEventListener("DOMContentLoaded", function() {
-    const favoriteButtons = document.querySelectorAll(".favorite-button");
 
-    favoriteButtons.forEach(button => {
-        button.addEventListener("click", function() {
-            const isFavorite = button.getAttribute("data-favorite") === "true";
-
-            if (isFavorite) {
-                button.setAttribute("data-favorite", "false");
-                button.innerHTML = "❤️";
-            } else {
-                button.setAttribute("data-favorite", "true");
-                button.innerHTML = "🤍 ";
-            }
-        });
-    });
-});
     </script>
     
 
