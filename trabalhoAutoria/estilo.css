@@ -1,8 +1,12 @@
+
+/*removendo a margem e o espaçamento interno de toda a página*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/*Criando um padrão de fonte importada para utilizar na página*/
 @font-face {
     font-family: 'jogos';
     src: url(fontes/HeadlinerNo.45\ DEMO.ttf);
@@ -13,59 +17,65 @@
     --fonte-padrao: 'jogos', cursive;
   }
 
+  /*Alterando a cor da fonte de todos os h1 da página*/
   h1{
     color: white;
   }
   
-
+/*Adicionando uma largura de 100% e uma altura de 100vh para usar um layout responsivo dentro da página*/
 body{
     width: 100%;
     height: 100vh;
-    background-color: black;
-    font-family: var(--fonte-padrao);
+    background-color: black; /*Alterando a cor de fundo da página*/
+    font-family: var(--fonte-padrao); /*Aplicando a fonte importada em toda a página*/
 }
 
+
+/*BARRA DE MENU*/
+
 .barra-menu{
-    background-color: rgb(32, 32, 32);
-    display: flex;
-    width: 100%;
-    height: 10vh;
+    background-color: rgb(32, 32, 32); /*Definindo a cor de fundo da barra de menu*/
+    display: flex; /*Adicionando um display flex para usar layout responsivo*/
+    width: 100%; /*Deixando a barra de menu com 100% de largura*/
+    height: 10vh; /*Definindo a altura da barra de menu*/
 }
+
+/*Alterando p tamanho da fonte do link que está dentro do menu presente na barra de menu*/
 .barra-menu .menu a{
     font-size: 27px;
 }
-.barra-menu .botao-login a{
-    font-size: 22px;
-}
 
+/*Alterando a cor da fonte do nome da logo na barra de menu, e aplicando propriedades responsivas*/
 .logo{
     color: rgb(168, 166, 166);/*cor da fonte*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 15%;
+    display: flex; /*Adicionando um display flex para usar layout responsivo*/
+    align-items: center; /*Alinhando os itens da div logo no centro em relação a vertical*/
+    justify-content: center; /*Alinhando os itens da div logo no centro em relação a horizontal*/
+    width: 15%; /*Definindo a largura que irá ocupar dentro da barra de menu*/
 }
 
+/*Alterando div logo o tamanho da fonte do h1 e definindo uma largura do h1 dentro da div*/
 .logo h1{
     font-size: 35px;
     width: 100%;
 }
 
-.logo  p{
-    font-size: 20px;
-}
+/*Alterando margem na div que está a imagem da logo, definindo uma largura que irá ocupar na barra de menu e 
+adicionando propriedades responsivas*/
 .img-logo{
-    margin: 0px 20px 0px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0px 20px 0px 20px; /*Adicionando margem à direita e à esquerda*/
+    display: flex; /*Adicionando um display flex para usar layout responsivo*/
+    align-items: center; /*Alinhando os itens da div no centro em relação a vertical*/
+    justify-content: center; /*Alinhando os itens da div no centro em relação a horizontal*/
     width: 5%;
 }
 
+/*Definindo tamanho da imagem da logo*/
 .img-logo img{
     width: 50px;
 }
 
+/*Definindo ma largura que irá ocupar na barra de menu, aplicando propriedades flexíveis e alinhando itens no centro*/
 .menu{
     display: flex;
     align-items: center;
@@ -73,24 +83,30 @@ body{
     width: 60%;
 }
 
+/*Deixando os itens da lista presentes no menu na horizontal e definindo um padding para ficar como um menu*/
 .menu li{
     display: inline;
     padding: 20px;
 }
+
+/*Aplicando um efeito de borda ao passar o mouse em cima dos itens da lista no menu*/
 .menu li:hover{
     border-bottom: 4px solid rgb(238, 147, 11);
 }
 
-.menu a{
-    font-size: 20px;
+/*Removendo a decoração de links nos links do menu na barra de menu e aplicando uma cor de fonte*/
+.menu a {
     text-decoration: none;
     color: rgb(168, 166, 166);/*cor da fonte*/
 }
 
+/*Mudando a cor da fonte dos links presentes na barra de menu ao passar o mouse por cima*/
 .menu a:hover{
     color: white;
 }
 
+/*Definindo a largura que a div do botão irá ocupar na barra de menu, aplicando propriedades flexíveis e centralizando 
+itens na div*/
 .botao-login{
     width: 20%;
     display: flex;
@@ -98,20 +114,26 @@ body{
     justify-content: center;
 }
 
+/*Adicionando estilo no link dentro da div do botão*/
 .botao-login a{
-    font-size: 17px;
+    font-size: 22px; /*Definindo tamanho da fonte do link*/
     color: black;
-    border-radius: 20px;
-    text-decoration: none;
-    background-color: rgb(238, 147, 11);
-    padding: 10px;
+    border-radius: 20px; /*Deixando a borda do link redonda*/
+    text-decoration: none; /*Removendo a decoração de links*/
+    background-color: rgb(238, 147, 11); /*Adicionando uma cor de fundo*/
+    padding: 10px; /*Definindo um espaçamento interno*/
 }
 
+/*mudando a cor da fonte e do plano de fundo do botão ao passar o mouse por cima*/
 .botao-login a:hover{
     background-color: white;
     color: rgb(238, 147, 11);
 }
 
+/*SUBMENU DA PÁGINA PRINCIPAL*/
+
+/*Definindo uma largura e altura do sunmenu, aplicando propriedades flexíveis e alinhando itens no centro e 
+adicionando uma margem no topo para distanciar da barra de menu*/
 .submenu{
     margin-top: 3%;
     display: flex;
@@ -121,6 +143,8 @@ body{
     height: 7vh;
 }
 
+/*Deixando a borda da lista de menu redonda, adicionando uma cor de fundo, definindo uma largura e uma altura em 
+relação à div submenu, aplicando propriedades flexíveis e alinhando itens no centro*/
 .submenu-lista{
     border-radius: 20px;
     background-color: rgb(32, 32, 32);
@@ -130,11 +154,15 @@ body{
     width: 50%;
     height: 100%;
 }
+
+/*Deixando a lista não ordenada com um displey flexível e forçando os itens a ficarem em linha*/
 .submenu-lista ul{
     display: flex;
     flex-direction: row;
 }
 
+/*Deixando o display dos itens da lista flexível, forçando os itens a ficarem em coluna, centralizando os itens, 
+forçando itens a não quebrarem quando chegarem na sua largura mínima e adicionando uma margem*/
 .submenu-lista li{
     display: flex;
     align-items: center;
@@ -144,91 +172,106 @@ body{
     margin: 20px;
 }
 
+/*Alterando o tamanho da fonte dos links presentes no submenu, removendo a decoração de links e definindo uma cor da 
+fonte*/
 .submenu a{
     font-size: 25px;
     text-decoration: none;
     color: rgb(168, 166, 166);
 }
 
+/*Alterando a cor dos links do submenu ao passar o mouse por cima*/
 .submenu a:hover{
     color: white
 }
 
+
+/*CARROSSEL DE IMAGENS DA PÁGINA PRINCIPAL*/
+
+/*Definindo um espaçamento inter no topo para a div ficar afastada do submenu, adicionando propriedade flexível para 
+layout responsivo e alinhando itens no centro em relação à horizontal */
 .container-carrossel{
     padding-top: 5vh;
     display: flex;
     justify-content: center;
 }
 
+/*Aplicando estilo na div carrosel que está dentro da div container-carrosel*/
 .carrossel{
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(32, 32, 32);
-    border-radius: 20px;
+    width: 60%; /*Definando a largura que irá ocupar na div container-carrossel*/
+    display: flex; /*definindo o display flex para layout responsivo*/
+    flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegarem na sua largura mínima*/
+    background-color: rgb(32, 32, 32); /*Aplicando uma cor de fundo na div*/
+    border-radius: 20px; /*Deixando a div com bordas redondas*/
 }
 
+/*Definindo uma largura e altura que a div menu-jogos vai ficar dentro da div carrosel e aplicando uma cor da fonte*/
 .menu-jogos{
     width: 30%;
     height: 100vh;
-}
-
-.menu-jogos{
     color: white;
 }
 
-.menu-jogos ul{
-    height: 90vh;
-}
-
+/*Aplicando estilo nos itens da lista dentro da div menu-jogos*/
 .menu-jogos li{
-    height: 100px;
-    padding-left: 16px;
-    height: 90px;
-    display: flex;
-    align-items: center;
+    padding-left: 16px; /*Definindo um espaçamento interno à esquerda*/
+    height: 90px; /*Definindo uma altura dos itens da lista */
+    display: flex; /*Definindo um displey flex para usar um layout responsivo*/
+    align-items: center; /*Alinhando os itens no centro em relação à vertical*/
     flex-wrap: wrap;
 }
 
+/*aplicando estilo nas imagens que estão dentro da div menu-jogos*/
 .menu-jogos img{
-    border-radius: 10px;
+    border-radius: 10px; /*Deixando borda redonda*/
     width: 60px; /* Ajuste a largura da imagem conforme necessário */
     height: 80px;/*ajustando a altura da imagem*/
 }
 
+/*Aplicando um espaçamento interno no texto dos jogos que estão no menu de jogos*/
 .texto-jogos{
     padding: 10px;
 }
 
+/*Definindo uma largura e altura que a div menu-imagens vai ficar dentro da div carrosel*/
 .menu-imagens{
     width: 70%;
     height: 100vh;
 }
 
+/*Fazendo as imagens ocuparem todo o tamanho da div menu-imagens e deixando a borda redonda*/
 .menu-imagens img{
     height: 100%;
     border-radius: 20px;
     width: 100%;
 }
+
+/*JOGOS DA PÁGINA PRINCIPAL*/
+
+/*Aplicando estilo na div todosJogos*/
 #todosJogos{
-    position: relative;
-    top: 5vh;
-    width: 80%;
-    min-width: 380px;
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    position: relative; /*Deixando a posição da div relativa*/
+    top: 5vh; /*Definindo uma distância do topo*/
+    width: 80%; /*Definindo uma largura*/
+    min-width: 380px; /*Definindo uma largura mínima que poderá ocupar*/
+    height: 100vh; /*Definindo uma altura*/
+    margin: auto; /*Deixando a margem automática para que se ajuste sozinha*/
+    display: flex; /*Deixando o display flexível para usar layout responsivo*/
+    justify-content: center; /*Alinhando itens no centro em relação à horizontal */
+    flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegar em uma largura mínima*/
 }
+
+/*Aplicando estilo na div que contém a barra dos tipos dos jogos*/
 .h1{
-    position: relative;
-    top: 2vh;
-    width: 100%;
-    background-color: rgb(32, 32, 32);
-    color: rgb(238, 147, 11);
-    text-align: center;
+    position: relative; /*Deixando a posição relativa*/
+    top: 2vh; /*aplicando uma distância no topo*/
+    width: 100%; /*Definindo para ocupar toda a largura*/
+    background-color: rgb(32, 32, 32); /*Aplicando uma cor de fundo*/
+    color: rgb(238, 147, 11); /*aplicando uma cor da fonte*/
+    text-align: center; /*Alinhando os itens no centro em relação à vertical*/
 }
+
+/*Aplicando estilo na dv lista que contém os tipos dos jogos*/
 #lista{
     display: flex;
     flex-direction: column;
