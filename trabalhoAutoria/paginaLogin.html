@@ -30,9 +30,11 @@
                 <a href="paginaPrincipal.html">Voltar</a>
             </div>
         </div>
+
         <div class="container-formulario">
+
             <div class="formulario">
-                <form action="#">
+                <form action="paginaPrincipal.html" method="post" onsubmit="return validarCampos()">
                     <div class="titulo-formulario">
                         <h1>Fazer Login</h1>
                     </div>
@@ -87,8 +89,53 @@
                     </div>
                 </form>
             </div>
+
         </div>
 
     </div>
+
+    <script>
+        function validarCampos(){
+            var nome = document.getElementById("Inome").value;
+            var idade = document.getElementById("Iidade").value;
+            var email = document.getElementById("Iemail").value;
+            var celular = document.getElementById("Icelular").value;
+            var senha = document.getElementById("Isenha").value;
+            var confirmarSenha = document.getElementById("IconfirmSenha").value;
+
+            if(nome === ""){
+                alert("Por favor, preencha o campo Nome.");
+                return false;
+
+            } else if(idade === ""){
+                alert("Por favor, Informe a sua idade.");
+                return false;
+
+            } else if(idade < 14){
+                alert("Você deve possuir 14 anos ou mais para realizar o login");
+                return false;
+                
+            } else if(email === ""){
+                alert("Por favor, preencha o campo Email");
+                return false;
+                
+            } else if(celular ===""){
+                alert("Por favor, informe o seu número de celular");
+                return false;
+
+            } else if(senha ===""){
+                alert("Por favor, informe a sua senha.");
+                return false;
+
+            } else if(confirmarSenha ===""){
+                alert("Por favor, confirme sua senha.");
+                return false;
+
+            } else if(senha != confirmarSenha){
+                alert("Os campos senha e confirme sua senha devem ser iguais!")
+                return false;
+            }
+        }
+    </script>
 </body>
 </html>
