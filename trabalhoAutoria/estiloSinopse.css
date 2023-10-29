@@ -89,8 +89,9 @@ main{
     text-indent: 10px;
     display: none;
     margin: auto;
-  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
    }
+
    #sinopse #botomMostrar{
     margin: auto;
     text-align: center;
