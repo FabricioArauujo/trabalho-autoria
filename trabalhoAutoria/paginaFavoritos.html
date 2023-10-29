@@ -116,53 +116,97 @@
         background-color: white;
         color: rgb(238, 147, 11);
     }
-        main {
-            width: 100%;
-            height: 100%;
-        }
-        #jogos-favoritos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-        #jogos-favoritos li {
-            margin: 10px;
-            border: 1px solid rgb(182, 182, 182);
-            color: white;
-            text-align: center;
-            list-style: none;
-        }
-        #container {
-            width: 100%;
-            background-color: blue;
-            text-align: center;
-        }
+    main {
+        position: relative;
+        top: 5%;
+        width: 100%;
+        height: 100%;
+    }
+    #jogos-favoritos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #jogos-favoritos li {
+        margin: 10px;
+        border: 1px solid rgb(182, 182, 182);
+        color: white;
+        text-align: center;
+        list-style: none;
+    }
+    #container {
+        width: 100%;
+        text-align: center;
+    }
+    #container h1 {
+        background-color: rgb(238, 147, 11);
+        width: 50%;
+        margin: auto;
+        color: black;
+        border-radius: 20px;
+    }
 
-        .pesquisa-container {
-            position: relative;
-            width: 100%;
-            background-color: aqua;
-        }
-        
-       #lista-jogos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
+    .pesquisa-container {
+        position: relative;
+        width: 80%;
+        background-color: rgb(32, 32, 32);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+        border-radius: 20px;
+    }
+    .pesquisa-container label{
+        font-size: 20px;
+    }
+    .pesquisa-container input{
+        padding: 3px;
+        border-radius: 10px;
+        text-align: center;
+        font-family: var(--fonte-padrao);
+        font-size: 16px;
+    }
+    .pesquisa-container button{
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        text-align: center;
+        font-family: var(--fonte-padrao);
+        font-size: 16px;
+    }
+    .pesquisa-container button:hover{
+        background-color: rgb(238, 147, 11);
+    }
+    .pesquisa-container select{
+        padding: 3px 12px;
+        text-align: center;
+        font-family: var(--fonte-padrao);
+        font-size: 18px;
+        border-radius: 15px;
+    }
+    
+#lista-jogos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
-        #lista-jogos li {
-            margin: 10px;
-            border: 1px solid rgb(182, 182, 182);
-            color: white;
-            text-align: center;
-            list-style: none;
-        }
-        .jogos h1{
-            text-align: center;
-            background-color: brown;
-        }
+    #lista-jogos li {
+        margin: 10px;
+        border: 1px solid rgb(182, 182, 182);
+        color: white;
+        text-align: center;
+        list-style: none;
+        padding: 10px;
+    }
+    .jogos{
+        position: relative;
+        top: 5%;
+    }
+    .jogos h1{
+        text-align: center;
+    }
     </style>
 </head>
 <body>
@@ -186,37 +230,57 @@
             <a href="paginaLogin.html">Login</a>
         </div>
     </div>
-<main>
+
     <div class="pesquisa-container">
         <form id="pesquisa-form">
             <label for="pesquisa">Pesquisar Jogo:</label>
             <input type="text" id="pesquisa" placeholder="Digite o nome do jogo">
-            <button type="button" onclick="pesquisarJogo()">Pesquisar</button>
+            <button type="button" onclick="pesquisarJogo()" style="margin-right: 10px;">Pesquisar</button>
             <label for="jogos">Plataforma</label>
-            <select name="jogos" id="jogos">
+            <select name="jogos" id="jogos" style="margin-right: 10px;">
                 <option value="0" data-plataforma="Todos">Selecione</option>
                 <option value="1" data-plataforma="Mobile">Mobile</option>
                 <option value="2" data-plataforma="PC">PC</option>
                 <option value="3" data-plataforma="Console">Console</option>
             </select>
+            <label for="categorias">Categorias</label>
+            <select name="categorias" id="categorias" style="margin-right: 10px;">
+                <option value="0" data-categoria="Todos">Selecione</option>
+                <option value="1" data-categoria="battle-royale">Battle royale</option>
+                <option value="2" data-categoria="sandbox">Sandbox</option>
+                <option value="3" data-categoria="deducao-social">Deducao social</option>
+                <option value="4" data-categoria="Futebol">Futebol</option>
+                <option value="5" data-categoria="mundo-aberto">Mundo aberto</option>
+                <option value="6" data-categoria="jogo-de-tiro">Jogo de tiro</option>
+                <option value="7" data-categoria="Ação-Aventura">Acao_Aventura</option>
+                <option value="8" data-categoria="Luta">Luta</option>
+                <option value="9" data-categoria="Estrategia">Estratégia</option>
+                <option value="10" data-categoria="MOBA" title="Multiplayer Online Battle Arena">MOBA</option>
+                <option value="11" data-categoria="Realidade-Aumentada">Realidade Aumentada</option>
+                <option value="12"  data-categoria="Pool">Jogos de sinuca</option>
+                <option value="13" data-categoria="Corrida">Corrida</option>
+                <option value="14" data-categoria="RPG-de-Ação">RPG de Acao</option>
+            </select>
         </form>
     </div>
+<main>
+   
 
     <div id="container">
-        <h2>Jogos Favoritos</h2>
+        <h1>Jogos Favoritos</h1>
         <ul id="jogos-favoritos">
         </ul>
     </div>
     <div class="jogos">
         <h1>Jogos</h1>
         <ul id="lista-jogos">
-            <li id="pubg" class="Mobile PC Console Todos">
+            <li id="pubg" class="Mobile PC Console Todos battle-royale jogo-de-tiro">
                 <a href="sinopsePUBG.html"><img src="img/imgPUBG@.jpg" alt="imagem PUBG" style="width: 230px; height: 410px;"></a>
                 <p>PUBG</p>
                 <p>Gratuito</p>
                 <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('pubg')">🤍</button>
             </li>
-            <li id="gta5" class="Console PC Todos">
+            <li id="gta5" class="Console PC Todos sandbox mundo-aberto">
                 <a href="sinopseGTA5.html"><img src="img/imgGTA5.jpg" alt="imagem GTA5" style="width: 230px; height: 410px;"></a>
                 <p>GTA 5</p>
                 <p>Gratuito</p>
@@ -363,6 +427,9 @@
     const listaItens = listaJogos.querySelectorAll('li');
     let jogoEncontrado = false;
 
+    if (termoPesquisa === '') {
+        alert("Por favor, insira o nome do jogo para pesquisa.");
+    }
     listaItens.forEach(item => {
         const nomeJogo = item.textContent.toLowerCase();
 
@@ -424,6 +491,23 @@ function removerJogoFavorito(id) {
             }
         });
     });
+    const selectCategorias = document.getElementById('categorias');
+
+    selectCategorias.addEventListener('change', () => {
+    const categoriaSelecionada = selectCategorias.options[selectCategorias.selectedIndex].getAttribute('data-categoria');
+
+    const listaItens = listaJogos.querySelectorAll('li');
+
+    listaItens.forEach(item => {
+        const categorias = item.classList;
+
+        if (categorias.contains(categoriaSelecionada) || categoriaSelecionada === 'Todos') {
+            item.style.display = 'inline-block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+});
 </script>
 </body>
 </html>
