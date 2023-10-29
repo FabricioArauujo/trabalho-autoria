@@ -279,3 +279,77 @@ body{
 .jogos li:hover{
     transform: scale(0.97);
 }
+
+.container-formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.formulario{
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(32, 32, 32);
+    min-width: 40%;
+    height: 80vh;
+    border: 1px solid rgb(238, 147, 11);
+}
+
+.titulo-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.grupo-inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.input{
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input label{
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.input input{
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.input select{
+    text-align: center;
+    width: 27vh;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.enviar-limpar{
+    display: flex;
+    justify-content: center;
+}
+
+.enviar-limpar input{
+    display: flex;
+}
+
+#enviar, #limpar{
+    width: 40%;
+    background-color: rgb(238, 147, 11);
+    color: white;
+}
+
+#enviar input:hover{
+    cursor: pointer;
+}

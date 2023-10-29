@@ -1,144 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB Jogos / Login</title>
+    <title>Login</title>
 
-    <link rel="shortcut icon" href="img/icoSite.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="responsivo.css">
-    <style>
-        *{
-            margin: 0%;
-            padding: 0%;
-        }
-        body{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgb(0, 0, 0);
-            color: white;
-
-        }
-        header{
-            width: 100%;
-            position: absolute;
-            top: 0vh;
-            background-color: rgb(32, 32, 32);;
-        }
-        #topo{
-            display: flex;
-            align-items: center;
-            width: 100%;
-            height: 10vh;
-        }
-        #logo{
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            width: 30%;
-        }
-        #lista{
-            display: flex;
-            align-items: center;
-            justify-content: left;
-            list-style-type: none;
-            width: 70%;
-        }
-        #lista a{
-            color: white;
-            text-decoration: none;
-            padding: 5px;
-            font-size: 20px;
-        }       
-    
-        #lista a:hover{
-            text-decoration: underline;
-            color: rgb(238, 147, 11);
-        }
-        main{
-            position: relative;
-            top: 12vh;
-            max-width: 90%;
-            min-width: 40%;
-            overflow: hidden;
-            height: 80vh;
-            text-align: center;
-            border: 1px solid white;
-            background-color: rgb(32, 32, 32);
-            border-radius: 20px;
-        }
-        input{
-            border-radius: 10px;
-        
-        }
-        .botao{
-            border-radius: 0px;
-            position: relative;
-            top: 10vh;
-        }
-        #containerInputs{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            top: 10vh;            
-        }
-        .input{
-            padding: 8px;
-            text-align: left;
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <div id="topo">
-            <div id="logo"	>
-                <img src="img/imgSIte3.png" alt="logo do site" title="logo do site">
-                <span>WEB Jogos</span>
+    <div class="principal">
+        <div class="barra-menu">
+            <div class="img-logo">
+                <img src="img/icoSite.ico" alt="">
             </div>
-        
-            <ul id="lista">
-                <li>
-                    <a href="pagina1.html">Jogos</a>
-                </li>
-        
-            </ul>
+
+            <div class="logo">
+                <h1>Web Jogos</h1>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href=".container-carrosel">Jogos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="botao-login">
+                <a href="paginaPrincipal.html">Voltar</a>
+            </div>
         </div>
-    </header>
-    <main>
-        <h1>Faça o login</h1>
-        <p>Por favor, preencha alguns dados que solicitaremos para acessar a página.</p>
-        <form action="pagina1.html" method="get">
-            <div id="containerInputs">
-                <div class="input">
-                    <label for="Inome">Nome:</label>
-                    <br>
-                    <input type="text" id="Inome" name="nome" required placeholder="Nome" style="text-align: center;">
-                </div>
-                <div class="input">
-                    <label for="Isobrenome">Sobrenome:</label>
-                    <br>
-                    <input type="text" id="Isobrenome" name="sobrenome" required placeholder="Sobrenome" style="text-align: center;">
-                </div>
-                <div class="input">
-                    <label for="Iemail">E-mail:</label>
-                    <br>
-                    <input type="email" id="Iemail" name="email" required placeholder="E-mail" style="text-align: center;" size="20">
-                </div>
-                <div class="input">
-                    <label for="Isenha">Senha:</label>
-                    <br>
-                    <input type="password" id="Isenha" name="senha" required placeholder="Senha" style="text-align: center;">
-                </div> 
-                <br>
-                
-            </div> 
-            <input class="botao" type="submit" value="Entrar">
-            <input class="botao" type="reset" value="Limpar">
-        </form>
-    </main>
+        <div class="container-formulario">
+            <div class="formulario">
+                <form action="#">
+                    <div class="titulo-formulario">
+                        <h1>Fazer Login</h1>
+                    </div>
+
+                    <div class="grupo-inputs">
+                        
+                            <div class="input">
+                                <label for="Inome">Nome:</label>
+                                <input type="text" id="Inome" name="nome"  placeholder="Digite seu nome" style="text-align: center;">
+                            </div>
+
+                            <div class="input">
+                                <label for="Igenero">Gênero:</label>
+                                <select name="genero" id="Igenero">
+                                    <option value="M">Masculino</option>
+                                    <option value="F">Feminino</option>
+                                    <option value="N">Prefiro não informar</option>
+                                </select>
+                            </div>
+
+                            <div class="input">
+                                <label for="Iidade">Idade:</label>
+                                <input type="number" id="Iidade" name="idade"  placeholder="Informe sua idade" style="text-align: center;">
+                            </div>
+                            
+                            <div class="input">
+                                <label for="Iemail">Email:</label>
+                                <input type="email" id="Iemail" name="email"  placeholder="Digite seu E-mail" style="text-align: center;" size="20">
+                            </div>
+
+                            <div class="input">
+                                <label for="Icelular">celular:</label>
+                                <input type="tel" id="Icelular" name="celular" placeholder="(XX) XXXX-XXXX" style="text-align: center;">
+                            </div>
+
+                            <div class="input">
+                                <label for="Isenha">Senha:</label>
+                                <input type="password" id="Isenha" name="senha" placeholder="Digite sua senha" style="text-align: center;">
+                            </div>
+
+                            <div class="input">
+                                <label for="IconfirmSenha">Confirmar senha:</label>
+                                <input type="password" id="IconfirmSenha" name="confirmSenha" placeholder="Digite sua senha novamente" style="text-align: center;">
+                            </div>
+
+                            <div class="input">
+                                <input id="enviar" type="submit" value="Logar">
+                                <input id="limpar" type="reset" value="Limpar">
+                            </div>
+                           
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
