@@ -4,117 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/icoSite.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="responsivo.css">
     <title>Meus Jogos Favoritos</title>
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        @font-face {
-            font-family: 'jogos';
-            src: url(fontes/HeadlinerNo.45\ DEMO.ttf);
-            font-weight: normal;
-        }
         
-        :root{
-            --fonte-padrao: 'jogos', cursive;
-        }
-
-        body{
-            width: 100%;
-            height: 100vh;
-            background-color: black;
-            font-family: var(--fonte-padrao);
-        }
-        .barra-menu{
-        background-color: rgb(32, 32, 32);
-        display: flex;
-        width: 100%;
-        height: 10vh;
-         }
-        .barra-menu .menu a{
-            font-size: 27px;
-        }
-        .barra-menu .botao-login a{
-            font-size: 22px;
-        }
-
-        .logo{
-            color: rgb(168, 166, 166);/*cor da fonte*/
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 15%;
-        }
-
-        .logo h1{
-            font-size: 35px;
-            width: 100%;
-        }
-
-        .logo  p{
-            font-size: 20px;
-        }
-        .img-logo{
-            margin: 0px 20px 0px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 5%;
-        }
-
-        .img-logo img{
-            width: 50px;
-        }
-
-        .menu{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 60%;
-        
-        }
-
-        .menu li{
-            display: inline;
-            padding: 20px;
-        }
-        .menu li:hover{
-            border-bottom: 4px solid rgb(238, 147, 11);
-        }
-
-        .menu a{
-            font-size: 20px;
-            text-decoration: none;
-            color: rgb(168, 166, 166);/*cor da fonte*/
-        }
-
-        .menu a:hover{
-            color: white;
-        }
-
-        .botao-login{
-            width: 20%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .botao-login a{
-            font-size: 17px;
-            color: black;
-            border-radius: 20px;
-            text-decoration: none;
-            background-color: rgb(238, 147, 11);
-            padding: 10px;
-        }
-
-        .botao-login a:hover{
-            background-color: white;
-            color: rgb(238, 147, 11);
-        }
-
         .pesquisa-container {
             position: relative;
             width: 80%;
