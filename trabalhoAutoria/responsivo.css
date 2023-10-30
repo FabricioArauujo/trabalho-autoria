@@ -1,31 +1,40 @@
 
+/*Adicionando uma media query para fazer alterações quando a largura máxima da tela chegar em 864 pixels*/
 @media only screen and (max-width: 864px){
     .carrossel{
-        display: flex;
-        flex-direction: column;
+        display: flex; /*Deixando o display da div carrossel responsivo*/
+        flex-direction: column; /*Forçando os itens a ficarem em forma de coluna*/
     }
 
+    /*alterando a aultura e a largura da div imagens*/
     .menu-imagens {
         height: 80vh;
         width: 100%;
     }
 
+    /*Aumentando o espaçamento interno e a largura da div menu-jogos*/
     .menu-jogos{
         padding: 20px;
         width: 100%;
     }
+
+    /*Alinhando os items da lista não ordenada do menu de jogos no centro em relação à horizontal*/
     .menu-jogos li{
         justify-content: center;
     }
 
+    /*Diminuindo o tamnho da logo na barra de menu para se ajustar adequadamente*/
     .logo h1{
         font-size: 30px;
     }
 }
 
+
+/*Adicionando uma media query para fazer alterações quando a largura máxima da tela chegar em 557 pixels*/
 @media only screen and (max-width: 557px){
     .submenu a{
-        font-size: 19px;
+        font-size: 19px; /*Diminuindo o tamanho da fonte dos links do submenu da página principal para se ajustarem 
+        corretamanete*/
     }
 }
 
