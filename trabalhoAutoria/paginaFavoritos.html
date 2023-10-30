@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icoSite.ico" type="image/x-icon">
     <title>Meus Jogos Favoritos</title>
     <style>
         *{
@@ -18,11 +21,6 @@
             --fonte-padrao: 'jogos', cursive;
         }
 
-        h1{
-            color: white;
-        }
-        
-
         body{
             width: 100%;
             height: 100vh;
@@ -34,179 +32,202 @@
         display: flex;
         width: 100%;
         height: 10vh;
-    }
-    .barra-menu .menu a{
-        font-size: 27px;
-    }
-    .barra-menu .botao-login a{
-        font-size: 22px;
-    }
+         }
+        .barra-menu .menu a{
+            font-size: 27px;
+        }
+        .barra-menu .botao-login a{
+            font-size: 22px;
+        }
 
-    .logo{
-        color: rgb(168, 166, 166);/*cor da fonte*/
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 15%;
-    }
+        .logo{
+            color: rgb(168, 166, 166);/*cor da fonte*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15%;
+        }
 
-    .logo h1{
-        font-size: 35px;
-        width: 100%;
-    }
+        .logo h1{
+            font-size: 35px;
+            width: 100%;
+        }
 
-    .logo  p{
-        font-size: 20px;
-    }
-    .img-logo{
-        margin: 0px 20px 0px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 5%;
-    }
+        .logo  p{
+            font-size: 20px;
+        }
+        .img-logo{
+            margin: 0px 20px 0px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5%;
+        }
 
-    .img-logo img{
-        width: 50px;
-    }
+        .img-logo img{
+            width: 50px;
+        }
 
-    .menu{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60%;
-    
-    }
+        .menu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+        
+        }
 
-    .menu li{
-        display: inline;
-        padding: 20px;
-    }
-    .menu li:hover{
-        border-bottom: 4px solid rgb(238, 147, 11);
-    }
+        .menu li{
+            display: inline;
+            padding: 20px;
+        }
+        .menu li:hover{
+            border-bottom: 4px solid rgb(238, 147, 11);
+        }
 
-    .menu a{
-        font-size: 20px;
-        text-decoration: none;
-        color: rgb(168, 166, 166);/*cor da fonte*/
-    }
+        .menu a{
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(168, 166, 166);/*cor da fonte*/
+        }
 
-    .menu a:hover{
-        color: white;
-    }
+        .menu a:hover{
+            color: white;
+        }
 
-    .botao-login{
-        width: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+        .botao-login{
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    .botao-login a{
-        font-size: 17px;
-        color: black;
-        border-radius: 20px;
-        text-decoration: none;
-        background-color: rgb(238, 147, 11);
-        padding: 10px;
-    }
+        .botao-login a{
+            font-size: 17px;
+            color: black;
+            border-radius: 20px;
+            text-decoration: none;
+            background-color: rgb(238, 147, 11);
+            padding: 10px;
+        }
 
-    .botao-login a:hover{
-        background-color: white;
-        color: rgb(238, 147, 11);
-    }
-    main {
+        .botao-login a:hover{
+            background-color: white;
+            color: rgb(238, 147, 11);
+        }
+
+        .pesquisa-container {
+            position: relative;
+            width: 80%;
+            top: 5%;
+            background-color: rgb(32, 32, 32);
+            color: white;
+            padding: 10px;
+            margin: auto;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .pesquisa-container .pesquisa{
+
+        }
+        .pesquisa-container label{
+            font-size: 20px;
+        }
+        .pesquisa-container input{
+            padding: 3px;
+            border-radius: 10px;
+            text-align: center;
+            font-family: var(--fonte-padrao);
+            font-size: 16px;
+        }
+        .pesquisa-container button{
+            padding: 5px 10px 5px 10px;
+            border-radius: 10px;
+            text-align: center;
+            font-family: var(--fonte-padrao);
+            font-size: 16px;
+        }
+        .pesquisa-container button:hover{
+            background-color: rgb(238, 147, 11);
+        }
+        .pesquisa-container select{
+            padding: 3px 12px;
+            text-align: center;
+            font-family: var(--fonte-padrao);
+            font-size: 18px;
+            border-radius: 15px;
+        }
+
+        main {
+            position: relative; /*Deixando a posição da div relativa*/
+            top: 5%; /*Definindo uma distância do topo*/
+            width: 80%; /*Definindo uma largura*/
+            min-width: 380px; /*Definindo uma largura mínima que poderá ocupar*/
+            height: 100vh; /*Definindo uma altura*/
+            margin: auto; /*Deixando a margem automática para que se ajuste sozinha*/
+            display: flex; /*Deixando o display flexível para usar layout responsivo*/
+            justify-content: center; /*Alinhando itens no centro em relação à horizontal */
+            flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegar em uma largura mínima*/
+        }
+        #container {
+            position: relative;
+            top: 5vh;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px 0px 20px 0px;
+        }
+        #container ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        #container li {
+            padding: 5px;
+            margin: 5px;
+            list-style-type: none;
+            color: white;
+            text-align: center;
+            border: 1px solid white;
+        }
+        #container h1{
+            text-align: center;
+            width: 100%;
+            background-color: rgb(238, 147, 11);
+            border-radius: 20px;
+        }
+        .jogos{
         position: relative;
-        top: 5%;
+        top: 5vh;
         width: 100%;
-        height: 100%;
-    }
-    #jogos-favoritos {
+        display: flex;
+        flex-wrap: wrap;
+        }
+        .jogos ul{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-    }
-    #jogos-favoritos li {
-        margin: 10px;
-        border: 1px solid rgb(182, 182, 182);
-        color: white;
-        text-align: center;
-        list-style: none;
-    }
-    #container {
         width: 100%;
-        text-align: center;
-    }
-    #container h1 {
-        background-color: rgb(238, 147, 11);
-        width: 50%;
-        margin: auto;
-        color: black;
-        border-radius: 20px;
-    }
-
-    .pesquisa-container {
         position: relative;
-        width: 80%;
-        background-color: rgb(32, 32, 32);
-        color: white;
-        text-align: center;
-        padding: 10px;
-        margin: auto;
-        border-radius: 20px;
-    }
-    .pesquisa-container label{
-        font-size: 20px;
-    }
-    .pesquisa-container input{
-        padding: 3px;
-        border-radius: 10px;
-        text-align: center;
-        font-family: var(--fonte-padrao);
-        font-size: 16px;
-    }
-    .pesquisa-container button{
-        padding: 5px 10px 5px 10px;
-        border-radius: 10px;
-        text-align: center;
-        font-family: var(--fonte-padrao);
-        font-size: 16px;
-    }
-    .pesquisa-container button:hover{
-        background-color: rgb(238, 147, 11);
-    }
-    .pesquisa-container select{
-        padding: 3px 12px;
-        text-align: center;
-        font-family: var(--fonte-padrao);
-        font-size: 18px;
-        border-radius: 15px;
-    }
-    
-#lista-jogos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #lista-jogos li {
-        margin: 10px;
-        border: 1px solid rgb(182, 182, 182);
-        color: white;
-        text-align: center;
-        list-style: none;
-        padding: 10px;
-    }
-    .jogos{
-        position: relative;
-        top: 5%;
-    }
-    .jogos h1{
-        text-align: center;
-    }
+        top: 1%;
+        }
+        .jogos li{
+            padding: 5px;
+            margin: 5px;
+            list-style-type: none;
+            color: white;
+            text-align: center;
+            border: 1px solid white;
+        }
+        .jogos h1{
+            text-align: center;
+            width: 100%;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -221,7 +242,7 @@
 
         <div class="menu">
             <ul>
-                <li><a href="#">Jogos</a></li>
+                <li><a href="paginaPrincipal.html">Jogos</a></li>
                 <li><a href="#">Sobre</a></li>
             </ul>
         </div>
@@ -232,35 +253,41 @@
     </div>
 
     <div class="pesquisa-container">
-        <form id="pesquisa-form">
-            <label for="pesquisa">Pesquisar Jogo:</label>
-            <input type="text" id="pesquisa" placeholder="Digite o nome do jogo">
-            <button type="button" onclick="pesquisarJogo()" style="margin-right: 10px;">Pesquisar</button>
-            <label for="jogos">Plataforma</label>
-            <select name="jogos" id="jogos" style="margin-right: 10px;">
-                <option value="0" data-plataforma="Todos">Selecione</option>
-                <option value="1" data-plataforma="Mobile">Mobile</option>
-                <option value="2" data-plataforma="PC">PC</option>
-                <option value="3" data-plataforma="Console">Console</option>
-            </select>
-            <label for="categorias">Categorias</label>
-            <select name="categorias" id="categorias" style="margin-right: 10px;">
-                <option value="0" data-categoria="Todos">Selecione</option>
-                <option value="1" data-categoria="battle-royale">Battle royale</option>
-                <option value="2" data-categoria="sandbox">Sandbox</option>
-                <option value="3" data-categoria="deducao-social">Deducao social</option>
-                <option value="4" data-categoria="Futebol">Futebol</option>
-                <option value="5" data-categoria="mundo-aberto">Mundo aberto</option>
-                <option value="6" data-categoria="jogo-de-tiro">Jogo de tiro</option>
-                <option value="7" data-categoria="Ação-Aventura">Acao_Aventura</option>
-                <option value="8" data-categoria="Luta">Luta</option>
-                <option value="9" data-categoria="Estrategia">Estratégia</option>
-                <option value="10" data-categoria="MOBA" title="Multiplayer Online Battle Arena">MOBA</option>
-                <option value="11" data-categoria="Realidade-Aumentada">Realidade Aumentada</option>
-                <option value="12"  data-categoria="Pool">Jogos de sinuca</option>
-                <option value="13" data-categoria="Corrida">Corrida</option>
-                <option value="14" data-categoria="RPG-de-Ação">RPG de Acao</option>
-            </select>
+        <form >
+            <div class="pesquisa">
+                <label for="pesquisa">Pesquisar Jogo:</label>
+                <input type="text" id="pesquisa" placeholder="Digite o nome do jogo">
+                <button type="button" onclick="pesquisarJogo()" style="margin-right: 10px;">Pesquisar</button>
+            </div>
+            <div class="plataforma">
+                <label for="jogos">Plataforma</label>
+                <select name="jogos" id="jogos" style="margin-right: 10px;">
+                    <option value="0" data-plataforma="Todos">Selecione</option>
+                    <option value="1" data-plataforma="Mobile">Mobile</option>
+                    <option value="2" data-plataforma="PC">PC</option>
+                    <option value="3" data-plataforma="Console">Console</option>
+                </select>
+            </div>
+            <div class="categorias">
+                <label for="categorias">Categorias</label>
+                <select name="categorias" id="categorias" style="margin-right: 10px;">
+                    <option value="0" data-categoria="Todos">Selecione</option>
+                    <option value="1" data-categoria="battle-royale">Battle royale</option>
+                    <option value="2" data-categoria="sandbox">Sandbox</option>
+                    <option value="3" data-categoria="deducao-social">Deducao social</option>
+                    <option value="4" data-categoria="Futebol">Futebol</option>
+                    <option value="5" data-categoria="mundo-aberto">Mundo aberto</option>
+                    <option value="6" data-categoria="jogo-de-tiro">Jogo de tiro</option>
+                    <option value="7" data-categoria="Ação-Aventura">Acao_Aventura</option>
+                    <option value="8" data-categoria="Luta">Luta</option>
+                    <option value="9" data-categoria="Estrategia">Estratégia</option>
+                    <option value="10" data-categoria="MOBA" title="Multiplayer Online Battle Arena">MOBA</option>
+                    <option value="11" data-categoria="Realidade-Aumentada">Realidade Aumentada</option>
+                    <option value="12"  data-categoria="Pool">Jogos de sinuca</option>
+                    <option value="13" data-categoria="Corrida">Corrida</option>
+                    <option value="14" data-categoria="RPG-de-Ação">RPG de Acao</option>
+                </select>
+            </div>
         </form>
     </div>
 <main>
@@ -286,19 +313,19 @@
                 <p>Gratuito</p>
                 <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('gta5')">🤍</button>
             </li>
-            <li id="csgo" class="PC Todos">
+            <li id="csgo" class="PC Todos jogo-de-tiro">
                 <a href="sinopseCSGO.html"> <img src="img/imgCSGO.jpg" alt="imagem cs go" style="width: 230px; height: 410px;" ></a>
                 <p>CS GO</p>
                 <p>Gratuito</p>
                 <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('csgo')">🤍</button>
             </li>
-            <li class="Console PC Todos" id="godofwar">
+            <li class="Console PC Todos Acao_Aventura" id="godofwar">
                 <a href="sinopseGODOFWAR.html"><img src="img/imgGodOfWar.jpg" alt="imagem GOD OF WAR" style="width: 230px; height: 410px;"></a>
                 <p>GOD OF WAR</p>
                 <p>Gratuito</p>
                 <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('godofwar')">🤍</button>
             </li>
-            <li class="Console Mobile PC Todos" id="hitman">
+            <li class="Console Mobile PC Todos " id="hitman">
                 <a href="sinopseHitman.html"> <img src="img/imgHitman2.jpg" alt="imagem  Hitman" 
                 style="width: 230px; height: 410px;"></a>
                 <p>Hitman</p>
@@ -311,19 +338,19 @@
                 <p>Gratuito</p>
                 <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('reddead')">🤍</button>
             </li>
-            <li class="Console Mobile PC Todos" id="mortalkombat">
+            <li class="Console Mobile PC Todos Luta" id="mortalkombat">
                 <a href="sinopseMortalKombat.html"><img src="img/imgMortalKombat.jpg" alt="Imagem Mortal Kombat"style="width: 230px; height: 410px;"></a>
                 <p>Mortal Kombat</p>
                 <p>Gratuito</p>
                 <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('mortalkombat')">🤍</button>
             </li>
-            <li class=" PC Todos" id="valorant">
+            <li class=" PC Todos jogo-de-tiro battle-royale" id="valorant">
                 <a href="sinopseValorant.html"><img src="img/imgValorant.jpg" alt="imagem Valorant" style="width: 230px; height: 410px;"></a>
                 <p>Valorant</p>
                 <p>Gratuito</p>
                 <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('valorant')">🤍</button>
             </li>
-            <li class="Console PC Todos" id="apexlegends">
+            <li class="Console PC Todos battle-royale jogo-de-tiro" id="apexlegends">
                 <a href="sinopseApexLegends.html"><img src="img/imgApexLegends.png" alt="imagem apex legends" style="width: 230px; height: 410px;"></a>
                 <p>Apex Legends</p>
                 <p>Gratuito</p>
@@ -371,13 +398,13 @@
                 <p>Gratuito</p>
                 <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('clashroyale')">🤍</button>
             </li>
-            <li class="Mobile PC Todos Console" id="minecraft">
+            <li class="Mobile PC Todos Console mundo-aberto sandbox" id="minecraft">
                 <a href="sinopseMinecraft.html"><img src="img/imgMinecraft.png" alt="imagem minecraft" style="width: 340px; height: 240px;"></a>
                 <p>Minecraft</p>
                 <p>Pago</p>
                 <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('minecraft')">🤍</button>
             </li>
-            <li class="Mobile PC Todos" id="leagueoflegends">
+            <li class="Mobile PC Todos MOBA" id="leagueoflegends">
                 <a href="sinopseLeagueOfLegends.html"><img src="img/imgleagueOfLegends.jpg" alt="imagem league of legends" style="width: 350px; height: 200px"></a>
                 <p>League Of Legends</p>
                 <p>Gratuito</p>
@@ -403,7 +430,7 @@
                 <p>Gratuito</p>
                 <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('ballpool')">🤍</button>
             </li>
-            <li class="Mobile PC Todos Console" id="stumbleguys">
+            <li class="Mobile PC Todos Console battle-royale Corrida" id="stumbleguys">
                 <a href="sinopseStumbleGuys.html"><img src="img/imgStumbleGuys.png" alt="Imagem Stumbl Guys" style="width: 340px; height: 240px;"></a>
                 <p>Stumble Guys</p>
                 <p>Gratuito</p>
@@ -445,6 +472,7 @@
         alert("Nenhum jogo correspondente encontrado.");
         listaItens.forEach(item => {
             item.style.display = 'inline-block'; // Mostrar todos os jogos novamente
+            pesquisaInput.value = '';
         });
     }
 }
