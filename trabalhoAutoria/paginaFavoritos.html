@@ -20,12 +20,42 @@
             border-radius: 20px;
             display: flex;
             align-items: center;
+        }
+
+        .pesquisa-container form{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .pesquisa{
+            display: flex;
+            width: 33%;
+            align-items: center;
+            justify-content: center;
             flex-wrap: wrap;
-            flex-direction: row;
+        }
+
+        .plataforma{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 33%;
+            flex-wrap: wrap;
+        }
+
+        .categorias{
+            width: 33%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
         }
        
         .pesquisa-container label{
             font-size: 20px;
+            margin-right: 10px;
         }
         .pesquisa-container input{
             padding: 3px;
@@ -149,11 +179,11 @@
             <div class="pesquisa">
                 <label for="pesquisa">Pesquisar Jogo:</label>
                 <input type="text" id="pesquisa" placeholder="Digite o nome do jogo">
-                <button type="button" onclick="pesquisarJogo()" style="margin-right: 10px;">Pesquisar</button>
+                <button type="button" onclick="pesquisarJogo()">Pesquisar</button>
             </div>
             <div class="plataforma">
                 <label for="jogos">Plataforma</label>
-                <select name="jogos" id="jogos" style="margin-right: 10px;">
+                <select name="jogos" id="jogos">
                     <option value="0" data-plataforma="Todos">Selecione</option>
                     <option value="1" data-plataforma="Mobile">Mobile</option>
                     <option value="2" data-plataforma="PC">PC</option>
@@ -162,7 +192,7 @@
             </div>
             <div class="categorias">
                 <label for="categorias">Categorias</label>
-                <select name="categorias" id="categorias" style="margin-right: 10px;">
+                <select name="categorias" id="categorias">
                     <option value="0" data-categoria="Todos">Selecione</option>
                     <option value="1" data-categoria="battle-royale">Battle royale</option>
                     <option value="2" data-categoria="sandbox">Sandbox</option>
