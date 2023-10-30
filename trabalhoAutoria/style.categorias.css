@@ -83,6 +83,7 @@ main{
 
 #containerJogos li{
     margin: 3px;
+    background-color: black;
 }
 
 #h1jogos{
@@ -113,4 +114,7 @@ a :hover{
     border: 5px solid rgb(238, 147, 11);
     transition: 0.5s ;
     transform: scale(0.97);
+}
+.favorite-button{
+    width: 100%;
 }
