@@ -389,6 +389,8 @@ layout responsivo e alinhando itens no centro em relação à horizontal */
 }
 
 #enviar, #limpar{
+    font-size: 20px;
+    font-family: var(--fonte-padrao);
     width: 40%;
     background-color: rgb(238, 147, 11);
     color: white;
