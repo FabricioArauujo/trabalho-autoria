@@ -6,13 +6,14 @@
     box-sizing: border-box;
 }
 
-/*Criando um padrão de fonte importada para utilizar na página*/
+/*Criando um padrão da fonte importada para utilizar na página*/
 @font-face {
     font-family: 'jogos';
     src: url(fontes/HeadlinerNo.45\ DEMO.ttf);
     font-weight: normal;
   }
   
+  /*Criando uma variável da fonte importada para utilizar no css*/
   :root{
     --fonte-padrao: 'jogos', cursive;
   }
@@ -261,7 +262,7 @@ layout responsivo e alinhando itens no centro em relação à horizontal */
     flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegar em uma largura mínima*/
 }
 
-/*Aplicando estilo na div que contém a barra dos tipos dos jogos*/
+/*Aplicando estilo na div que contém a barra do tipo de plataforma dos jogos*/
 .h1{
     position: relative; /*Deixando a posição relativa*/
     top: 2vh; /*aplicando uma distância no topo*/
@@ -271,58 +272,80 @@ layout responsivo e alinhando itens no centro em relação à horizontal */
     text-align: center; /*Alinhando os itens no centro em relação à vertical*/
 }
 
-/*Aplicando estilo na dv lista que contém os tipos dos jogos*/
+/*Aplicando estilo na div lista que contém as plataformas dos jogos*/
 #lista{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
-    background-color: rgb(32, 32, 32);
-    border-radius: 20px;
+    display: flex; /*Deixando o display flex para usar layout responsivo*/
+    flex-direction: column; /*Deixando os itens se comportando como coluna*/
+    flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegarem em sua largura mínima*/
+    align-items: center; /*alinhando os itens no centro em relação à vertical*/
+    width: 100%; /*Preenchendo toda a largura*/
+    background-color: rgb(32, 32, 32); /*Definindo uma cor de plano de fundo*/
+    border-radius: 20px; /*Deixando a borda redonda*/
 
 }
+
+/*Aplicando estilo nos links dentro da lista de plataformas*/
 #lista a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+    text-decoration: none; /*Removendo decoração dos links*/
+    color: white; /*Definindo uma cor da fonte*/
+    font-size: 20px; /*Aumentando o tamanho da fonte*/
 }
+
+/*Aplicando um sublinhando nos links e uma cor da fonte ao passar o mouse por cima*/
 #lista a:hover{
     text-decoration: underline;
     color: rgb(238, 147, 11);
 }
+
+/*Aplicando um display flexível na lista não ordenada e forçando os itens a quebrarem quando chegarem na sua largura
+ míninima*/
 #lista ul{
     display: flex;
     flex-wrap: wrap;
 }
+
+/*Adicionando um espaçamento interno nos itens da lista e removendo a decoração da lista*/
 #lista li{
     padding: 10px;
     list-style-type: none;
 }
+
+/*Aplicando estilo na div que contém os jogos*/
 .jogos{
-    position: relative;
-    top: 5vh;
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
+    position: relative; /*Deixando a posição relativa*/
+    top: 5vh; /*Aplicando um espaço no topo*/
+    width: 90%; /*Definindo uma largura*/
+    display: flex; /*Deixando o display flexível para utilizar layout responsivo*/
+    flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegarem em sua largura mínima*/
 }
+
+/*Aplicando um estilo na lista não ordenada que contém os jogos*/
 .jogos ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    display: flex; /*Deixando o display flexível para usar layout responsivo*/
+    flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegarem em sua largura mínima*/
+    justify-content: center; /*Aliando os itens no centro em relação à vertical*/
+    width: 100%; /*Preenchendo toda a largura*/
 }
+
+/*Aplicando estilo nos itens da lista não ordenada que contém os jogos*/
 .jogos li{
-    padding: 5px;
-    list-style-type: none;
-    color: rgb(238, 147, 11);
-    text-align: center;
-    transition: transform 0.8s ease;
+    padding: 5px; /*Aumentando o espaçamento interno*/
+    list-style-type: none; /*Removendo a decoração dos itens da lista*/
+    color: rgb(238, 147, 11); /*Aplicando uma cor da fonte que será usada na legenda dos jogos*/
+    text-align: center; /*Alinhando o texto da legenda no centro*/
+    transition: transform 0.8s ease; /*Adicionando uma transição que será usada ao passar o mouse por cima*/
 }
+
+/*Diminuindo a escala dos itens da lista ao passar o mouse por cima */
 .jogos li:hover{
     transform: scale(0.97);
 }
 
+
+/*ESTILO DOS FORMULÁRIOS*/
+
+
+/*Definindo uma altura e uma largura na div do container do formulário, aplicando um displey flexível para usar layout responsivo e alinhando itens no centro da div*/
 .container-formulario{
     display: flex;
     align-items: center;
@@ -331,47 +354,57 @@ layout responsivo e alinhando itens no centro em relação à horizontal */
     height: 90vh;
 }
 
+/*Aplicando estilo na div que contém o formulário*/
 .formulario{
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(32, 32, 32);
-    min-width: 40%;
-    min-height: 80vh;
-    border: 3px solid rgb(238, 147, 11);
+    border-radius: 20px; /*Deixando as bordas redondas*/
+    display: flex; /*deixando o display flexível para usar o layout responsivo*/
+    justify-content: center; /*Alinhando itens no centro em relação à horizontal*/
+    align-items: center; /*Alinhando itens no centro em relação à vertical*/
+    background-color: rgb(32, 32, 32); /*Aplicando uma cor de fundo*/
+    min-width: 40%; /*Definindo uma largura mínima para que ao diminuir a largura da página o formulário mantenha uma
+     largura fixa*/
+    min-height: 80vh; /*Definindo a altura do formulário*/
+    border: 3px solid rgb(238, 147, 11); /*Aplicando uma borda laranja*/
 }
 
+/*Aplicando estilo no título do formulário*/
 .titulo-formulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    display: flex; /*Deixando um display flexível para usar layout responsivo*/
+    justify-content: center; /*Alinhando itens no centro em relação à horizontal*/
+    align-items: center; /*Alinhando itens no centro em relação à vertical*/
+    padding: 20px; /*Adicionando um espaçamento interno*/
 }
 
+/*Deixando a div que contém todos os inputs com um display flexível, deixando os itens em direção de coluna e fazendo com que essa div ocupe toda a largura do formulário*/
 .grupo-inputs{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+
+/*Aplicando estilo na div dos inputs*/
 .input{
-    padding: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 12px; /*Aumentando o espaçamento interno*/
+    display: flex; /*Deixando o display flexível para usar um layout responsivo*/
+    align-items: center; /*Alinhando os itens no centro em relação à vertical*/
+    justify-content: space-between; /*Alinhando os itens com uma distância proporcional em relação à horizontal*/
 }
 
+/*aplicando estilo nos label que estão dentro da div input*/
 .input label{
-    color: white;
-    font-size: 20px;
-    margin-right: 20px;
+    color: white; /*Definindo uma cor de fonte*/
+    font-size: 20px; /*Aumentando o tamanho da fonte*/
+    margin-right: 20px; /*Aplicando uma margem à direita*/
 }
 
+/*Aumentando o espaçamento interno dos inputs que estão dentro da div input e os deixando com uma borda redonda*/
 .input input{
     padding: 5px;
     border-radius: 20px;
 }
 
+/*Aumentando a largura do select de gênero, alinhando texto no centro, aumentando o espaçamento interno e deixando com
+ borda redonda*/
 .input select{
     text-align: center;
     width: 27vh;
@@ -379,23 +412,11 @@ layout responsivo e alinhando itens no centro em relação à horizontal */
     border-radius: 20px;
 }
 
-.enviar-limpar{
-    display: flex;
-    justify-content: center;
-}
-
-.enviar-limpar input{
-    display: flex;
-}
-
+/*Aplicando estilo nos botões de envir e limpar*/
 #enviar, #limpar{
-    font-size: 20px;
-    font-family: var(--fonte-padrao);
-    width: 40%;
-    background-color: rgb(238, 147, 11);
-    color: white;
-}
-
-#enviar input:hover{
-    cursor: pointer;
+    font-size: 20px; /*Aumentando o tamanho da fonte*/
+    font-family: var(--fonte-padrao); /*Aplicando um estilo de fonte importado*/
+    width: 40%; /*Definindo uma largura*/
+    background-color: rgb(238, 147, 11); /*Aplicando uma cor de fundo laranja*/
+    color: white; /*Aplicando uma cor da fonte branca*/
 }
