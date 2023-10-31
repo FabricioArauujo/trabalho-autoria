@@ -38,3 +38,13 @@
     }
 }
 
+/*Adicionando uma media query para fazer alterações quando a largura máxima da tela chegar em 557 pixels*/
+@media only screen and (max-width: 1080px){
+    .pesquisa-container form{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+}
+
+
