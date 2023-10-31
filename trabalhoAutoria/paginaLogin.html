@@ -95,47 +95,47 @@
     </div>
 
     <script>
-        function validarCampos(){
-            var nome = document.getElementById("Inome").value;
-            var idade = document.getElementById("Iidade").value;
-            var email = document.getElementById("Iemail").value;
-            var celular = document.getElementById("Icelular").value;
-            var senha = document.getElementById("Isenha").value;
-            var confirmarSenha = document.getElementById("IconfirmSenha").value;
+        function validarCampos(){ /*Funcionalidade para verificar se os campos foram preenchidos*/
+            var nome = document.getElementById("Inome").value; /*Pegando os valores dos campos*/ 
+            var idade = document.getElementById("Iidade").value; /* Pegando os valores dos campos*/
+            var email = document.getElementById("Iemail").value; /* Pegando os valores dos campos*/
+            var celular = document.getElementById("Icelular").value; /* Pegando os valores dos campos*/ 
+            var senha = document.getElementById("Isenha").value; /* Pegando os valores dos campos*/ 
+            var confirmarSenha = document.getElementById("IconfirmSenha").value; /* Pegando os valores dos campos*/ 
 
-            if(nome === ""){
-                alert("Por favor, preencha o campo Nome.");
-                return false;
+            if(nome === ""){ /* Verificar se os campos foram preenchidos*/
+                alert("Por favor, preencha o campo Nome."); /* Exibir mensagem de erro */
+                return false; /* Retorna falso para impedir que o formulário seja enviado */
+ 
+            } else if(idade === ""){ /* Verificar se os campos foram preenchidos*/
+               alert("Por favor, Informe a sua idade."); /* Exibir mensagem de erro */
+                return false; /* Retorna falso para impedir que o formulário seja enviado */
 
-            } else if(idade === ""){
-                alert("Por favor, Informe a sua idade.");
-                return false;
-
-            } else if(idade < 14){
-                alert("Você deve possuir 14 anos ou mais para realizar o login");
-                return false;
+            } else if(idade < 14){ /* Verificar se a idade é menor que 14*/
+                alert("Você deve possuir 14 anos ou mais para realizar o login"); /* Exibir mensagem de erro */
+                return false; /* Retorna falso para impedir que o formulário seja enviado */
                 
-            } else if(email === ""){
-                alert("Por favor, preencha o campo Email");
-                return false;
+            } else if(email === ""){ /* Verificar se os campos foram preenchidos*/
+                alert("Por favor, preencha o campo Email"); /* Exibir mensagem de erro */
+                return false; /* Retorna falso para impedir que o formulário seja enviado */
                 
-            } else if(celular ===""){
-                alert("Por favor, informe o seu número de celular");
-                return false;
+            } else if(celular ===""){ /* Verificar se os campos foram preenchidos*/
+                alert("Por favor, informe o seu número de celular"); /* Exibir mensagem de erro */
+                return false; /* Retorna falso para impedir que o formulário seja enviado */
 
-            } else if(senha ===""){
-                alert("Por favor, informe a sua senha.");
-                return false;
+            } else if(senha ===""){ /* Verificar se os campos foram preenchidos*/
+                alert("Por favor, informe a sua senha."); /* Exibir mensagem de erro */
+                return false; /* Retorna falso para impedir que o formulário seja enviado */ 
 
-            } else if(confirmarSenha ===""){
-                alert("Por favor, confirme sua senha.");
-                return false;
-
-            } else if(senha != confirmarSenha){
-                alert("Os campos senha e confirme sua senha devem ser iguais!")
-                return false;
+            } else if(confirmarSenha ===""){ /* Verificar se os campos foram preenchidos*/
+                alert("Por favor, confirme sua senha."); /* Exibir mensagem de erro */ 
+                return false; /* Retorna falso para impedir que o formulário seja enviado */
+ 
+            } else if(senha != confirmarSenha){ /* Verificar se as senhas são iguais*/
+                alert("Os campos senha e confirme sua senha devem ser iguais!") /* Exibir mensagem de erro */
+                return false; /* Retorna falso para impedir que o formulário seja enviado */
             } else{
-                return true;
+                return true; /* Retorna verdadeiro para permitir que o formulário seja enviado */
             }
         }
     </script>

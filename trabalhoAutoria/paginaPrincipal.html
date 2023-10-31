@@ -266,60 +266,61 @@
         document.addEventListener("DOMContentLoaded", function() {
             const carrossel = document.querySelector(".carrossel"); // Alterado para selecionar a classe carrossel
             const imagens = carrossel.querySelectorAll(".menu-imagens img"); // Alterado para selecionar imagens dentro da classe menu-imagens
-            let idx = 0;
+            let idx = 0; // Variável para armazenar o índice da imagem
 
-            function mostrarProximaImagem() {
-                imagens[idx].style.display = "none";
-                idx = (idx + 1) % imagens.length;
-                imagens[idx].style.display = "block";
+            function mostrarProximaImagem() { 
+                imagens[idx].style.display = "none"; /* Definir imagem como display: none */
+                idx = (idx + 1) % imagens.length; /* Incrementar o índice da imagem */
+                imagens[idx].style.display = "block"; /* Definir imagem como display: block */
             }
 
             // Definir todas as imagens como display: none inicialmente
-            for (let i = 0; i < imagens.length; i++) {
-                imagens[i].style.display = "none";
+            for (let i = 0; i < imagens.length; i++) { /* Percorrer todas as imagens*/
+                imagens[i].style.display = "none"; /* Definir imagem como display: none */
             }
 
-            function iniciarCarrossel() {
+            function iniciarCarrossel() { /* Função para iniciar o carrossel */
                 setInterval(mostrarProximaImagem, 3000); // Avança para a próxima imagem a cada 3 segundos (3000 milissegundos)
             }
 
-            iniciarCarrossel();
+            iniciarCarrossel(); /* Chamar a função para iniciar o carrossel */
         });
 
         /*fiz um javascript para quando aplicarmos no links segundo suas plataformas, ocorresse um filtro onde busca pela class vinculada a cada li*/
-        document.addEventListener("DOMContentLoaded", function () {
-          const botoesPlataformas = document.querySelectorAll("#Plataformas a");
-          const listaJogos = document.querySelectorAll(".listaJogos li"); // Correção do seletor
-          const h1 = document.querySelector(".h1");
-          h1.textContent = "Todos";
-          h1.style.fontSize = "30px";
+        document.addEventListener("DOMContentLoaded", function () { /* Executa quando a página estiver carregada*/
+          const botoesPlataformas = document.querySelectorAll("#Plataformas a"); /*pega o seletor de todos os botoes*/
+          const listaJogos = document.querySelectorAll(".listaJogos li"); // pega o seletor de todos os li
+          const h1 = document.querySelector(".h1"); // pega o seletor do h1
+          h1.textContent = "Todos"; /*altera o texto do h1*/
+          h1.style.fontSize = "30px"; /*altera o tamanho do h1*/
       
           // Função para atualizar o display das li quando um botão é clicado
-          function atualizarDisplayLi() {
-            listaJogos.forEach((jogo) => {
-              if (jogo.style.display !== "none") {
-                jogo.style.display = "inline-block";
+          function atualizarDisplayLi() { /* Função para atualizar o display das li*/
+            listaJogos.forEach((jogo) => { /* Percorrer todos os elementos da lista*/
+              if (jogo.style.display !== "none") { /* Se o elemento estiver oculto*/
+                jogo.style.display = "inline-block"; /* Mostrar o elemento */
               }
             });
           }
       
-          botoesPlataformas.forEach((botao) => {
-            botao.addEventListener("click", function (event) {
-              event.preventDefault();
-              const plataformaSelecionada = this.getAttribute("data-plataforma");
+          botoesPlataformas.forEach((botao) => { /* Percorrer todos os botoes*/ 
+            botao.addEventListener("click", function (event) { /* Adicionar um listener para o botão*/
+              event.preventDefault(); /* Previne o comportamento padrao do link*/ 
+              const plataformaSelecionada = this.getAttribute("data-plataforma"); /* Pegar o valor do atributo data-plataforma do botao clicado*/
       
-              listaJogos.forEach((jogo) => {
-                if (plataformaSelecionada === "Todos" || jogo.classList.contains(plataformaSelecionada)) {
-                  jogo.style.display = "inline-block";
-                } else {
-                  jogo.style.display = "none";
+              listaJogos.forEach((jogo) => { /* Percorrer todos os elementos da lista*/
+                if (plataformaSelecionada === "Todos" || jogo.classList.contains(plataformaSelecionada)) { /* Se o elemento estiver oculto*/
+                  jogo.style.display = "inline-block"; /* Mostrar o elemento */ 
+                } else { 
+                  jogo.style.display = "none"; /* Ocultar o elemento */
                 }
               });
       
               // Chama a função para atualizar o display das li após o clique
               atualizarDisplayLi();
 
-              h1.textContent = this.textContent;
+              h1.textContent = this.textContent; /* Altera o texto do h1 para o texto do link clicado*/
+
             });
           });
       
