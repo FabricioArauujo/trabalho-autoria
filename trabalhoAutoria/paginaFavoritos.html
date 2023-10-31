@@ -418,18 +418,23 @@ function favoritarJogo(id) { /* Função para favoritar um jogo */
     }
 }
 
-function removerJogoFavorito(id) { /* Função para remover um jogo favorito */
-    const jogoFavorito = jogosFavoritos.querySelector(`#${id}`); /* Obter o elemento do favorito */
-    if (jogoFavorito) { /* Verificar se o elemento do favorito existe */ 
-        jogoFavorito.remove(); /* Remover o elemento do favorito */ 
-        const jogoOriginal = listaJogos.querySelector(`#${id}`); /* Obter o elemento original do jogo */ 
-         const favoriteButton = jogoOriginal.querySelector('.favorite-button'); /* Obter o botão de favoritar */ 
-        favoriteButton.setAttribute('data-favorite', 'false'); /* Desabilitar o botão de favoritar */ 
-        favoriteButton.textContent = '🤍'; /* Alterar o texto do botão de favoritar */
-        jogoOriginal.style.display = 'inline-block'; // Exiba o jogo novamente na lista-jogos
+function removerJogoFavorito(id) {
+    const jogoFavorito = jogosFavoritos.querySelector(`#${id}`); // Obter o elemento do favorito
+    if (jogoFavorito) { // Verificar se o elemento do favorito existe
+        const jogoOriginal = listaJogos.querySelector(`#${id}`); // Obter o elemento original do jogo
+        const favoriteButton = jogoOriginal.querySelector('.favorite-button'); // Obter o botão de favoritar
+
+        // Exibir uma mensagem de confirmação
+        const confirmacao = window.confirm('Tem certeza de que deseja remover este jogo dos favoritos?');
+
+        if (confirmacao) { // Se o usuário confirmar
+            jogoFavorito.remove(); // Remover o elemento do favorito
+            favoriteButton.setAttribute('data-favorite', 'false'); // Desabilitar o botão de favoritar
+            favoriteButton.textContent = '🤍'; // Alterar o texto do botão de favoritar
+            jogoOriginal.style.display = 'inline-block'; // Exiba o jogo novamente na lista-jogos
+        }
     }
 }
-
 
     selectPlataforma.addEventListener('change', () => { /* Adicionar um listener para o seletor de plataforma */
         const plataformaSelecionada = selectPlataforma.options[selectPlataforma.selectedIndex].getAttribute('data-plataforma'); /* Obter a plataforma selecionada */
