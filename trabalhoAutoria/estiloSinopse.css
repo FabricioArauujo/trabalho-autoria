@@ -1,192 +1,226 @@
+/*Criando um padrão da fonte importada para utilizar na página*/
 @font-face {
   font-family: 'jogos';
   src: url(fontes/HeadlinerNo.45\ DEMO.ttf);
   font-weight: normal;
 }
 
+/*Criando uma variável da fonte importada para utilizar no css*/
 :root{
   --fonte-padrao: 'jogos', cursive;
 }
 
+/*Removendo a decoração de todos os itens de listas da página*/
 li{
     list-style: none;
 }
 
+/*Aplicando estilo nos links que estão dentro de um item de lista*/
 li a {
     color: white;/*Cor da fonte da lista*/
     text-decoration: none;/*retirando os sublinhados dos links presentes na lista*/
     font-size: 18px;/*Fonte da lista*/
   }
+
+  /*Aplicando a fonte importada em toda a página*/
   body{
     font-family: var(--fonte-padrao);
   }
   
 
+  /*Aplicando estilo na div título do jogo*/
 #titulo{
-    position: relative;
-    left: 25%;
-    font-family: var(--fonte-padrao);
-    font-size: 22px;
-    text-align: center;
-    margin-top: 5vh;
-    color: white;
-    background-color: rgb(32, 32, 32);
-    border-radius: 20px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    position: relative; /*Deixando a posição relativa*/
+    left: 25%; /*Posicionando à esquerda*/
+    font-family: var(--fonte-padrao); /*Aplicando uma fonte importada*/
+    font-size: 22px; /*Definindo o tamanho da fonte*/
+    text-align: center; /*Alinhando texto no centro*/
+    margin-top: 5vh; /*Definindo um espaçamento externo no topo*/
+    color: white; /*Definindo uma cor da fonte*/
+    background-color: rgb(32, 32, 32); /*Definindo uma cor de fundo*/
+    border-radius: 20px; /*Deixando a div com bordas redondas*/
+    width: 50%; /*Definindo uma largura*/
+    display: flex; /*Deixando o display flexível para usar layout responsivo*/
+    justify-content: center; /*Alinhando itens no centro em relação à horizontal*/
+    flex-direction: row; /*Forçando os itens a ficarem em linha*/
 }
+
+/*Aumentando o padding da tag h1 que está dentro da div título*/
 #titulo h1{
     padding: 5px;
 }
 
+/*Aplicando estilo na tag main*/
 main{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center; ;   
-     flex-wrap: wrap;
-    background-color: rgb(24, 22, 22);
-    margin-top: 5%;
+    position: relative; /*Deixando a posição relativa*/
+    width: 100%; /*Preenchendo toda a largura da página*/
+    height: 100%; /*Definindo um tamanho da div*/
+    display: flex; /*Deixando o display flexível para usar layout responsivo*/
+    justify-content: center; /*Centralizando itens em relação à horizontal*/
+     flex-wrap: wrap; /*Forçando itens a quebrarem quando chegaram na sua largura mínima*/
+    background-color: rgb(24, 22, 22); /*Aplicando uma cor de fundo*/
+    margin-top: 5%; /*Aumentando o espaçamento externo no topo*/
   }
 
+  /*Aplicando estilo na div onde fica a sinopse*/
 #sinopse{
-    position: relative;
-    width: 50%;
-    min-width: 380px;
-    min-height: 50%;
-    background-color: white;
-    background-color: rgb(24,22,22);
+    position: relative; /*Definindo uma posição relativa*/
+    width: 50%; /*Definindo uma largura*/
+    min-width: 380px; /*Aplicando uma largura mínima*/
+    min-height: 50%; /*Aplicando uma altura mínima*/
+    background-color: rgb(24,22,22); /*Definindo uma cor de fundo*/
     
    }
 
+   /*Aplicando estilo na div onde contém o vídeo de cada jogo*/
    .video{
-    background-color: var(--cor5);
-    margin: 0;
-    padding-bottom: 50%;
-    position: relative;
+    background-color: var(--cor5); /*Definindo uma cor de fundo*/
+    margin: 0; /*Removendo a margem*/
+    padding-bottom: 50%; /*Adicionando um espaçamento interno em baixo*/
+    position: relative; /*Definindo uma posição relativa*/
    }
   
-  
+  /*Aplicando estilo no iframe do vídeo de cada jogo*/
    .video iframe{
-    position: absolute;
-    width: 90%;
-    height: 90%;
-    left: 5%;
-    top: 2%;
+    position: absolute; /*Definindo uma posição absoluta*/
+    width: 90%; /*Definindo uma largura*/
+    height: 90%; /*Definindo uma altura*/
+    left: 5%; /*posicionando 5% à esquerda*/
+    top: 2%; /*Posicionando 2% ao topo*/
 }
 
-    
-  #sinopse #sinopsejogo{/*fazendo a sinopse do jogo ficar oculta no inicio, com o posicionamento relativo, com uma largura de 70% e altura de 30 px. a cor de fundo de cor rgb e color do texto preta*/
-    position: relative;
-    background: rgb(24, 22, 22);
-    color: white;
-    width: 100%;
-    text-align: justify;
-    text-indent: 10px;
-    display: none;
-    margin: auto;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+
+/*Aplicando estilo na div sinopseJogo*/
+  #sinopse #sinopsejogo{
+    position: relative; /*Deixando a posição relativa*/
+    background: rgb(24, 22, 22); /*Aplicando uma cor de fundo*/
+    color: white; /*Defindino uma cor da fonte*/
+    width: 100%; /*preenchendo a largura de 100%*/
+    text-align: justify; /*Deixando o texto justificado*/
+    text-indent: 10px; /*Aplicando um espaço entre as linhas dos parágrafos*/
+    display: none; /*Deixando o display invisível*/
+    margin: auto; /*Aplicando uma margem automática para se ajustar sozinha*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  /*Definindo um estilo de fonte*/
    }
 
+   /*Aplicando estilo no botão de mostrar sinopse*/
    #sinopse #botomMostrar{
-    margin: auto;
-    text-align: center;
-    position: relative;
-    top: -1.5vh;
-    background: rgb(238, 180, 19);
-    width: 120px;
-    color: black;
-    border-radius: 10px;
-    padding: 0px 8px 0px 8px ;
+    margin: auto; /*Deixando a margem automática*/
+    text-align: center; /*Alinhando texto no centro*/
+    position: relative; /*Deixando a posição relativa*/
+    top: -1.5vh; /*Aplicando um espaço no topo*/
+    background: rgb(238, 180, 19); /*Definindo uma cor de fundo*/
+    width: 120px; /*Definindo uma largura*/
+    color: black; /*Aplicando uma cor da fonte no texto do botão*/
+    border-radius: 10px; /*Deixando o botão redondo*/
+    padding: 0px 8px 0px 8px ; /*Aumentando o padding*/
    }
+
+   /*Mudando a cor do botão de mostrar sinopse ao passar o mouse por cima*/
    #sinopse #botomMostrar:hover{
     background: rgb(183, 196, 8);
    }
   
+   /*Aplicando estilo na div de download*/
   #download{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    position: relative;
-    width: 50%;
-    min-height: 50%;
-    min-width: 400px;
-    overflow: hidden;
+    display: flex; /*Deixando o display flexível*/
+    flex-direction: column; /*Fazendo os itens se comportarem em coluna*/ 
+    align-items: center; /*Centralizando itens em relação à vertical*/
+    position: relative; /*Deixando a posição da div relativa*/
+    width: 50%; /*Definindo uma largura*/
+    min-height: 50%; /*Definindo uma altura mínima*/
+    min-width: 400px; /*Definindo uma largura mínima*/ 
+    overflow: hidden; /*Fazendo os itens se encaixarem dentro da div*/
   }
+
+  /*Aolicando estilo no conteúdo da div download*/
   #conteudoDownload{
-    border: 1px solid rgb(185, 171, 171);
-    min-width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
+    border: 1px solid rgb(185, 171, 171); /*Aplicando uma borda*/
+    min-width: 60%; /*Definindo uma largura mínima*/
+    height: 100%; /*Definindo uma altura*/
+    display: flex; /*Deixando o display flexível para usar layout responsivo*/
+    flex-direction: column; /*Fazendo os itens se comportarem dentro da div como colunas*/
+    align-items: center; /*Centralizando itens em relação á vertical*/
+    border-radius: 20px; /*Deixando a borda do container redonda*/
     
   }
+
+  /*Adicionando um espaçamento interno nas tags h2 e p dentro do conteúdo de download*/
   #conteudoDownload h2,p{
     padding: 10px;
     color: aliceblue;
   }
 
+  /*Deixando a borda da imagem da logo dos jogos redonda*/
   #conteudoDownload img{
     border-radius: 20px;
   }
+
+  /*Definindo uma altura e largura da imagem da logo dos jogos*/
   #download img{
     width: 30%;
     height: 30%;
   }
 
+  /*Aplicando uma cor de fundo, aumentando o espaçamento interno e deixando a borda redonda do botão de baixar*/
   #iconeBaixar{
     background-color: rgb(238, 147, 11);
     padding: 5px 20px ;
     border-radius: 10px;
   }
   
+  /*Alterando a cor de fundo do botão de baixar ao passar o mouse por cima*/
   #iconeBaixar:hover{
     background-color: rgb(196, 168, 8);
   }
+
+  /*Aplicando estilo nos tipos de download*/
   #tiposDownload{
-    margin: auto;
-    text-align: center;
-    display: none;
-    position: relative;
-    padding: 0px;
+    margin: auto; /*Definindo uma margem automática para se ajustar sozinha*/
+    text-align: center; /*Alinhando texto no centro*/
+    display: none; /*Deixando o display das opções invisíveis*/
+    position: relative; /*Deixando a posição relativa*/
+    padding: 0px; /*Removendo o espaçamento interno*/
   }
+
+  /*Adicionando uma borda em baixo da opção ao passar o mouse por cima*/
   #tiposDownload a:hover{
      border-bottom: 5px solid rgb(238, 147, 11);
   }
 
+  /*Aplicando estilo no título das fotos da gameplay*/
   #tituloGamePlay h1{
-    margin: 3vh 0vh 3vh 0vh ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-family: var(--fonte-padrao);
-    font-size: 35px;
-    color: aliceblue;
+    margin: 3vh 0vh 3vh 0vh ; /*Aplicando um espaçamento externo*/
+    display: flex; /*Deixando o display flexível para usar layout responsivo*/
+    align-items: center; /*centralizando itens em relação à vertical*/
+    justify-content: center; /*centralizando itens em relação à horizontal*/
+    width: 100%; /*Preenchendo toda a largura da página*/
+    font-family: var(--fonte-padrao); /*Aplicando a fonte importada*/
+    font-size: 35px; /*Aumentando o tamanho da fonte*/
+    color: aliceblue; /*Definindo a cor da fonte*/
   }
 
+  /*Aplicando estilo na div onde ficam as fotos da gameplay*/
   #fotoGamePlay{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
+    display: flex; /*Adicionando um display flexível para usar layout responsivo*/
+    align-items: center; /*centralizando itens em relação à vertical*/
+    justify-content: center; /*centralizando itens em relação à horizontal*/
+    width: 100%; /*preenchendno toda a largura da página*/
+    flex-wrap: wrap; /*forçando os itens a quebrarem quando chegaram na sua larhura mínima*/
   }
 
+/*Definindo um tamanho padrão para todas as imagens da gameplay, adicionando um espaçamento interno e uma transição*/
   #fotoGamePlay img{
     width: 350px;
     padding: 10px;
     transition: all 0.4s ease;
   }
+  /*Diminuindo o tamanho das imagens com transição ao passar o mouse por cima*/
   #fotoGamePlay img:hover{
     transform: scale(1.1);
   }
 
+  /*Definindo uma altura da div gameplay*/
   #gameplay{
     height: 300px;
   }
