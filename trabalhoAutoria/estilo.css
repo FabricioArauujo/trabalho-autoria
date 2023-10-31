@@ -144,18 +144,21 @@ adicionando uma margem no topo para distanciar da barra de menu*/
     height: 7vh;
 }
 
+/*Aplicando estilo na div que contém um título*/
 .container-titulo{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    background-color: rgb(238, 147, 11);
-    width: 40%;
-    margin: auto;
-    margin-top: 3vh;
-    border-radius: 20px;
-    
+    display: flex; /*Deixando o display flexível para usar layout responsivo*/
+    justify-content: center; /*Alinhando itens sem relação à horizontal no centro*/
+    align-items: center; /*Alinhando itens em relação à vertical no centro*/
+    background-color: rgb(238, 147, 11); /*Aplicando uma cor de fundo*/
+    width: 50%; /*Definindo uma largura*/
+    margin: auto; /*Deixando a margem automática para centralizar a div*/
+    margin-top: 3vh; /*Aumentando espaçamento externo no topo*/
+    border-radius: 20px; /*Deixando a borda redonda*/
 }
+
+/*Centralizando o texto do h1 que está dentro da div e aplicando uma cor da fonte*/
 .container-titulo h1{
+    text-align: center;
     color: black;
 }
 

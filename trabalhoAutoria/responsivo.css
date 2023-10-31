@@ -38,11 +38,11 @@
     }
 }
 
-/*Adicionando uma media query para fazer alterações quando a largura máxima da tela chegar em 557 pixels*/
+/*Adicionando uma media query para fazer alterações quando a largura máxima da tela chegar em 1080 pixels*/
 @media only screen and (max-width: 1080px){
     .pesquisa-container form{
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: column; /*Fazendo os itens se comportarem como coluna*/
+        justify-content: flex-start; /*posicionando os itens à esquerda*/
     }
 
 }
