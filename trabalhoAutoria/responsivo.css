@@ -9,15 +9,6 @@
     /*alterando a aultura e a largura da div imagens*/
     .menu-imagens {
         height: 80vh;
-        width: 100%;
-    }
-
-    /*Aumentando o espaçamento interno e a largura da div menu-jogos*/
-    .menu-jogos{
-        padding: 20px;
-        width: 100%;
-    }
-
     /*Alinhando os items da lista não ordenada do menu de jogos no centro em relação à horizontal*/
     .menu-jogos li{
         justify-content: center;
@@ -28,6 +19,19 @@
         font-size: 30px;
     }
 }
+@media only screen and (min-width: 380px){
+    .carrossel{
+        width: 80%;
+    }
+    .menu-imagens {
+        width: 100%;
+    }
+    .menu-jogos {
+        width: 50%;
+    }
+    
+}
+
 
 
 /*Adicionando uma media query para fazer alterações quando a largura máxima da tela chegar em 557 pixels*/

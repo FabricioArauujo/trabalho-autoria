@@ -1,3 +1,34 @@
+/*removendo a margem e o espaçamento interno de toda a página*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Criando um padrão da fonte importada para utilizar na página*/
+@font-face {
+    font-family: 'jogos';
+    src: url(fontes/HeadlinerNo.45\ DEMO.ttf);
+    font-weight: normal;
+  }
+  
+  /*Criando uma variável da fonte importada para utilizar no css*/
+  :root{
+    --fonte-padrao: 'jogos', cursive;
+  }
+
+  /*Alterando a cor da fonte de todos os h1 da página*/
+  h1{
+    color: white;
+  }
+  
+/*Adicionando uma largura de 100% e uma altura de 100vh para usar um layout responsivo dentro da página*/
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(24, 22, 22); /*Alterando a cor de fundo da página*/
+    font-family: var(--fonte-padrao); /*Aplicando a fonte importada em toda a página*/
+}
 .navbar{
     background-color: rgb(32, 32, 32); /*Definindo a cor de fundo da barra de menu*/
 }
@@ -5,6 +36,7 @@
 
 .navbar-brand{ 
     font-size: 26px;
+    font-weight: bold
 }
 
 .navbar-nav {
@@ -21,4 +53,133 @@
     border: 1px solid rgb(238, 147, 11);
     background-color: white;
     color:  rgb(238, 147, 11);;
+}
+
+.collapse{
+    font-size: 22px;
+}
+.navbar-toggler{
+    background-color: rgb(238, 147, 11);
+    border-radius: 10px;
+   
+}
+
+.navbar-toggler:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+   
+}
+.nav-item:hover{
+    text-decoration: underline;
+    color: rgb(238, 147, 11);
+}
+
+
+
+.container{
+    width: 50%;
+    margin-top: 2%;
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+} 
+.container a{
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+}
+.container a:hover{
+    text-decoration: underline;
+    color: rgb(238, 147, 11);
+}
+
+#todosJogos{
+    position: relative; /*Deixando a posição da div relativa*/
+    top: 5vh; /*Definindo uma distância do topo*/
+    width: 80%; /*Definindo uma largura*/
+    min-width: 380px; /*Definindo uma largura mínima que poderá ocupar*/
+    height: 100vh; /*Definindo uma altura*/
+    margin: auto; /*Deixando a margem automática para que se ajuste sozinha*/
+    display: flex; /*Deixando o display flexível para usar layout responsivo*/
+    justify-content: center; /*Alinhando itens no centro em relação à horizontal */
+    flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegar em uma largura mínima*/
+}
+.h1{
+    position: relative; /*Deixando a posição relativa*/
+    top: 2vh; /*aplicando uma distância no topo*/
+    width: 100%; /*Definindo para ocupar toda a largura*/
+    background-color: rgb(32, 32, 32); /*Aplicando uma cor de fundo*/
+    color: rgb(238, 147, 11); /*aplicando uma cor da fonte*/
+    text-align: center; /*Alinhando os itens no centro em relação à vertical*/
+   
+}
+/*Aplicando estilo na div lista que contém as plataformas dos jogos*/
+#lista{
+    display: flex; /*Deixando o display flex para usar layout responsivo*/
+    flex-direction: column; /*Deixando os itens se comportando como coluna*/
+    flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegarem em sua largura mínima*/
+    align-items: center; /*alinhando os itens no centro em relação à vertical*/
+    width: 60%; /*Preenchendo toda a largura*/
+    margin: auto;
+    background-color: rgb(32, 32, 32); /*Definindo uma cor de plano de fundo*/
+    border-radius: 20px; /*Deixando a borda redonda*/
+
+}
+
+/*Aplicando estilo nos links dentro da lista de plataformas*/
+#lista a{
+    text-decoration: none; /*Removendo decoração dos links*/
+    color:rgb(255, 255, 255); /*Definindo uma cor da fonte*/
+    font-size: 20px; /*Aumentando o tamanho da fonte*/
+}
+
+/*Aplicando um sublinhando nos links e uma cor da fonte ao passar o mouse por cima*/
+#lista a:hover{
+    text-decoration: underline;
+    color: rgb(238, 147, 11);
+}
+
+/*Aplicando um display flexível na lista não ordenada e forçando os itens a quebrarem quando chegarem na sua largura
+ míninima*/
+#lista ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Adicionando um espaçamento interno nos itens da lista e removendo a decoração da lista*/
+#lista li{
+    padding: 10px;
+    list-style-type: none;
+}
+
+/*Aplicando estilo na div que contém os jogos*/
+.jogos{
+    position: relative; /*Deixando a posição relativa*/
+    top: 5vh; /*Aplicando um espaço no topo*/
+    width: 90%; /*Definindo uma largura*/
+    display: flex; /*Deixando o display flexível para utilizar layout responsivo*/
+    flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegarem em sua largura mínima*/
+}
+
+/*Aplicando um estilo na lista não ordenada que contém os jogos*/
+.jogos ul{
+    display: flex; /*Deixando o display flexível para usar layout responsivo*/
+    flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegarem em sua largura mínima*/
+    justify-content: center; /*Aliando os itens no centro em relação à vertical*/
+    width: 100%; /*Preenchendo toda a largura*/
+}
+
+/*Aplicando estilo nos itens da lista não ordenada que contém os jogos*/
+.jogos li{
+    padding: 5px; /*Aumentando o espaçamento interno*/
+    list-style-type: none; /*Removendo a decoração dos itens da lista*/
+    color: rgb(238, 147, 11); /*Aplicando uma cor da fonte que será usada na legenda dos jogos*/
+    text-align: center; /*Alinhando o texto da legenda no centro*/
+    transition: transform 0.8s ease; /*Adicionando uma transição que será usada ao passar o mouse por cima*/
+    background-color: black;/*Adicionando uma cor de fundo*/
+}
+
+/*Diminuindo a escala dos itens da lista ao passar o mouse por cima */
+.jogos li a :hover{
+    border: 5px solid rgb(238, 147, 11);
+    transition: 0.5s ;
+    transform: scale(0.97);
 }
