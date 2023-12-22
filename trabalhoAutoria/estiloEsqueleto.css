@@ -109,19 +109,26 @@ body{
     background-color: rgb(32, 32, 32); /*Aplicando uma cor de fundo*/
     color: rgb(238, 147, 11); /*aplicando uma cor da fonte*/
     text-align: center; /*Alinhando os itens no centro em relação à vertical*/
-   
+    margin: 0;
 }
+
 /*Aplicando estilo na div lista que contém as plataformas dos jogos*/
 #lista{
     display: flex; /*Deixando o display flex para usar layout responsivo*/
     flex-direction: column; /*Deixando os itens se comportando como coluna*/
     flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegarem em sua largura mínima*/
     align-items: center; /*alinhando os itens no centro em relação à vertical*/
-    width: 60%; /*Preenchendo toda a largura*/
-    margin: auto;
+    width: 80%; /*Preenchendo toda a largura*/
+    height: 40px;
+    margin: auto; /*Deixando a margem automática para que se ajuste sozinha*/
     background-color: rgb(32, 32, 32); /*Definindo uma cor de plano de fundo*/
     border-radius: 20px; /*Deixando a borda redonda*/
+}
 
+@media screen  and (min-width: 780px){
+    #lista{
+        width: 40%;
+    }
 }
 
 /*Aplicando estilo nos links dentro da lista de plataformas*/
@@ -146,9 +153,10 @@ body{
 
 /*Adicionando um espaçamento interno nos itens da lista e removendo a decoração da lista*/
 #lista li{
-    padding: 10px;
-    list-style-type: none;
+    margin-right: 15px;
+    list-style-type:none;
 }
+
 
 /*Aplicando estilo na div que contém os jogos*/
 .jogos{
