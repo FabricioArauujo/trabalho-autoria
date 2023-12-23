@@ -1,0 +1,17 @@
+@media only screen and (max-width: 856px){
+    .carrossel{
+        display: flex; /*Deixando o display da div carrossel responsivo*/
+        flex-direction: column; /*Forçando os itens a ficarem em forma de coluna*/
+    }
+
+    #carouselExampleControls{
+        width: 100%;
+    }
+
+    .menu-jogos{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

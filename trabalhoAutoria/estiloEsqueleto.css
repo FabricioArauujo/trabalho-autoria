@@ -79,6 +79,7 @@ body{
 .container{
     width: 50%;
     margin-top: 2%;
+    margin-bottom: 2%;
     background-color: rgb(32, 32, 32);
     border-radius: 10px;
 } 
@@ -190,4 +191,64 @@ body{
     border: 5px solid rgb(238, 147, 11);
     transition: 0.5s ;
     transform: scale(0.97);
+}
+
+.carrossel{
+    background-color: rgb(32, 32, 32);
+    border-radius: 20px;
+    display: flex;
+    margin: auto;
+    width: 60%;
+}
+
+#carouselExampleControls {
+    border-radius: 20px;
+    width: 70%;
+}
+
+.carousel-item img {
+    border-radius: 20px;
+    height: 650px;
+}
+
+
+/*Definindo uma largura e altura que a div menu-jogos vai ficar dentro da div carrosel e aplicando uma cor da fonte*/
+.menu-jogos{
+    width: 30%;
+    height: 100vh;
+    color: white;
+}
+
+/*Aplicando estilo nos itens da lista dentro da div menu-jogos*/
+.menu-jogos li{
+    padding-left: 16px; /*Definindo um espaçamento interno à esquerda*/
+    height: 90px; /*Definindo uma altura dos itens da lista */
+    display: flex; /*Definindo um displey flex para usar um layout responsivo*/
+    align-items: center; /*Alinhando os itens no centro em relação à vertical*/
+    flex-wrap: wrap;
+}
+
+/*aplicando estilo nas imagens que estão dentro da div menu-jogos*/
+.menu-jogos img{
+    border-radius: 10px; /*Deixando borda redonda*/
+    width: 60px; /* Ajuste a largura da imagem conforme necessário */
+    height: 80px;/*ajustando a altura da imagem*/
+}
+
+/*Aplicando um espaçamento interno no texto dos jogos que estão no menu de jogos*/
+.texto-jogos{
+    padding: 10px;
+}
+
+/*Definindo uma largura e altura que a div menu-imagens vai ficar dentro da div carrosel*/
+.menu-imagens{
+    width: 70%;
+    height: 100vh;
+}
+
+/*Fazendo as imagens ocuparem todo o tamanho da div menu-imagens e deixando a borda redonda*/
+.menu-imagens img{
+    height: 100%;
+    border-radius: 20px;
+    width: 100%;
 }
