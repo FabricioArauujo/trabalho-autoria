@@ -2,7 +2,6 @@
     .carrossel{
         display: flex; /*Deixando o display da div carrossel responsivo*/
         flex-direction: column; /*Forçando os itens a ficarem em forma de coluna*/
-        width: 80%; /*Preenchendo toda a largura*/
     }
 
     #carouselExampleControls{
