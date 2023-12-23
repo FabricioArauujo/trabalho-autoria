@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos</title>
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estiloEsqueleto.css">
+    <link rel="stylesheet" href="estiloEsqueletoResponsivo.css">
+    <style>
+        
+        main {
+            position: relative; /*Deixando a posição da div relativa*/
+            top: 5%; /*Definindo uma distância do topo*/
+            width: 80%; /*Definindo uma largura*/
+            min-width: 380px; /*Definindo uma largura mínima que poderá ocupar*/
+            height: 100vh; /*Definindo uma altura*/
+            margin: auto; /*Deixando a margem automática para que se ajuste sozinha*/
+            display: flex; /*Deixando o display flexível para usar layout responsivo*/
+            justify-content: center; /*Alinhando itens no centro em relação à horizontal */
+            flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegar em uma largura mínima*/
+        }
+        #container {
+            position: relative; /*Deixando a posição da div relativa*/
+            top: 5vh;  /*Definindo uma distância do topo*/
+            width: 100%; /*Definindo uma largura*/
+            padding: 10px 0px 20px 0px; /*Definindo um espaçamento interno*/ 
+        }
+        #container ul{
+            display: flex; /*Deixando o display flexível para usar layout responsivo*/
+            flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegar em uma largura mínima*/ 
+            justify-content: center; /*Alinhando os itens no centro em relação à horizontal */ 
+            width: 100%; /*Definindo uma largura*/
+        }
+        
+        #container li {
+            padding: 5px; /*Definindo um espaçamento interno*/
+            margin: 5px; /*Definindo um espaçamento interno*/
+            list-style-type: none; /*Removendo a bolinha da lista*/ 
+            color: white; /*Definindo a cor do texto*/ 
+            text-align: center; /*Alinhando os itens da div no centro em relação a horizontal*/ 
+            background-color: black; /*Aplicando uma cor de fundo preta*/
+        }
+        #container h1{ 
+            text-align: center; /*Alinhando os itens da div no centro em relação a horizontal*/ 
+            width:70%; /*Definindo uma largura*/ 
+            margin: auto; /*Deixando a margem automática para que se ajuste sozinha*/
+            background-color: rgb(238, 147, 11); /*Aplicando uma cor de fundo laranja*/ 
+            border-radius: 20px; /*Deixando a borda redonda*/ 
+        }
+        .jogos{
+        position: relative; /*Deixando a posição da div relativa*/ 
+        top: 5vh; /*Definindo uma distância do topo*/ 
+        width: 100%; /*Definindo uma largura*/ 
+        display: flex; /*Deixando o display flexivel para usar layout responsivo*/ 
+        flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegar em uma largura:minima*/
+        } 
+        .jogos ul{
+        display: flex; /*Deixando o display flexivel para usar layout responsivo*/
+        flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegar em uma largura:minima*/ 
+        justify-content: center; /*Alinhando os itens no centro em relação à horizontal*/
+        width: 100%; /*Definindo uma largura*/ 
+        position: relative; /*Deixando a posição da div relativa*/
+        top: 1%; /*Definindo uma distância do topo*/
+        }
+        .jogos li{
+            padding: 5px; /*Definindo um espaçamento interno*/
+            margin: 5px; /*Definindo um espaçamento interno*/ 
+            list-style-type: none; /*Removendo a bolinha da lista*/ 
+            color: white; /*Definindo a cor do texto*/ 
+            text-align: center; /*Alinhando os textos da div no centro em relação a horizontal*/ 
+            background-color: black; /*Aplicando uma cor de fundo preta*/ 
+        }
+        .favorite-button{
+            width: 100%; /*Definindo uma largura*/
+        }    
+        .jogos h1{
+            text-align: center; /*Alinhando os textos da div no centro em relação a horizontal*/
+            width: 100%; /*Definindo uma largura*/ 
+            background-color: rgb(22, 22, 22);
+            color: white; /*Definindo a cor do texto*/
+        }
+        .jogos li a :hover{
+        border: 5px solid rgb(238, 147, 11); /*Aplicando uma cor de fundo laranja*/ 
+        transition: 0.5s ; /*Definindo um tempo de transição*/ 
+        transform: scale(0.97);  /*aplicando uma escala ao passar o mouse por cima*/
+        }
+       
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#" style="color: white;">
+            <img src="img/icoSite.ico" width="45" height="45" class="d-inline-block align-top" alt="">
+            Web Jogos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="esqueletoPaginaPrincipal.html" style="color:rgb(255, 255, 255);">Home <span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="paginaCadastro.html" style="color:rgb(255, 255, 255);">Cadastrar</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+            <div class=" col-12 col-sm-12 col-md-10 col-lg-10">
+                <div class="pesquisa-container">
+                    <form>
+                        <div class="pesquisa">
+                            <label for="pesquisa" class="form-label" style="color: white;">Pesquisar Jogo:</label>
+                            <input type="text" id="pesquisa" class="form-control" autocomplete="off" placeholder="Digite o nome do jogo">
+                            <div class="row"><div class="col"><button type="button" class="btn btn-primary" onclick="pesquisarJogo()">Pesquisar</button></div></div>
+                        </div>
+                        <div class="plataforma form-group">
+                            <label for="jogos" style="color: white;">Plataforma</label>
+                            <select name="jogos" id="jogos" class="form-select">
+                                <option value="0" data-plataforma="Todos">Selecione</option>
+                                <option value="1" data-plataforma="Mobile">Mobile</option>
+                                <option value="2" data-plataforma="PC">PC</option>
+                                <option value="3" data-plataforma="Console">Console</option>
+                            </select>
+                        </div>
+                        <div class="categorias form-group">
+                            <label for="categorias" style="color: white;">Categorias</label>
+                            <select name="categorias" id="categorias" class="form-select">
+                                <option value="0" data-categoria="Todos">Selecione</option>
+                                <option value="1" data-categoria="battle-royale">Battle royale</option>
+                                <option value="2" data-categoria="sandbox">Sandbox</option>
+                                <option value="3" data-categoria="deducao-social">Deducao social</option>
+                                <option value="4" data-categoria="Futebol">Futebol</option>
+                                <option value="5" data-categoria="mundo-aberto">Mundo aberto</option>
+                                <option value="6" data-categoria="jogo-de-tiro">Jogo de tiro</option>
+                                <option value="7" data-categoria="Acao_Aventura">Acao_Aventura</option>
+                                <option value="8" data-categoria="Luta">Luta</option>
+                                <option value="9" data-categoria="Estrategia">Estratégia</option>
+                                <option value="10" data-categoria="MOBA" title="Multiplayer Online Battle Arena">MOBA</option>
+                                <option value="11" data-categoria="Realidade-Aumentada">Realidade Aumentada</option>
+                                <option value="12" data-categoria="Pool">Jogos de sinuca</option>
+                                <option value="13" data-categoria="Corrida">Corrida</option>
+                                <option value="14" data-categoria="RPG-de-Ação">RPG de Acao</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+    
+
+        <div id="container">
+            <h1>Jogos Favoritos</h1>
+            <ul id="jogos-favoritos">
+            </ul>
+        </div>
+        <div class="jogos">
+            <h1>Jogos</h1>
+            <ul id="lista-jogos">
+                <li id="pubg" class="Mobile PC Console Todos battle-royale jogo-de-tiro">
+                    <a href="sinopsePUBG.html"><img src="img/imgPUBG@.jpg" alt="imagem PUBG" style="width: 230px; height: 410px;"></a>
+                    <p>PUBG</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('pubg')">🤍</button>
+                </li>
+                <li id="gta5" class="Console PC Todos sandbox mundo-aberto">
+                    <a href="sinopseGTA5.html"><img src="img/imgGTA5.jpg" alt="imagem GTA5" style="width: 230px; height: 410px;"></a>
+                    <p>GTA 5</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('gta5')">🤍</button>
+                </li>
+                <li id="csgo" class="PC Todos jogo-de-tiro">
+                    <a href="sinopseCSGO.html"> <img src="img/imgCSGO.jpg" alt="imagem cs go" style="width: 230px; height: 410px;" ></a>
+                    <p>CS GO</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('csgo')">🤍</button>
+                </li>
+                <li class="Console PC Todos Acao_Aventura RPG-de-Ação" id="godofwar">
+                    <a href="sinopseGODOFWAR.html"><img src="img/imgGodOfWar.jpg" alt="imagem GOD OF WAR" style="width: 230px; height: 410px;"></a>
+                    <p>GOD OF WAR</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('godofwar')">🤍</button>
+                </li>
+                <li class="Console Mobile PC Todos Acao_Aventura RPG-de-Ação jogo-de-tiro " id="hitman">
+                    <a href="sinopseHitman.html"> <img src="img/imgHitman2.jpg" alt="imagem  Hitman" 
+                    style="width: 230px; height: 410px;"></a>
+                    <p>Hitman</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('hitman')">🤍</button>
+                </li>
+                <li class="Console PC Todos Acao_Aventura RPG-de-Ação jogo-de-tiro" id="reddead">
+                    <a href="sinopseRedDead.html"><img src="img/imgRedDead.jpg" alt="imagem Red dead Repemtiop" style="width: 230px; height: 410px;"></a>
+                    <p>Red Dead Redemption </p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('reddead')">🤍</button>
+                </li>
+                <li class="Console Mobile PC Todos Luta" id="mortalkombat">
+                    <a href="sinopseMortalKombat.html"><img src="img/imgMortalKombat.jpg" alt="Imagem Mortal Kombat"style="width: 230px; height: 410px;"></a>
+                    <p>Mortal Kombat</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('mortalkombat')">🤍</button>
+                </li>
+                <li class="Mobile Console PC Todos jogo-de-tiro battle-royale" id="callofduty">
+                    <a href="sinopseCallOfDuty.html"><img src="img/imgCallOfDuty.png" alt="imagem Call of duty" style="width: 230px; height: 410px;"></a>
+                    <p>Call Of Duty </p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('callofduty')">🤍</button>
+                </li>
+                <li class=" PC Todos jogo-de-tiro battle-royale" id="valorant">
+                    <a href="sinopseValorant.html"><img src="img/imgValorant.jpg" alt="imagem Valorant" style="width: 230px; height: 410px;"></a>
+                    <p>Valorant</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('valorant')">🤍</button>
+                </li>
+                <li class="Console PC Todos battle-royale jogo-de-tiro" id="apexlegends">
+                    <a href="sinopseApexLegends.html"><img src="img/imgApexLegends.png" alt="imagem apex legends" style="width: 230px; height: 410px;"></a>
+                    <p>Apex Legends</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('apexlegends')">🤍</button>
+                </li>
+                <li class="Mobile PC Todos Estrategia" id="clashofclans">
+                    <a href="sinopseClashOfClash.html"><img src="img/imgClashOfClans.jpg" alt="imagem clash of Clans" style="width: 230px; height: 410px;"></a>
+                    <p>Clash Of Clans </p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('clashofclans')">🤍</button>
+                </li>
+                <li class="Mobile Todos Realidade-Aumentada" id="pokemongo">
+                    <a href="sinopsePokemongo.html"><img src="img/imgPokemonGo.jpg" alt="imagem pokemon go" style="width: 230px; height: 410px;"></a>
+                    <p>Pokemon GO </p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('pokemongo')">🤍</button>
+                </li>
+                <li class="PC Todos Console RPG-de-Ação Acao_Aventura" id="horizon">
+                    <a href="sinopseHorizon.html"><img src="img/imgHorizon.jpg" alt="Imagem de Horizon" style="width: 230px; height: 410px;" ></a>
+                    <p>Horizon</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('horizon')">🤍</button>
+                </li>
+                <li class="Console PC Todos Futebol" id="EA24">
+                    <a href="sinopseEA24.html"><img src="img/imgEA24.jpg" alt="imagem Ea FC 24" style="width: 350px;"></a>
+                    <p>EA FC24</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('EA24')">🤍</button>
+                </li>
+                <li class="Mobile Console PC Todos Futebol" id="efootball">
+                    <a href="sinopseEfootball.html"><img src="img/imgEFootball.jpg" alt="imagem Efootball" style="width: 350px; height: 200px;"></a>
+                    <p>Efootball</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('efootball')">🤍</button>
+                </li>
+                <li class="Mobile Console PC Todos jogo-de-tiro battle-royale" id="fortine">
+                    <a href="sinopseFortine.html"> <img src="img/imgFortine.jpg" alt="imagem fortine" style="width: 350px; height: 200px;"></a>
+                    <p>Fortine</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('fortine')">🤍</button>
+                </li>
+                <li class="Mobile Todos Estrategia" id="clashroyale">
+                    <a href="sinopseClash.html"><img src="img/imgClash.jpg" alt="imagem clash royale" style="width: 350px; height: 200px;"></a>
+                    <p>Clash Royale</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('clashroyale')">🤍</button>
+                </li>
+                <li class="Mobile PC Todos Console mundo-aberto sandbox" id="minecraft">
+                    <a href="sinopseMinecraft.html"><img src="img/imgMinecraft.png" alt="imagem minecraft" style="width: 340px; height: 200px;"></a>
+                    <p>Minecraft</p>
+                    <p>Pago</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('minecraft')">🤍</button>
+                </li>
+                <li class="Mobile PC Todos MOBA" id="leagueoflegends">
+                    <a href="sinopseLeagueOfLegends.html"><img src="img/imgleagueOfLegends.jpg" alt="imagem league of legends" style="width: 350px; height: 200px"></a>
+                    <p>League Of Legends</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('leagueoflegends')">🤍</button>
+                </li>
+                
+            
+                <li class="Mobile Console PC Todos deducao-social" id="amongus">
+                    <a href="sinopseAmongUs.html"><img src="img/imgAmongUs.png" alt="Imagem Aomng Us" style="width: 340px; height: 240px;"></a>
+                    <p>Among US </p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('amongus')">🤍</button>
+                </li>
+                <li class="Mobile Todos Pool" id="ballpool">
+                    <a href="sinopse8BallPoll.html"><img src="img/imgBallPool.jpg" alt="imagem * baal poll" style="width: 340px; height:240px ;"></a>
+                    <p>8 Ball Pool</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('ballpool')">🤍</button>
+                </li>
+                <li class="Mobile PC Todos Console battle-royale Corrida" id="stumbleguys">
+                    <a href="sinopseStumbleGuys.html"><img src="img/imgStumbleGuys.png" alt="Imagem Stumbl Guys" style="width: 340px; height: 240px;"></a>
+                    <p>Stumble Guys</p>
+                    <p>Gratuito</p>
+                    <button class="favorite-button" data-favorite="false" title="Favoritar" onclick="favoritarJogo('stumbleguys')">🤍</button>
+                </li>
+            </ul>
+        </div>
+    </main>
+     <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        const listaJogos = document.getElementById('lista-jogos'); /* Lista de jogos */
+        const jogosFavoritos = document.getElementById('jogos-favoritos'); /* Lista de jogos favoritos */
+        const pesquisaInput = document.getElementById('pesquisa'); /* Campo de pesquisa */
+        const selectPlataforma = document.getElementById('jogos'); /* Seleção de plataforma */
+    
+        function pesquisarJogo() { 
+        const termoPesquisa = pesquisaInput.value.trim().toLowerCase(); /* Obter o termo de pesquisa digitado pelo usuário */
+        const listaItens = listaJogos.querySelectorAll('li'); /* Obter todos os elementos da lista de jogos */
+        let jogoEncontrado = false; /* Variável para verificar se o jogo foi encontrado */
+    
+        if (termoPesquisa === '' ) { /* Verificar se o campo de pesquisa está vazio */
+            alert("Por favor, insira o nome do jogo para pesquisa."); /* Exibir mensagem de erro */
+        }
+        listaItens.forEach(item => { /* Percorrer todos os elementos da lista de jogos */
+            const nomeJogo = item.textContent.toLowerCase(); /* Obter o nome do jogo */
+    
+            if (nomeJogo.includes(termoPesquisa)) { /* Verificar se o nome do jogo contém o termo de pesquisa */
+                item.style.display = 'inline-block'; /* Mostrar o elemento da lista de jogos */ 
+                jogoEncontrado = true; /* Indicar que o jogo foi encontrado */
+            } else {
+                item.style.display = 'none'; /* Ocultar o elemento da lista de jogos */
+            }
+        });
+    
+        if (!jogoEncontrado) { /* Verificar se o jogo foi encontrado */
+            alert("Nenhum jogo correspondente encontrado."); /* Exibir mensagem de erro */ 
+            listaItens.forEach(item => { /* Percorrer todos os elementos da lista de jogos */ 
+                item.style.display = 'inline-block'; // Mostrar todos os jogos novamente
+                pesquisaInput.value = ''; // Limpar o campo de pesquisa
+            });
+        }
+    }
+    
+    function favoritarJogo(id) { /* Função para favoritar um jogo */
+        const jogo = document.getElementById(id); /* Obter o elemento do jogo */
+        const favoriteButton = jogo.querySelector('.favorite-button'); /* Obter o botão de favoritar */ 
+    
+        if (favoriteButton.getAttribute('data-favorite') === 'false') { /* Verificar se o botão de favoritar está desabilitado */
+            favoriteButton.setAttribute('data-favorite', 'true'); /* Habilitar o botão de favoritar */
+            favoriteButton.textContent = '❤️'; /* Alterar o texto do botão de favoritar */
+            const jogoFavorito = jogo.cloneNode(true); /* Clonar o elemento do jogo */
+            jogoFavorito.querySelector('.favorite-button').addEventListener('click', () => removerJogoFavorito(id)); /* Adicionar um listener para o botão de favoritar */
+            jogosFavoritos.appendChild(jogoFavorito); /* Adicionar o elemento do jogo ao final da lista de favoritos */
+            jogo.style.display = 'none'; /* Remover o elemento do jogo da lista-jogos */
+        }
+    }
+    
+    function removerJogoFavorito(id) {
+        const jogoFavorito = jogosFavoritos.querySelector(`#${id}`); // Obter o elemento do favorito
+        if (jogoFavorito) { // Verificar se o elemento do favorito existe
+            const jogoOriginal = listaJogos.querySelector(`#${id}`); // Obter o elemento original do jogo
+            const favoriteButton = jogoOriginal.querySelector('.favorite-button'); // Obter o botão de favoritar
+    
+            // Exibir uma mensagem de confirmação
+            const confirmacao = window.confirm('Tem certeza de que deseja remover este jogo dos favoritos?');
+    
+            if (confirmacao) { // Se o usuário confirmar
+                jogoFavorito.remove(); // Remover o elemento do favorito
+                favoriteButton.setAttribute('data-favorite', 'false'); // Desabilitar o botão de favoritar
+                favoriteButton.textContent = '🤍'; // Alterar o texto do botão de favoritar
+                jogoOriginal.style.display = 'inline-block'; // Exiba o jogo novamente na lista-jogos
+            }
+        }
+    }
+    
+        selectPlataforma.addEventListener('change', () => { /* Adicionar um listener para o seletor de plataforma */
+            const plataformaSelecionada = selectPlataforma.options[selectPlataforma.selectedIndex].getAttribute('data-plataforma'); /* Obter a plataforma selecionada */
+    
+            const listaItens = listaJogos.querySelectorAll('li'); /* Obter todos os elementos da lista de jogos */
+    
+            listaItens.forEach(item => { /* Percorrer todos os elementos da lista de jogos */
+                const plataformas = item.classList; /* Obter as classes da lista de jogos */ 
+    
+                if (plataformas.contains(plataformaSelecionada) || plataformaSelecionada === 'Todos') { /* Verificar se as classes da lista de jogos contêm a plataforma selecionada ou se a plataforma selecionada é 'Todos' */
+                    item.style.display = 'inline-block'; /* Mostrar o elemento da lista de jogos */ 
+                } else {
+                    item.style.display = 'none'; /* Ocultar o elemento da lista de jogos */ 
+                }
+            });
+        });
+        const selectCategorias = document.getElementById('categorias'); /* Obter o seletor de categorias */
+    
+        selectCategorias.addEventListener('change', () => {  /* Adicionar um listener para o seletor de categorias */
+            const categoriaSelecionada = selectCategorias.options[selectCategorias.selectedIndex].getAttribute('data-categoria'); /* Obter a categoria selecionada */
+        
+            const listaItens = listaJogos.querySelectorAll('li'); /* Obter todos os elementos da lista de jogos */
+        
+            listaItens.forEach(item => { /* Percorrer todos os elementos da lista de jogos */
+                const categorias = item.classList; /* Obter as classes da lista de jogos */ 
+        
+                if (categorias.contains(categoriaSelecionada) || categoriaSelecionada === 'Todos') { /* Verificar se as classes da lista de jogos contêm a categoria selecionada ou se a categoria selecionada é 'Todos' */
+                    item.style.display = 'inline-block'; /* Mostrar o elemento da lista de jogos */ 
+                } else {
+                    item.style.display = 'none'; /* Ocultar o elemento da lista de jogos */
+                }
+            });
+        });
+    </script>
+</body>
+</html>
