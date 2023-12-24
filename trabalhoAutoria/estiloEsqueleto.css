@@ -329,6 +329,10 @@ a:hover{
     flex-direction: column;
  }
 
+ #titulojogos{
+    font-size: 50px;
+ }
+
  .jogos{
     width: 100%;
  }
