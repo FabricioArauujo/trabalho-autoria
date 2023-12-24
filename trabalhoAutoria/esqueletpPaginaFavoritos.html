@@ -119,25 +119,39 @@
         <form>
             <div class="form-row justify-content-md-center">
               <div class="form-group col-md-3">
-                <label for="inputPlataforma">Plataforma</label>
-                <select id="inputPlataforma" class="form-control">
-                  <option selected>Escolher...</option>
-                  <option>...</option>
+                <label for="plataforma">Plataforma</label>
+                <select id="plataforma" class="form-control">
+                    <option value="0" data-plataforma="Todos">Selecione</option>
+                    <option value="1" data-plataforma="Mobile">Mobile</option>
+                    <option value="2" data-plataforma="PC">PC</option>
+                    <option value="3" data-plataforma="Console">Console</option>
                 </select>
               </div>
               <div class="form-group col-md-3">
-                <label for="inputCategoria">Categoria</label>
-                <select id="inputcategoria" class="form-control">
-                  <option selected>Escolher...</option>
-                  <option>...</option>
+                <label for="categorias">Categoria</label>
+                <select id="categorias" class="form-control">
+                    <option value="0" data-categoria="Todos">Selecione</option>
+                    <option value="1" data-categoria="battle-royale">Battle royale</option>
+                    <option value="2" data-categoria="sandbox">Sandbox</option>
+                    <option value="3" data-categoria="deducao-social">Deducao social</option>
+                    <option value="4" data-categoria="Futebol">Futebol</option>
+                    <option value="5" data-categoria="mundo-aberto">Mundo aberto</option>
+                    <option value="6" data-categoria="jogo-de-tiro">Jogo de tiro</option>
+                    <option value="7" data-categoria="Acao_Aventura">Acao_Aventura</option>
+                    <option value="8" data-categoria="Luta">Luta</option>
+                    <option value="9" data-categoria="Estrategia">Estratégia</option>
+                    <option value="10" data-categoria="MOBA" title="Multiplayer Online Battle Arena">MOBA</option>
+                    <option value="11" data-categoria="Realidade-Aumentada">Realidade Aumentada</option>
+                    <option value="12"  data-categoria="Pool">Jogos de sinuca</option>
+                    <option value="13" data-categoria="Corrida">Corrida</option>
+                    <option value="14" data-categoria="RPG-de-Ação">RPG de Acao</option>
                 </select>
               </div>
               <div class="form-group col-md-6">
-                <label for="">Pesquisar Jogo</label>
-
+                <label for="pesquisa">Pesquisar Jogo</label>
                 <div class="pesquisa" style="display: flex; align-items: center;">
-                    <input class="form-control mr-sm-1" type="search" placeholder="Digite o nome do jogo" aria-label="Pesquisar">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                    <input type="text" class="form-control mr-sm-1" id="pesquisa" autocomplete="off" placeholder="Digite o nome do jogo">
+                    <button type="button" class="btn btn-outline-success my-2 my-sm-0" onclick="pesquisarJogo()">Pesquisar</button>
                 </div>
                 
               </div>
@@ -305,35 +319,35 @@
         const listaJogos = document.getElementById('lista-jogos'); /* Lista de jogos */
         const jogosFavoritos = document.getElementById('jogos-favoritos'); /* Lista de jogos favoritos */
         const pesquisaInput = document.getElementById('pesquisa'); /* Campo de pesquisa */
-        const selectPlataforma = document.getElementById('jogos'); /* Seleção de plataforma */
+        const selectPlataforma = document.getElementById('plataforma'); /* Seleção de plataforma */
     
         function pesquisarJogo() { 
-        const termoPesquisa = pesquisaInput.value.trim().toLowerCase(); /* Obter o termo de pesquisa digitado pelo usuário */
-        const listaItens = listaJogos.querySelectorAll('li'); /* Obter todos os elementos da lista de jogos */
-        let jogoEncontrado = false; /* Variável para verificar se o jogo foi encontrado */
-    
-        if (termoPesquisa === '' ) { /* Verificar se o campo de pesquisa está vazio */
-            alert("Por favor, insira o nome do jogo para pesquisa."); /* Exibir mensagem de erro */
-        }
-        listaItens.forEach(item => { /* Percorrer todos os elementos da lista de jogos */
-            const nomeJogo = item.textContent.toLowerCase(); /* Obter o nome do jogo */
-    
-            if (nomeJogo.includes(termoPesquisa)) { /* Verificar se o nome do jogo contém o termo de pesquisa */
-                item.style.display = 'inline-block'; /* Mostrar o elemento da lista de jogos */ 
-                jogoEncontrado = true; /* Indicar que o jogo foi encontrado */
-            } else {
-                item.style.display = 'none'; /* Ocultar o elemento da lista de jogos */
+            const termoPesquisa = pesquisaInput.value.trim().toLowerCase(); /* Obter o termo de pesquisa digitado pelo usuário */
+            const listaItens = listaJogos.querySelectorAll('li'); /* Obter todos os elementos da lista de jogos */
+            let jogoEncontrado = false; /* Variável para verificar se o jogo foi encontrado */
+
+            if (termoPesquisa === '' ) { /* Verificar se o campo de pesquisa está vazio */
+                alert("Por favor, insira o nome do jogo para pesquisa."); /* Exibir mensagem de erro */
             }
-        });
-    
-        if (!jogoEncontrado) { /* Verificar se o jogo foi encontrado */
-            alert("Nenhum jogo correspondente encontrado."); /* Exibir mensagem de erro */ 
-            listaItens.forEach(item => { /* Percorrer todos os elementos da lista de jogos */ 
-                item.style.display = 'inline-block'; // Mostrar todos os jogos novamente
-                pesquisaInput.value = ''; // Limpar o campo de pesquisa
+            listaItens.forEach(item => { /* Percorrer todos os elementos da lista de jogos */
+                const nomeJogo = item.textContent.toLowerCase(); /* Obter o nome do jogo */
+
+                if (nomeJogo.includes(termoPesquisa)) { /* Verificar se o nome do jogo contém o termo de pesquisa */
+                    item.style.display = 'inline-block'; /* Mostrar o elemento da lista de jogos */ 
+                    jogoEncontrado = true; /* Indicar que o jogo foi encontrado */
+                } else {
+                    item.style.display = 'none'; /* Ocultar o elemento da lista de jogos */
+                }
             });
+
+            if (!jogoEncontrado) { /* Verificar se o jogo foi encontrado */
+                alert("Nenhum jogo correspondente encontrado."); /* Exibir mensagem de erro */ 
+                listaItens.forEach(item => { /* Percorrer todos os elementos da lista de jogos */ 
+                    item.style.display = 'inline-block'; // Mostrar todos os jogos novamente
+                    pesquisaInput.value = ''; // Limpar o campo de pesquisa
+                });
+            }
         }
-    }
     
     function favoritarJogo(id) { /* Função para favoritar um jogo */
         const jogo = document.getElementById(id); /* Obter o elemento do jogo */
