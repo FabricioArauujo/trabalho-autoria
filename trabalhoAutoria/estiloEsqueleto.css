@@ -55,7 +55,7 @@ body{
     color:  rgb(238, 147, 11);;
 }
 
-.collapse{
+.collapse .nav-link{
     font-size: 22px;
 }
 .navbar-toggler{
