@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="estiloEsqueleto.css">
     <link rel="stylesheet" href="estiloEsqueletoResponsivo.css">
+    <link rel="shortcut icon" href="img/icoSite.ico">
 
-    <title>Categorias</title>
+    <title>Categorias / WEB Jogos</title>
   </head>
   <body>
 
@@ -247,6 +248,51 @@
                 </div>
             </div>
           </div>
+
+
+    
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function () { /* Executa quando a página estiver carregada*/
+              const botoesCategorias = document.querySelectorAll(".categorias a[data-categoria]"); /* Selecionar todos os botoes de categoria */
+              const listaJogos = document.querySelectorAll("#containerJogos li"); /* Selecionar todos os elementos da lista */
+              const h1Jogos = document.querySelector("#titulojogos"); /* Selecionar o elemento H1 */ 
+          
+              function atualizarDisplayLi() { /* Função para atualizar o display das li quando um botão é clicado */
+                listaJogos.forEach((jogo) => { /* Percorrer todos os elementos da lista*/
+                  if (jogo.style.display !== "none") { /* Se o elemento estiver oculto*/
+                    jogo.style.display = "inline-block"; /* Mostrar o elemento */
+                  }
+                });
+              }
+          
+              botoesCategorias.forEach((botao) => { /* Percorrer todos os elementos da lista */
+                botao.addEventListener("click", function (event) { /* Adicionar um listener para o botão */
+                  event.preventDefault(); /* Previne o comportamento padrao do link */ 
+                  const categoriaSelecionada = this.getAttribute("data-categoria"); /* Pegar o valor do atributo data-categoria do botao clicado */ 
+          
+                  listaJogos.forEach((jogo) => { /* Percorrer todos os elementos da lista */ 
+                    if (categoriaSelecionada === "Todos" || jogo.classList.contains(categoriaSelecionada)) { /* Verificar se a categoria selecionada corresponde ao elemento da lista */
+                      jogo.style.display = "inline-block"; /* Mostrar o elemento */
+                    } else {
+                      jogo.style.display = "none"; /* Ocultar o elemento */
+                    }
+                  });
+          
+                  atualizarDisplayLi();
+    
+                  // Atualiza o texto do H1 para o texto do link clicado
+                  h1Jogos.textContent = this.textContent; /* Atualizar o texto do H1 para o texto do link clicado */
+                });
+              });
+          
+              atualizarDisplayLi(); /* Atualizar o display das li quando a página estiver carregada */
+            });
+    
+            
+    
+        </script>
+        
           
 
 
