@@ -115,50 +115,38 @@
         </div>
       </nav>
 
-      <div class="container">
-        <div class="row">
-            <div class=" col-12 col-sm-12 col-md-10 col-lg-10">
-                <div class="pesquisa-container">
-                    <form>
-                        <div class="pesquisa">
-                            <label for="pesquisa" class="form-label" style="color: white;">Pesquisar Jogo:</label>
-                            <input type="text" id="pesquisa" class="form-control" autocomplete="off" placeholder="Digite o nome do jogo">
-                            <div class="row"><div class="col"><button type="button" class="btn btn-primary" onclick="pesquisarJogo()">Pesquisar</button></div></div>
-                        </div>
-                        <div class="plataforma form-group">
-                            <label for="jogos" style="color: white;">Plataforma</label>
-                            <select name="jogos" id="jogos" class="form-select">
-                                <option value="0" data-plataforma="Todos">Selecione</option>
-                                <option value="1" data-plataforma="Mobile">Mobile</option>
-                                <option value="2" data-plataforma="PC">PC</option>
-                                <option value="3" data-plataforma="Console">Console</option>
-                            </select>
-                        </div>
-                        <div class="categorias form-group">
-                            <label for="categorias" style="color: white;">Categorias</label>
-                            <select name="categorias" id="categorias" class="form-select">
-                                <option value="0" data-categoria="Todos">Selecione</option>
-                                <option value="1" data-categoria="battle-royale">Battle royale</option>
-                                <option value="2" data-categoria="sandbox">Sandbox</option>
-                                <option value="3" data-categoria="deducao-social">Deducao social</option>
-                                <option value="4" data-categoria="Futebol">Futebol</option>
-                                <option value="5" data-categoria="mundo-aberto">Mundo aberto</option>
-                                <option value="6" data-categoria="jogo-de-tiro">Jogo de tiro</option>
-                                <option value="7" data-categoria="Acao_Aventura">Acao_Aventura</option>
-                                <option value="8" data-categoria="Luta">Luta</option>
-                                <option value="9" data-categoria="Estrategia">Estratégia</option>
-                                <option value="10" data-categoria="MOBA" title="Multiplayer Online Battle Arena">MOBA</option>
-                                <option value="11" data-categoria="Realidade-Aumentada">Realidade Aumentada</option>
-                                <option value="12" data-categoria="Pool">Jogos de sinuca</option>
-                                <option value="13" data-categoria="Corrida">Corrida</option>
-                                <option value="14" data-categoria="RPG-de-Ação">RPG de Acao</option>
-                            </select>
-                        </div>
-                    </form>
+      <div class="container text-center" style="width: 70%; color: white;">
+        <form>
+            <div class="form-row justify-content-md-center">
+              <div class="form-group col-md-3">
+                <label for="inputPlataforma">Plataforma</label>
+                <select id="inputPlataforma" class="form-control">
+                  <option selected>Escolher...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputCategoria">Categoria</label>
+                <select id="inputcategoria" class="form-control">
+                  <option selected>Escolher...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="">Pesquisar Jogo</label>
+
+                <div class="pesquisa" style="display: flex; align-items: center;">
+                    <input class="form-control mr-sm-1" type="search" placeholder="Digite o nome do jogo" aria-label="Pesquisar">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
                 </div>
+                
+              </div>
+
             </div>
-        </div>
-    </div>
+          </form>
+      </div>
+
+      
     <main>
     
 
