@@ -323,4 +323,18 @@ a:hover{
     color:  rgb(238, 147, 11);
  }
 
+ #containerJogos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ .jogos{
+    width: 100%;
+ }
+
+ .categorias{
+    margin-bottom: 20px;
+ }
+
     
