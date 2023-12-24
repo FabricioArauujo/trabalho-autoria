@@ -229,6 +229,14 @@ body{
     border-radius: 20px;
     width: 100%;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
 .containerLogin{
     width: 60%;
     height: 75%;
