@@ -296,7 +296,7 @@ a:hover{
     color: white;
     justify-content: center;
     border-radius: 20px;
-    border: 2px solid rgb(238, 147, 11);;
+    border: 2px solid rgb(238, 147, 11);
 }
 
 .formulario .container{
@@ -312,5 +312,15 @@ a:hover{
     margin: auto;
 }
 
+.list-group{
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+ .list-group-item-action{
+
+    background-color: rgb(32, 32, 32);
+    color:  rgb(238, 147, 11);
+ }
 
     
