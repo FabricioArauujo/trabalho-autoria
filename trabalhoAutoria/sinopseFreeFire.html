@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinopse CS GO</title>
+    <title>Sinopse Free Fire / WEB Jogos</title>
 
     <link rel="shortcut icon" href="img/icoSite.ico" type="image/x-icon">
     
@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="estiloEsqueleto.css">
     <link rel="stylesheet" href="estiloEsqueletoResponsivo.css">
     <link rel="stylesheet" href="estiloSinopse.css">
-    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -25,7 +24,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="PaginaPrincipal.html" style="color:rgb(255, 255, 255);">Home <span class="sr-only">(Página atual)</span></a>
+              <a class="nav-link" href="paginaPrincipal.html" style="color:rgb(255, 255, 255);">Home <span class="sr-only">(Página atual)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="paginaCadastro.html" style="color:rgb(255, 255, 255);">Cadastrar</a>
@@ -36,32 +35,34 @@
           </form>
         </div>
       </nav>
-
-      <div id="titulo">
-        <h1>Counter Strike: Global Offensive</h1>
+    <div id="titulo">
+        <h1>Free Fire</h1>
     </div>
 
-    <main>   
+    <main>
+       
         <div id="sinopse">
             <div class="video">
-                <iframe id="videoFrame"  width="500" height="315" autoplay="1" src="https://www.youtube.com/embed/edYCtaNueQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CaSFKu_fjHk?si=94ITWQVCeITTctsn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <p id="botomMostrar">Mostrar sinopse</p>
-            <p id="sinopsejogo">Counter-Strike: Global Offensive é um jogo online desenvolvido pela Valve Corporation e pela Hidden Path Entertainment, sendo uma sequência de Counter-Strike: Source. É o quarto título principal da franquia.</p>
-       
+            <p id="sinopsejogo">Free Fire (FF) é um Battle Royale desenvolvido pela Garena disponível para download grátis em celulares Android, iPhone (iOS), além de ser possível baixar no PC – via emulador (Bluestacks ou LD Player).</p>
+        
         </div>
         <div id="download">
             <div id="conteudoDownload">
-                <img src="img/imgLogoCSgo.jpg" alt="CSGO">
+                <img src="img/imgLogoFreeFire.jpg" alt="pubg">
                 <h2>Ficou interresado? baixe aqui!</h2>
                 <p id="gratuito">JOGO GRATUITO</p>
                 <p id="baixar">você inclui o download do jogo por aqui:</p>
+        
                 <p id="iconeBaixar">BAIXAR </p>
-                <ul id="tiposDownload">
-                    <li>      
-                        <a href="https://store.steampowered.com/app/413850/CSGO_Player_Profiles" target="_blank">Baixe aqui o CS GO para Computador</a>
-                    </li>
-                </ul>
+                    <ul id="tiposDownload">
+                        <li>        
+                            <a href="https://play.google.com/store/search?q=free+fire&c=apps" target="_blank">Baixe aqui PUBG Mobile</a>
+                        </li>
+                        
+                    </ul>
             </div>
         </div>
 
@@ -72,48 +73,46 @@
             </div>
             
             <div id="fotoGamePlay">
-                <img src="img/imgCSGOGameplay.jpg" alt="foto GamePlay CSGO">
-                <img src="img/imgCSGOGameplay2.jpg" alt="Foto GamePlay CSGO">
-                <img src="img/imgCSGOgameplay3.jpg" alt="Foto GamePlay CSGO">
+                <img  src="img/imgGameplayFreeFire4" alt="Red Dead Redemption">
+                <img  src="img/imgGameplayFrrefire2" alt="Red Dead Redemption">
+                <img  src="img/imgGameplayFrrefire3" alt="pubg" >
             </div>
         </div>
         
     </main>
    
-
-    
     <script>
-                // Adicionei um evento de clique ao elemento #iconeBaixar
-        document.getElementById('iconeBaixar').addEventListener('click', function() {
-        // Obtém a referência à lista #tiposDownload
-        var tiposDownload = document.getElementById('tiposDownload');
-        
-        // Verifica se a lista está visível
-        if (tiposDownload.style.display === 'none') {
-            // Se estiver oculta, torna-a visível
-            tiposDownload.style.display = 'block';
-        } else {
-            // Caso contrário, oculta a lista novamente
-            tiposDownload.style.display = 'none';
-        }
-        });
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('iconeBaixar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var tiposDownload = document.getElementById('tiposDownload');
+  
+  // Verifica se a lista está visível
+  if (tiposDownload.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    tiposDownload.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    tiposDownload.style.display = 'none';
+  }
+});
 
-                // Adicionei um evento de clique ao elemento #iconeBaixar
-        document.getElementById('botomMostrar').addEventListener('click', function() {
-        // Obtém a referência à lista #tiposDownload
-        var sinopsejogo = document.getElementById('sinopsejogo');
-        
-        // Verifica se a lista está visível
-        if (sinopsejogo.style.display === 'none') {
-            // Se estiver oculta, torna-a visível
-            sinopsejogo.style.display = 'block';
-        } else {
-            // Caso contrário, oculta a lista novamente
-            sinopsejogo.style.display = 'none';
-        }
-        });
-
+        // Adicionei um evento de clique ao elemento #iconeBaixar
+document.getElementById('botomMostrar').addEventListener('click', function() {
+  // Obtém a referência à lista #tiposDownload
+  var sinopsejogo = document.getElementById('sinopsejogo');
+  
+  // Verifica se a lista está visível
+  if (sinopsejogo.style.display === 'none') {
+    // Se estiver oculta, torna-a visível
+    sinopsejogo.style.display = 'block';
+  } else {
+    // Caso contrário, oculta a lista novamente
+    sinopsejogo.style.display = 'none';
+  }
+});
     </script>
+
       <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
