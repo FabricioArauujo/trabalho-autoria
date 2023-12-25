@@ -1,136 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar</title>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="responsivo.css">
-</head>
-<body>
-    <div class="principal">
-        <div class="barra-menu">
-            <div class="img-logo">
-                <img src="img/icoSite.ico" alt="">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estiloEsqueleto.css">
+    <link rel="stylesheet" href="estiloEsqueletoResponsivo.css">
+
+    <title>Olá, mundo!</title>
+  </head>
+  <body>
+
+    
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#" style="color: white;">
+                <img src="img/icoSite.ico" width="45" height="45" class="d-inline-block align-top" alt="">
+                Web Jogos</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="esqueletoPaginaPrincipal.html" style="color:rgb(255, 255, 255);">Home <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#todosJogos" style="color:rgb(255, 255, 255);">Jogos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="paginaCadastro.html" style="color:rgb(255, 255, 255);">Cadastrar</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+              </form>
             </div>
+          </nav>
 
-            <div class="logo">
-                <h1>Web Jogos</h1>
-            </div>
 
-            <div class="menu">
-                <ul>
-                    <li><a href="paginaPrincipal.html">Jogos</a></li>
-                    <li><a href="#">Sobre</a></li>
-                </ul>
-            </div>
-
-            <div class="botao-login">
-                <a href="paginaPrincipal.html">Voltar</a>
-            </div>
-        </div>
-
-        <div class="container-formulario">
-
+         
             <div class="formulario">
-                <form action="paginaPrincipal.html" method="post" onsubmit="return validarCampos()">
-                    <div class="titulo-formulario">
-                        <h1>Fazer Cadastro</h1>
-                    </div>
-
-                    <div class="grupo-inputs">
-                        
-                            <div class="input">
-                                <label for="Inome">Nome:</label>
-                                <input type="text" id="Inome" name="nome"  placeholder="Digite seu nome" style="text-align: center;">
-                            </div>
-
-                            <div class="input">
-                                <label for="Igenero">Gênero:</label>
-                                <select name="genero" id="Igenero">
-                                    <option value="M">Masculino</option>
-                                    <option value="F">Feminino</option>
-                                    <option value="N">Prefiro não informar</option>
-                                </select>
-                            </div>
-
-                            <div class="input">
-                                <label for="Iidade">Idade:</label>
-                                <input type="number" id="Iidade" name="idade"  placeholder="Informe sua idade" style="text-align: center;">
-                            </div>
-                            
-                            <div class="input">
-                                <label for="Iemail">Email:</label>
-                                <input type="email" id="Iemail" name="email"  placeholder="Digite seu E-mail" style="text-align: center;" size="20">
-                            </div>
-
-                            <div class="input">
-                                <label for="Icelular">celular:</label>
-                                <input type="tel" id="Icelular" name="celular" placeholder="(XX) XXXX-XXXX" style="text-align: center;">
-                            </div>
-
-                            <div class="input">
-                                <label for="Isenha">Senha:</label>
-                                <input type="password" id="Isenha" name="senha" placeholder="Digite sua senha" style="text-align: center;">
-                            </div>
-
-                            <div class="input">
-                                <label for="IconfirmSenha">Confirmar senha:</label>
-                                <input type="password" id="IconfirmSenha" name="confirmSenha" placeholder="Digite sua senha novamente" style="text-align: center;">
-                            </div>
-
-                            <div class="input">
-                                <input id="enviar" type="submit" value="Cadastrar">
-                                <input id="limpar" type="reset" value="Limpar">
-                            </div>
-                           
-                        
-                    </div>
-                </form>
+              <div class="container">
+                 <div class="row">
+                  <div class="col-12">
+                    <h2>Fazer Cadastro</h2>
+                  </div>
+                </div>
+              </div>
+             
+  
+              <form ction="paginaPrincipal.html" method="post" onsubmit="return validarCampos()">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="Inome">Nome</label>
+                    <input type="text" name="nome" class="form-control" id="Inome" placeholder="Digite seu nome">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="Igenero">Gênero</label>
+                    <select id="Igenero" name="genero" class="form-control">
+                      <option selected>Masculino</option>
+                      <option>Feminino</option>
+                      <option>Prefiro não informar</option>
+                    </select>
+                  </div>
+                </div>
+  
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="Iidade">Idade</label>
+                    <input type="number" name="idade" class="form-control" id="Iidade" placeholder="Informe a idade">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="Icelular">Celular</label>
+                    <input type="tel" name="celular" class="form-control" id="Icelular" placeholder="(XX) XXXX-XXXX">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="Iendereco">Endereço</label>
+                  <input type="text" name="endereco" class="form-control" id="Iendereco" placeholder="Cidade, rua, nº">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-5">
+                    <label for="Iemail">Email</label>
+                    <input type="email" name="email" class="form-control" id="Iemail" placeholder="Digite seu E-mail">
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="Isenha">Senha</label>
+                    <input type="password" name="senha" class="form-control" id="Isenha" placeholder="Digite sua senha">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="IconfirmSenha">Confirmar</label>
+                    <input type="password" name="confirmSenha" class="form-control" id="IconfirmSenha" placeholder="Confirme sua senha">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Salvar informações
+                    </label>
+                  </div>
+                </div>
+                <div class="form-row text-center">
+                  <div class="form-group col">
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                  </div>
+                  <div class="form-group col">
+                    <button type="reset" class="btn btn-primary">Limpar</button>
+                  </div>
+                </div>
+              </form>
             </div>
+          
+        
 
-        </div>
-
-    </div>
-
-    <script>
+      <script>
         function validarCampos(){ /*Funcionalidade para verificar se os campos foram preenchidos*/
-            var nome = document.getElementById("Inome").value; /*Pegando os valores dos campos*/ 
+            var nome = document.getElementById("Inome").value; /*Pegando os valores dos campos*/
+            var endereco = document.getElementById("Iendereco").value 
             var idade = document.getElementById("Iidade").value; /* Pegando os valores dos campos*/
             var email = document.getElementById("Iemail").value; /* Pegando os valores dos campos*/
             var celular = document.getElementById("Icelular").value; /* Pegando os valores dos campos*/ 
             var senha = document.getElementById("Isenha").value; /* Pegando os valores dos campos*/ 
             var confirmarSenha = document.getElementById("IconfirmSenha").value; /* Pegando os valores dos campos*/ 
-
+  
             if(nome === ""){ /* Verificar se os campos foram preenchidos*/
                 alert("Por favor, preencha o campo Nome."); /* Exibir mensagem de erro */
                 return false; /* Retorna falso para impedir que o formulário seja enviado */
- 
+  
             } else if(idade === ""){ /* Verificar se os campos foram preenchidos*/
                alert("Por favor, Informe a sua idade."); /* Exibir mensagem de erro */
                 return false; /* Retorna falso para impedir que o formulário seja enviado */
-
+  
             } else if(idade < 14){ /* Verificar se a idade é menor que 14*/
-                alert("Você deve possuir 14 anos ou mais para realizar o login"); /* Exibir mensagem de erro */
-                return false; /* Retorna falso para impedir que o formulário seja enviado */
-                
-            } else if(email === ""){ /* Verificar se os campos foram preenchidos*/
-                alert("Por favor, preencha o campo Email"); /* Exibir mensagem de erro */
+                alert("Você deve possuir 14 anos ou mais para realizar o cadastro"); /* Exibir mensagem de erro */
                 return false; /* Retorna falso para impedir que o formulário seja enviado */
                 
             } else if(celular ===""){ /* Verificar se os campos foram preenchidos*/
                 alert("Por favor, informe o seu número de celular"); /* Exibir mensagem de erro */
                 return false; /* Retorna falso para impedir que o formulário seja enviado */
+                
+            } else if(endereco ===""){ /* Verificar se os campos foram preenchidos*/
+                alert("Por favor, preencha o campo Endereço"); /* Exibir mensagem de erro */
+                  return false; /* Retorna falso para impedir que o formulário seja enviado */
 
+            } else if(email === ""){ /* Verificar se os campos foram preenchidos*/
+                alert("Por favor, preencha o campo Email"); /* Exibir mensagem de erro */
+                return false; /* Retorna falso para impedir que o formulário seja enviado */
+                
             } else if(senha ===""){ /* Verificar se os campos foram preenchidos*/
                 alert("Por favor, informe a sua senha."); /* Exibir mensagem de erro */
                 return false; /* Retorna falso para impedir que o formulário seja enviado */ 
-
+  
             } else if(confirmarSenha ===""){ /* Verificar se os campos foram preenchidos*/
                 alert("Por favor, confirme sua senha."); /* Exibir mensagem de erro */ 
                 return false; /* Retorna falso para impedir que o formulário seja enviado */
- 
+  
             } else if(senha != confirmarSenha){ /* Verificar se as senhas são iguais*/
                 alert("Os campos senha e confirme sua senha devem ser iguais!") /* Exibir mensagem de erro */
                 return false; /* Retorna falso para impedir que o formulário seja enviado */
@@ -139,5 +168,17 @@
             }
         }
     </script>
-</body>
+
+
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    
+  </body>
 </html>
