@@ -95,7 +95,7 @@ body{
 #todosJogos{
     position: relative; /*Deixando a posição da div relativa*/
     top: 5vh; /*Definindo uma distância do topo*/
-    width: 80%; /*Definindo uma largura*/
+    width: 70%; /*Definindo uma largura*/
     min-width: 380px; /*Definindo uma largura mínima que poderá ocupar*/
     height: 100vh; /*Definindo uma altura*/
     margin: auto; /*Deixando a margem automática para que se ajuste sozinha*/
@@ -140,7 +140,7 @@ body{
 .jogos{
     position: relative; /*Deixando a posição relativa*/
     top: 5vh; /*Aplicando um espaço no topo*/
-    width: 90%; /*Definindo uma largura*/
+    width: 100%; /*Definindo uma largura*/
     display: flex; /*Deixando o display flexível para utilizar layout responsivo*/
     flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegarem em sua largura mínima*/
 }
