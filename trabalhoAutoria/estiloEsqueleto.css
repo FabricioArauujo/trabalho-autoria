@@ -103,6 +103,7 @@ body{
     justify-content: center; /*Alinhando itens no centro em relação à horizontal */
     flex-wrap: wrap; /*Forçando os itens a quebrarem quando chegar em uma largura mínima*/
 }
+
 .h1{
     position: relative; /*Deixando a posição relativa*/
     top: 2vh; /*aplicando uma distância no topo*/
