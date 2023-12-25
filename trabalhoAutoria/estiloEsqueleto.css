@@ -256,6 +256,9 @@ a:hover{
 .containerLogin .bottom{
     margin: 20px 15px;
 }
+.containerLogin .col{
+    margin-bottom: 15px;
+}
 .container form {
     margin: 15px;
 }
