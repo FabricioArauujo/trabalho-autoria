@@ -1,291 +1,316 @@
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="responsivo.css">
-    <link rel="shortcut icon" href="img/icoSite.ico" type="image/x-icon">
-    <title>Web Jogos</title>
-</head>
-<body>
-    <div class="principal">
-        <div class="barra-menu">
-            <div class="img-logo">
-                <img src="img/icoSite.ico" alt="">
-            </div>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-            <div class="logo">
-                <h1>Web Jogos</h1>
-            </div>
+    <!-- Bootstrap CSS -->
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estiloEsqueleto.css">
+    <link rel="stylesheet" href="estiloEsqueletoResponsivo.css">
 
-            <div class="menu">
-                <ul>
-                    <li><a href="#Plataformas">Jogos</a></li>
-                    <li><a href="#">Sobre</a></li>
-                </ul>
+    <title>Página principal</title>
+  </head>
+  <body>
+    
+    <div id="principal">
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#" style="color: white;">
+              <img src="img/icoSite.ico" width="45" height="45" class="d-inline-block align-top" alt="">
+              Web Jogos</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="esqueletoPaginaPrincipal.html" style="color:rgb(255, 255, 255);">Home <span class="sr-only">(Página atual)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#todosJogos" style="color:rgb(255, 255, 255);">Jogos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paginaCadastro.html" style="color:rgb(255, 255, 255);">Cadastrar</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" action="paginaLogin.html">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+            </form>
+          </div>
+        </nav>
+      
+        <div class="container text-center" style="padding: 5px;">
+          <div class="row justify-content-md-center">
+            <div class="col-6 col-md-3" >
+              <a href="paginaFavoritos.html">Favoritos</a>
             </div>
-
-            <div class="botao-login">
-                <a href="paginaLogin.html">Login</a>
+            <div class="col-6 col-md-3">
+              <a href="categorias.html">Categoria</a>
             </div>
+          </div>
         </div>
 
-        <div class="submenu">
 
-            <div class="submenu-lista">
-                <ul>
-                    <li><a href="paginaFavoritos.html">Favoritos</a></li>
-                    <li><a href="categorias.html">Categoria</a></li>
-                </ul>
+        <div class="carrossel">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/imgPUBG@.jpg" alt="Primeiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/imgGTA5.jpg" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/imgGodOfWar.jpg" alt="Terceiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/imgCSGO.jpg" alt="Terceiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/imgHitman2.jpg" alt="Terceiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/imgRedDead.jpg" alt="Terceiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/imgValorant.jpg" alt="Terceiro Slide">
+              </div>
             </div>
-        </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
 
-        <div class="container-titulo">
-            <h1>Top mais jogados</h1>
-        </div>
-
-        <div class="container-carrossel" id="carrossel-container">
-            <div class="carrossel">
-                <div class="menu-imagens">
-                    <img src="img/imgPUBG@.jpg" alt="Imagem PUBG">
-                    <img src="img/imgGTA5.jpg" alt="image, GTA5">
-                    <img src="img/imgGodOfWar.jpg" alt="imagem" >
-                    <img src="img/imgCSGO.jpg" alt="imagem cs go">
-                    <img src="img/imgHitman2.jpg" alt="Imagem Hitman">
-                    <img src="img/imgRedDead.jpg" alt="imagem Red Dead">
-                    <img src="img/imgValorant.jpg" alt="imagem Valorant">
-                </div>
-                <div class="menu-jogos">
-                    <ul>
-                        <li>
-                            <a href="sinopsePUBG.html"><img src="img/imgPUBG@.jpg" alt="imagem PUBG"></a>
-                            <div class="texto-jogos">
-                                <p>PUBG</p>
-                                <p>Gratuito</p>
-                            </div>
-                           
-                        </li>
-                        <li>
-                            <a href="sinopseGTA5.html"><img src="img/imgGTA5.jpg" alt="image, GTA5"></a>
-                            <div class="texto-jogos">
-                                <p>GTA 5</p>
-                                <p>Gratuito</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="sinopseGODOFWAR.html"><img src="img/imgGodOfWar.jpg" alt="imagem"></a>
-                            <div class="texto-jogos">
-                                <p>GOD OF WAR</p>
-                                <p>Gratuito</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="sinopseCSGO.html"><img src="img/imgCSGO.jpg" alt="imagem cs go"></a>
-                            <div class="texto-jogos">
-                                <p>CS GO</p>
-                                <p>Gratuito</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="sinopseHitman.html"><img src="img/imgHitman2.jpg" alt="Imagem Hitman"></a>
-                            <div class="texto-jogos">
-                                <p>HITMAN</p>
-                                <p>Gratuito</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="sinopseRedDead.html"><img src="img/imgRedDead.jpg" alt="imagem Red Dead Redemption"></a>
-                            <div class="texto-jogos">
-                                <p>READ DEAD 2</p>
-                                <p>Gratuito</p>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="sinopseValorant.html"><img src="img/imgValorant.jpg" alt="imagem Valorant"></a>
-                                <div class="texto-jogos">
-                                    <p>VALORANT</p>
-                                    <p>Gratuito</p>
-                                </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div id="todosJogos">
-                
-           
-            <div id="lista">
-                <ul id="Plataformas">
-                    <li>
-                    <a href="#" data-plataforma="Todos">Todos</a>
-                    </li>
-                    <li>
-                    <a href="#" data-plataforma="Mobile">Mobile</a>
-                    </li>
-                    <li>
-                    <a href="#" data-plataforma="Computador">Computador</a>
-                    </li>
-                    <li>
-                    <a href="#" data-plataforma="Console">Console</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="h1">
-            </div>
-
-            <div class="jogos">
-                <ul class="listaJogos"> <!-- Adicione a classe listaJogos para diferenciar das plataformas -->
-                    <li class="Mobile Computador Console">
-                        <a href="sinopsePUBG.html"><img src="img/imgPUBG@.jpg" alt="imagem PUBG" style="width: 230px; height: 410px;"></a>
+          <div class="menu-jogos">
+            <ul>
+                <li>
+                    <a href="sinopsePUBG.html"><img src="img/imgPUBG@.jpg" alt="imagem PUBG"></a>
+                    <div class="texto-jogos">
                         <p>PUBG</p>
                         <p>Gratuito</p>
-                    </li>
-                    <li class="Console Computador">
-                        <a href="sinopseGTA5.html"><img src="img/imgGTA5.jpg" alt="imagem GTA5" style="width: 230px; height: 410px;"></a>
+                    </div>
+                   
+                </li>
+                <li>
+                    <a href="sinopseGTA5.html"><img src="img/imgGTA5.jpg" alt="image, GTA5"></a>
+                    <div class="texto-jogos">
                         <p>GTA 5</p>
                         <p>Gratuito</p>
-                    </li>
-                    <li class="Computador">
-                        <a href="sinopseCSGO.html"> <img src="img/imgCSGO.jpg" alt="imagem cs go" style="width: 230px; height: 410px;" ></a>
-                        <p>CS GO</p>
-                        <p>Gratuito</p>
-                    </li>
-                    <li class="Console Computador">
-                        <a href="sinopseGODOFWAR.html"><img src="img/imgGodOfWar.jpg" alt="imagem GOD OF WAR" style="width: 230px; height: 410px;"></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="sinopseGODOFWAR.html"><img src="img/imgGodOfWar.jpg" alt="imagem"></a>
+                    <div class="texto-jogos">
                         <p>GOD OF WAR</p>
                         <p>Gratuito</p>
-                    </li>
-                    <li class="Console Mobile Computador">
-                        <a href="sinopseHitman.html"> <img src="img/imgHitman2.jpg" alt="imagem  Hitman" 
-                        style="width: 230px; height: 410px;"></a>
-                        <p>Hitman</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="sinopseCSGO.html"><img src="img/imgCSGO.jpg" alt="imagem cs go"></a>
+                    <div class="texto-jogos">
+                        <p>CS GO</p>
                         <p>Gratuito</p>
-                    </li>
-                    <li class="Console Computador">
-                        <a href="sinopseRedDead.html"><img src="img/imgRedDead.jpg" alt="imagem Red dead Repemtiop" style="width: 230px; height: 410px;"></a>
-                        <p>Red Dead Redemption </p>
+                    </div>
+                </li>
+                <li>
+                    <a href="sinopseHitman.html"><img src="img/imgHitman2.jpg" alt="Imagem Hitman"></a>
+                    <div class="texto-jogos">
+                        <p>HITMAN</p>
                         <p>Gratuito</p>
-                    </li>
-                    <li class="Console Mobile Computador">
-                        <a href="sinopseMortalKombat.html"><img src="img/imgMortalKombat.jpg" alt="Imagem Mortal Kombat"style="width: 230px; height: 410px;"></a>
-                        <p>Mortal Kombat</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="sinopseRedDead.html"><img src="img/imgRedDead.jpg" alt="imagem Red Dead Redemption"></a>
+                    <div class="texto-jogos">
+                        <p>READ DEAD 2</p>
                         <p>Gratuito</p>
-                    </li>
-                    <li class=" Computador">
-                        <a href="sinopseValorant.html"><img src="img/imgValorant.jpg" alt="imagem Valorant" style="width: 230px; height: 410px;"></a>
-                        <p>Valorant</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="sinopseValorant.html"><img src="img/imgValorant.jpg" alt="imagem Valorant"></a>
+                    <div class="texto-jogos">
+                        <p>VALORANT</p>
                         <p>Gratuito</p>
-                    </li>
-                    <li class="Console Computador">
-                        <a href="sinopseApexLegends.html"><img src="img/imgApexLegends.png" alt="imagem apex legends" style="width: 230px; height: 410px;"></a>
-                        <p>Apex Legends</p>
-                        <p>Gratuito</p>
-                    </li>
-                    <li class="Mobile">
-                        <a href="sinopseClashOfClash.html"><img src="img/imgClashOfClans.jpg" alt="imagem clash of Clans" style="width: 230px; height: 410px;"></a>
-                        <p>Clash Of Clans </p>
-                        <p>Gratuito</p>
-                    </li>
-                    <li class="Mobile Console Computador">
-                        <a href="sinopseCallOfDuty.html"><img src="img/imgCallOfDuty.png" alt="imagem Call of duty" style="width: 230px; height: 410px;"></a>
-                        <p>Call Of Duty </p>
-                        <p>Gratuito</p>
-                    </li>
-                    <li class="Mobile">
-                        <a href="sinopsePokemongo.html"><img src="img/imgPokemonGo.jpg" alt="imagem pokemon go" style="width: 230px; height: 410px;"></a>
-                        <p>Pokemon GO </p>
-                        <p>Gratuito</p>
-
-                    </li>
-                    <li class="Computador Console">
-                        <a href="sinopseHorizon.html"><img src="img/imgHorizon.jpg" alt="Imagem de Horizon" style="width: 230px; height: 410px;" ></a>
-                        <p>Horizon</p>
-                        <p>Gratuito</p>
-                    </li>
-                    <li class="Console Computador">
-                        <a href="sinopseEA24.html"><img src="img/imgEA24.jpg" alt="imagem Ea FC 24" style="width: 350px;"></a>
-                        <p>EA FC24</p>
-                        <p>Gratuito</p>
-                    </li>
-                    <li class="Mobile Console Computador">
-                        <a href="sinopseEfootball.html"><img src="img/imgEFootball.jpg" alt="imagem Efootball" style="width: 350px; height: 200px;"></a>
-                        <p>Efootball</p>
-                        <p>Gratuito</p>
-                    </li>
-                    <li class="Mobile Console Computador">
-                        <a href="sinopseFortine.html"> <img src="img/imgFortine.jpg" alt="imagem fortine" style="width: 350px; height: 200px;"></a>
-                        <p>Fortine</p>
-                        <p>Gratuito</p>
-                    </li>
-                    <li class="Mobile">
-                        <a href="sinopseClash.html"><img src="img/imgClash.jpg" alt="imagem clash royale" style="width: 350px; height: 200px;"></a>
-                        <p>Clash Royale</p>
-                        <p>Gratuito</p>
-                    </li>
-                    <li class="Mobile Computador Console">
-                        <a href="sinopseMinecraft.html"><img src="img/imgMinecraft.png" alt="imagem minecraft" style="width: 340px; height: 240px;"></a>
-                        <p>Minecraft</p>
-                        <p>Pago</p>
-                    </li>
-                    <li class="Mobile Computador">
-                        <a href="sinopseLeagueOfLegends.html"><img src="img/imgleagueOfLegends.jpg" alt="imagem league of legends" style="width: 350px; height: 200px"></a>
-                        <p>League Of Legends</p>
-                        <p>Gratuito</p>
-                    </li>
-                    
-                    
-                   
-                    <li class="Mobile Console Computador">
-                        <a href="sinopseAmongUs.html"><img src="img/imgAmongUs.png" alt="Imagem Aomng Us" style="width: 340px; height: 240px;"></a>
-                        <p>Among US </p>
-                        <p>Gratuito</p>
-                    </li>
-                    <li class="Mobile ">
-                        <a href="sinopse8BallPoll.html"><img src="img/imgBallPool.jpg" alt="imagem * baal poll" style="width: 340px; height:240px ;"></a>
-                        <p>8 Ball Pool</p>
-                        <p>Gratuito</p>
-                    </li>
-                    <li class="Mobile Computador Console">
-                        <a href="sinopseStumbleGuys.html"><img src="img/imgStumbleGuys.png" alt="Imagem Stumbl Guys" style="width: 340px; height: 240px;"></a>
-                        <p>Stumble Guys</p>
-                        <p>Gratuito</p>
-                    </li>>
-
-                   
-                </ul>
-            </div>  
+                    </div>
+                </li>
+            </ul>
         </div>
-    </div>
-</div>    
+        </div>
 
+
+      
+        <div id="todosJogos">
+          
+              <div class="lista container text-center" id="Plataformas">
+                <div class="row justify-content-md-center">
+                  <div class="col col-md-2">
+                    <a href="#" data-plataforma="Todos">Todos</a>
+                  </div>
+                  <div class="col col-md-2">
+                    <a href="#" data-plataforma="Mobile">Mobile</a>
+                  </div>
+                  <div class="col col-md-3">
+                    <a href="#" data-plataforma="Computador">Computador</a>
+                  </div>
+                  <div class="col col-md-2">
+                    <a href="#" data-plataforma="Console">Console</a>
+                  </div>
+                </div>
+                  
+                  
+                  
+                  
+              </div>
+
+          <div class="h1">
+          </div>
+
+
+
+          <div class="jogos">
+              <ul class="listaJogos"> <!-- Adicione a classe listaJogos para diferenciar das plataformas -->
+                  <li class="Mobile Computador Console">
+                      <a href="sinopsePUBG.html"><img src="img/imgPUBG@.jpg" alt="imagem PUBG" style="width: 230px; height: 410px;"></a>
+                      <p>PUBG</p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Console Computador">
+                      <a href="sinopseGTA5.html"><img src="img/imgGTA5.jpg" alt="imagem GTA5" style="width: 230px; height: 410px;"></a>
+                      <p>GTA 5</p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Computador">
+                      <a href="sinopseCSGO.html"> <img src="img/imgCSGO.jpg" alt="imagem cs go" style="width: 230px; height: 410px;" ></a>
+                      <p>CS GO</p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Console Computador">
+                      <a href="sinopseGODOFWAR.html"><img src="img/imgGodOfWar.jpg" alt="imagem GOD OF WAR" style="width: 230px; height: 410px;"></a>
+                      <p>GOD OF WAR</p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Console Mobile Computador">
+                      <a href="sinopseHitman.html"> <img src="img/imgHitman2.jpg" alt="imagem  Hitman"
+                      style="width: 230px; height: 410px;"></a>
+                      <p>Hitman</p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Console Computador">
+                      <a href="sinopseRedDead.html"><img src="img/imgRedDead.jpg" alt="imagem Red dead Repemtiop" style="width: 230px; height: 410px;"></a>
+                      <p>Red Dead Redemption </p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Console Mobile Computador">
+                      <a href="sinopseMortalKombat.html"><img src="img/imgMortalKombat.jpg" alt="Imagem Mortal Kombat"style="width: 230px; height: 410px;"></a>
+                      <p>Mortal Kombat</p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class=" Computador">
+                      <a href="sinopseValorant.html"><img src="img/imgValorant.jpg" alt="imagem Valorant" style="width: 230px; height: 410px;"></a>
+                      <p>Valorant</p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Console Computador">
+                      <a href="sinopseApexLegends.html"><img src="img/imgApexLegends.png" alt="imagem apex legends" style="width: 230px; height: 410px;"></a>
+                      <p>Apex Legends</p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Mobile">
+                      <a href="sinopseClashOfClash.html"><img src="img/imgClashOfClans.jpg" alt="imagem clash of Clans" style="width: 230px; height: 410px;"></a>
+                      <p>Clash Of Clans </p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Mobile Console Computador">
+                      <a href="sinopseCallOfDuty.html"><img src="img/imgCallOfDuty.png" alt="imagem Call of duty" style="width: 230px; height: 410px;"></a>
+                      <p>Call Of Duty </p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Mobile">
+                      <a href="sinopsePokemongo.html"><img src="img/imgPokemonGo.jpg" alt="imagem pokemon go" style="width: 230px; height: 410px;"></a>
+                      <p>Pokemon GO </p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Computador Console">
+                      <a href="sinopseHorizon.html"><img src="img/imgHorizon.jpg" alt="Imagem de Horizon" style="width: 230px; height: 410px;" ></a>
+                      <p>Horizon</p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Console Computador">
+                      <a href="sinopseEA24.html"><img src="img/imgEA24.jpg" alt="imagem Ea FC 24" style="width: 350px;"></a>
+                      <p>EA FC24</p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Mobile Console Computador">
+                      <a href="sinopseEfootball.html"><img src="img/imgEFootball.jpg" alt="imagem Efootball" style="width: 350px; height: 200px;"></a>
+                      <p>Efootball</p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Mobile Console Computador">
+                      <a href="sinopseFortine.html"> <img src="img/imgFortine.jpg" alt="imagem fortine" style="width: 350px; height: 200px;"></a>
+                      <p>Fortine</p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Mobile">
+                      <a href="sinopseClash.html"><img src="img/imgClash.jpg" alt="imagem clash royale" style="width: 350px; height: 200px;"></a>
+                      <p>Clash Royale</p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Mobile Computador Console">
+                      <a href="sinopseMinecraft.html"><img src="img/imgMinecraft.png" alt="imagem minecraft" style="width: 340px; height: 240px;"></a>
+                      <p>Minecraft</p>
+                      <p>Pago</p>
+                  </li>
+                  <li class="Mobile Computador">
+                      <a href="sinopseLeagueOfLegends.html"><img src="img/imgleagueOfLegends.jpg" alt="imagem league of legends" style="width: 350px; height: 200px"></a>
+                      <p>League Of Legends</p>
+                      <p>Gratuito</p>
+                  </li>
+      
+      
+      
+                  <li class="Mobile Console Computador">
+                      <a href="sinopseAmongUs.html"><img src="img/imgAmongUs.png" alt="Imagem Aomng Us" style="width: 340px; height: 240px;"></a>
+                      <p>Among US </p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Mobile ">
+                      <a href="sinopse8BallPoll.html"><img src="img/imgBallPool.jpg" alt="imagem * baal poll" style="width: 340px; height:240px ;"></a>
+                      <p>8 Ball Pool</p>
+                      <p>Gratuito</p>
+                  </li>
+                  <li class="Mobile Computador Console">
+                      <a href="sinopseStumbleGuys.html"><img src="img/imgStumbleGuys.png" alt="Imagem Stumbl Guys" style="width: 340px; height: 240px;"></a>
+                      <p>Stumble Guys</p>
+                      <p>Gratuito</p>
+                  </li>>
+      
+              </ul>
+          </div>
+      </div>
     </div>
+      
+      
+
+
+
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const carrossel = document.querySelector(".carrossel"); // Alterado para selecionar a classe carrossel
-            const imagens = carrossel.querySelectorAll(".menu-imagens img"); // Alterado para selecionar imagens dentro da classe menu-imagens
-            let idx = 0; // Variável para armazenar o índice da imagem
-
-            function mostrarProximaImagem() { 
-                imagens[idx].style.display = "none"; /* Definir imagem como display: none */
-                idx = (idx + 1) % imagens.length; /* Incrementar o índice da imagem */
-                imagens[idx].style.display = "block"; /* Definir imagem como display: block */
-            }
-
-            // Definir todas as imagens como display: none inicialmente
-            for (let i = 0; i < imagens.length; i++) { /* Percorrer todas as imagens*/
-                imagens[i].style.display = "none"; /* Definir imagem como display: none */
-            }
-
-            function iniciarCarrossel() { /* Função para iniciar o carrossel */
-                setInterval(mostrarProximaImagem, 3000); // Avança para a próxima imagem a cada 3 segundos (3000 milissegundos)
-            }
-
-            iniciarCarrossel(); /* Chamar a função para iniciar o carrossel */
-        });
-
         /*fiz um javascript para quando aplicarmos no links segundo suas plataformas, ocorresse um filtro onde busca pela class vinculada a cada li*/
         document.addEventListener("DOMContentLoaded", function () { /* Executa quando a página estiver carregada*/
           const botoesPlataformas = document.querySelectorAll("#Plataformas a"); /*pega o seletor de todos os botoes*/
@@ -328,7 +353,5 @@
           atualizarDisplayLi();
         });
     </script>
-
-
-</body>
+  </body>
 </html>
