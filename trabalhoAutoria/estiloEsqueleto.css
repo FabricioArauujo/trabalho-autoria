@@ -162,6 +162,11 @@ body{
     text-align: center; /*Alinhando o texto da legenda no centro*/
     transition: transform 0.8s ease; /*Adicionando uma transição que será usada ao passar o mouse por cima*/
     background-color: black;/*Adicionando uma cor de fundo*/
+    margin: 2px;
+}
+
+.jogos button{
+    width: 100%;
 }
 
 /*Diminuindo a escala dos itens da lista ao passar o mouse por cima */
