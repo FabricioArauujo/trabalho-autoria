@@ -6,19 +6,19 @@
     }
 
     #carouselExampleControls{
-        width: 100%;
-    }
+        width: 100%; /*Preenchendo toda a largura*/
+    } 
 
     .menu-jogos{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
+         width: 100%; /* Preenchendo toda a largura*/
+        height: 100%;  /*Definindo um tamanho da div*/
+        display: flex; /*Deixando o display flexivel para usar layout responsivo*/
+        justify-content: center; /*Centralizando os itens na horizontal*/ 
     }
 }
 @media screen and (max-width: 650px){
    .container .pesquisa{
-       display: flex;
+       display: flex; /*Deixando o display flexivel para usar layout responsivo*/
 
    }
     
@@ -26,6 +26,6 @@
 
 @media screen and (max-width: 752px){
     .formulario{
-        width: 80%;
+        width: 80%; /*Preenchendo toda a largura*/
     }
 }

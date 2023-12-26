@@ -268,61 +268,61 @@ a:hover{
 
 
 .containerLogin{
-    width: 60%;
-    height: 75%;
-    margin: auto;
-    position: relative;
-    top: 5%;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: rgb(32, 32, 32);
-    text-align: center;
-    border-radius: 20px;
-    border: 1px solid rgb(238, 147, 11);
+    width: 60%; /*Definindo uma largura*/ 
+    height: 75%; /*Definindo uma altura*/
+    margin: auto; /*Aplicando uma margem automática para que se ajuste sozinha*/ 
+    position: relative; /*Deixando a posição da div relativa*/ 
+    top: 5%; /*Definindo uma distância do topo*/    
+    font-family: Arial, Helvetica, sans-serif; /*Definindo uma fonte*/
+    color: white; /*Aplicando uma cor da fonte*/ 
+    background-color: rgb(32, 32, 32);  /*Aplicando uma cor de fundo*/
+    text-align: center; /*Alinhando os itens no centro em relação à horizontal*/    
+    border-radius: 20px; /*Deixando a borda redonda*/
+    border: 1px solid rgb(238, 147, 11); /*Adicionando uma borda laranja*/
 }
 .containerLogin form{
-    margin: 15px;
+    margin: 15px; /*Aplicando uma margem*/
 }
 .containerLogin .bottom{
-    margin: 20px 15px;
+    margin: 20px 15px; /*Aplicando uma margem*/
 }
 .containerLogin .col{
-    margin-bottom: 15px;
+    margin-bottom: 15px; /*Aplicando uma margem*/
 }
 .container form {
-    margin: 15px;
+    margin: 15px; /*Aplicando uma margem*/
 }
 .containerLogin h1{
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-padrao); /*Aplicando uma fonte*/
 }
 .containerLogin a{
-    text-decoration: none;
-    color: black;
-    padding: 15px;
-}
+    text-decoration: none; /*Removendo a decoração dos links*/
+    color: black; /*Aplicando uma cor preta*/ 
+    padding: 15px; /*Aplicando uma margem*/
+} 
 @media  only screen and (max-width: 700px){
-    .containerLogin{
-        min-width: 360px;
-        width: 80%;
-        height: 82%;
-        margin: auto;
-        position: relative;
-        top: 5%;
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-        background-color: rgb(32, 32, 32);
-        text-align: center;
-        border-radius: 20px;
+  .containerLogin{
+        min-width: 360px; /*Definindo uma largura*/
+        width: 80%; /*Definindo uma largura*/ 
+        height: 82%; /*Definindo uma altura*/ 
+        margin: auto; /*Aplicando uma margem automática para que se ajuste sozinha*/ 
+        position: relative;     /*Deixando a posição da div relativa*/
+        top: 5%; /*Definindo uma distância do topo*/
+        font-family: Arial, Helvetica, sans-serif; /*Definindo uma fonte*/
+        color: white; /*Aplicando uma cor da fonte*/ 
+        background-color: rgb(32, 32, 32);  /*Aplicando uma cor de fundo*/
+        text-align: center; /*Alinhando os itens no centro em relacionamento a horizontal*/
+        border-radius: 20px; /*Deixando a borda redonda*/ 
     }
 }
 @media  only screen and (min-width: 992px){
     .containerLogin .btn{
-        position: relative;
-        top: 30px;
+        position: relative; /*Deixando a posição da div relativa*/
+        top: 30px; /*Definindo uma distância do topo*/
     }
     .containerLogin .cadastro{
-       position: relative;
-       top: 60px;
+       position: relative; /*Deixando a posição da div relativa*/ 
+       top: 60px; /*Definindo uma distância do topo*/
     }
     
 }
