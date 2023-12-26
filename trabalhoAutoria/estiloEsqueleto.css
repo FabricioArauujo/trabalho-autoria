@@ -29,64 +29,77 @@ body{
     background-color: rgb(24, 22, 22); /*Alterando a cor de fundo da página*/ /*Alterando a cor de fundo da página*/
     font-family: var(--fonte-padrao); /*Aplicando a fonte importada em toda a página*/
 }
+
+/*Alterando a cor de fundo da barra de menu*/
 .navbar{
     background-color: rgb(32, 32, 32); /*Definindo a cor de fundo da barra de menu*/
 }
 
-
+/*Alterando o tamanho da fonte da barra de navegação e deixando em negrito*/
 .navbar-brand{ 
     font-size: 26px;
     font-weight: bold
 }
 
+/*Deixando a margem automática*/
 .navbar-nav {
     margin: auto;
 }
 
+/*Estilizando botões*/
 .btn{
-    border: 1px solid black;
+    border: 1px solid black; /*Adicionando borda preta*/
     background-color: rgb(238, 147, 11); /*Adicionando uma cor de fundo*/
-    color: black;
+    color: black; /*Deixando a cor da fonte preta*/
 }
 
+/*Adicionando animação de troca de cor ao passar o mouse por cima do botão da barra de menu*/
 .form-inline button:hover{
-    border: 1px solid rgb(238, 147, 11);
-    background-color: white;
-    color:  rgb(238, 147, 11);;
+    border: 1px solid rgb(238, 147, 11); /*Adicionando uma borda laranja*/
+    background-color: white; /*Adicionando uma cor de fundo branca*/
+    color:  rgb(238, 147, 11); /*Deixando a cor da fonte laranja*/
 }
 
+/*Aumentando a fonte dos links da barra de menu*/
 .collapse .nav-link{
     font-size: 22px;
 }
+
+/*Estilizando submenu*/
 .navbar-toggler{
-    background-color: rgb(238, 147, 11);
-    border-radius: 10px;
-   
+    background-color: rgb(238, 147, 11); /*Adicionando uma cor de fundo*/
+    border-radius: 10px; /*Deixando a borda redonda*/
 }
 
 .navbar-toggler:hover{
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
+    background-color: rgb(255, 255, 255); /*Alterando cor de fundo para a cor branca*/
+    border-radius: 10px; /*Deixando a borda redonda*/
    
 }
+
+/*Aplicando um efeito de borda em baixo dos links da barra de menu alterando a cor para laranja*/
 .nav-item:hover{
     text-decoration: underline;
     color: rgb(238, 147, 11);
 }
 
 
-
+/*Estilizando containers*/
 .container{
-    width: 50%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    background-color: rgb(32, 32, 32);
-    border-radius: 10px;
+    width: 50%; /*Aplicando uma largura de 50%*/
+    margin-top: 2%; /*Aplicando uma margem no topo de 2%*/
+    margin-bottom: 2%; /*Aplicando uma margem em baixo de 2%*/
+    background-color: rgb(32, 32, 32); /*Aplicando uma cor de fundo quase preta*/
+    border-radius: 10px; /*Deixando a borda redonda*/
 } 
+
+/*Alterando o tamanho e a cor da fonte dos links dos containers*/
 .container a{
     color:rgb(255, 255, 255);
     font-size: 20px;
 }
+
+/*Deixando a cor dos links dos containers laranja ao passar o mouse por cima e aplicando uma borda em baixo*/
 .container a:hover{
     text-decoration: underline;
     color: rgb(238, 147, 11);
@@ -165,6 +178,7 @@ body{
     margin: 2px;
 }
 
+/*Deixando os botões dos cards com 100% da largura*/
 .jogos button{
     width: 100%;
 }
@@ -176,19 +190,23 @@ body{
     transform: scale(0.97);
 }
 
+
+/*Estilizando o carrossel de imagens*/
 .carrossel{
-    background-color: rgb(32, 32, 32);
-    border-radius: 20px;
-    display: flex;
-    margin: auto;
-    width: 60%;
+    background-color: rgb(32, 32, 32); /*Aplicando uma cor de fundo quase preta*/
+    border-radius: 20px; /*Deixando a borda do carrossel redonda*/
+    display: flex; /*Deixando o display flexível*/
+    margin: auto; /*Aplicando uma margem automática*/
+    width: 60%; /*Definindo uma largura de 60%*/
 }
 
+/*Aplicando uma borda redonda na div filha do carrossel e definindo uma largura de 70%*/
 #carouselExampleControls {
     border-radius: 20px;
     width: 70%;
 }
 
+/*Definindo um tamanho fixo para todas as imagens do carrossel e deixando as imagens com borda redonda*/
 .carousel-item img {
     border-radius: 20px;
     height: 650px;
@@ -235,14 +253,20 @@ body{
     border-radius: 20px;
     width: 100%;
 }
+
+/*Removendo a decoração dos links e aplicando uma cor preta*/
 a{
     text-decoration: none;
     color: black;
 }
+
+/*Deixando os links com cor preta ao passar o mouse por cima*/
 a:hover{
     text-decoration: none;
     color: black;
 }
+
+
 .containerLogin{
     width: 60%;
     height: 75%;
