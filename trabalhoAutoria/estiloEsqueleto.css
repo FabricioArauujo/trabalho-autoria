@@ -327,55 +327,65 @@ a:hover{
     
 }
 
+/*Estilazando formulário*/
 .formulario{
-    background-color: rgb(32, 32, 32);
-    width: 50%;
-    margin: auto;
-    margin-top: 30px;
-    color: white;
-    justify-content: center;
-    border-radius: 20px;
-    border: 2px solid rgb(238, 147, 11);
+    background-color: rgb(32, 32, 32); /*Definindo uma cor de fundo*/
+    width: 50%; /*Aplicando uma largura de 50%*/
+    margin: auto; /*Definindo uma margem automática*/
+    margin-top: 30px; /*Aplicando uma margem no topo*/
+    color: white; /*Aplicando uma cor de fonte branca*/
+    justify-content: center; /*Alinhando os itens no centro em relação a horizontal*/
+    border-radius: 20px; /*Deixando a borda redonda*/
+    border: 2px solid rgb(238, 147, 11); /*Aplicando uma borda laranja*/
 }
 
+/*Estilizando container dentro do formulário*/
 .formulario .container{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(32, 32, 32);
+    text-align: center; /*Alinhando itens no centro em relação a vertical*/
+    display: flex; /*Deixando um display flexível*/
+    justify-content: center; /*Alinhando os itens no centro em relação a horuzontal*/
+    background-color: rgb(32, 32, 32); /*Definindo uma cor de fundo*/
 }
 
+/*Estilizando o form que está dentro da div do formulário*/
 .formulario form{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 90%;
-    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*Aplicando um estilo de fonte*/
+    width: 90%; /*Definindo uma largura de 90%*/
+    margin: auto; /*Aplicando uma margem automática*/
 }
+
+/*Estilizando a lista da página categorias*/
 
 .list-group{
-    border: 2px solid gray;
-    border-radius: 5px;
+    border: 2px solid gray; /*aplicando uma borda cinza*/ 
+    border-radius: 5px; /* deixando a borda um pouco redonda*/
 }
 
+/*Deixando os item da lista de categorias com uma cor de fundo quase preta e uma cor da fonte laranja */
  .list-group-item-action{
 
     background-color: rgb(32, 32, 32);
     color:  rgb(238, 147, 11);
  }
 
+ /*Alinhando itens do container de jogos no centro e deixando o comportamento em forma de coluna*/
  #containerJogos{
     display: flex;
     justify-content: center;
     flex-direction: column;
  }
 
+ /*Applicando um tamanho da fonte no título dos jogos*/
  #titulojogos{
     font-size: 50px;
  }
 
+ /*Definindo uma largura de 100% onde contém os cards dos jogos*/
  .jogos{
     width: 100%;
  }
 
+ /*Aplicando uma margem na parte de baixo na lista de categorias*/
  .categorias{
     margin-bottom: 20px;
  }
